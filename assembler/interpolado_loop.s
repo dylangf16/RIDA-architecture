@@ -1,73 +1,32 @@
 .arch armv7ve
 .data
-MATRICES_BASE: .word 0x2a0
-RESULTADO_BASE: .word 0x27500
-SECTOR_SELECT: .word 0x28c
+MATRICES_BASE: .word 0x1d0
+RESULTADO_BASE: .word 0x272e0
+SECTOR_SELECT: .word 0x1c8
 
 .text
 .global main
 
 main:
-    @ Selección del sector
-    LDR R9, =SECTOR_SELECT
-    LDR R9, [R9]
-    LDRB R8, [R9]               @ Cargar el valor del sector desde la dirección 0x200
+    LDR R0, =MATRICES_BASE
+    LDR R0, [R0]                @ R0 = dirección base de las matrices
+    LDR R1, =SECTOR_SELECT
+    LDR R1, [R1]
+    LDRB R1, [R1]               @ R1 = número de sector (0-15)
+    MOV R2, #100                 @ R2 = tamaño de incremento básico (64 bytes)
+    MOV R3, #39700             @ R3 = incremento especial cada 3 sectores
+    MOV R4, #0                  @ R4 = contador de sectores
+    MOV R10, R0                 @ R10 = dirección resultante, inicializada con MATRICES_BASE
 
-    @ Tabla de saltos para los sectores
-    ADR R7, sector_table
-    LDR PC, [R7, R8, LSL #2]    @ Cargar la dirección del sector seleccionado en PC
-
-sector_table:
-    .word sector1, sector2, sector3, sector4, sector5, sector6, sector7, sector8
-    .word sector9, sector10, sector11, sector12, sector13, sector14, sector15, sector16
-
-sector1:
-    LDR R10, =0x2a0
-    B continue_main
-sector2:
-    LDR R10, =0x304
-    B continue_main
-sector3:
-    LDR R10, =0x368
-    B continue_main
-sector4:
-    LDR R10, =0x3cc
-    B continue_main
-sector5:
-    LDR R10, =0x9ee0
-    B continue_main
-sector6:
-    LDR R10, =0x9f44
-    B continue_main
-sector7:
-    LDR R10, =0x9fa8
-    B continue_main
-sector8:
-    LDR R10, =0xa00c
-    B continue_main
-sector9:
-    LDR R10, =0x13b20
-    B continue_main
-sector10:
-    LDR R10, =0x13b84
-    B continue_main
-sector11:
-    LDR R10, =0x13be8
-    B continue_main
-sector12:
-    LDR R10, =0x13c4c
-    B continue_main
-sector13:
-    LDR R10, =0x1d760
-    B continue_main
-sector14:
-    LDR R10, =0x1d7c4
-    B continue_main
-sector15:
-    LDR R10, =0x1d828
-    B continue_main
-sector16:
-    LDR R10, =0x1d88c
+calculate_sector:
+    CMP R4, R1
+    BGE continue_main           @ Si hemos alcanzado el sector deseado, terminamos
+    ADD R4, R4, #1              @ Incrementamos el contador de sectores
+    AND R5, R4, #3              @ Comprobamos si es múltiplo de 3
+    CMP R5, #0
+    ADDEQ R10, R10, R3          @ Si es múltiplo de 3, sumamos 0x9b14
+    ADDNE R10, R10, R2          @ Si no es múltiplo de 3, sumamos 64 bytes
+    B calculate_sector
 
 continue_main:
     @ Actualizar MATRICES_BASE con el nuevo valor
