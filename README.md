@@ -1,0 +1,2 @@
+# RIDA architecture
+ 
