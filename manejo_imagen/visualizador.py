@@ -39,7 +39,7 @@ interpolacion = load_hex_values_from_txt(interpolacion_path)
 
 # Crear las imágenes a partir de los valores cargados
 create_image_from_hex_values(referencia, 100, 100, referencia_imagen_path)
-create_image_from_hex_values(interpolacion, 200, 200, interpolacion_imagen_path)
+create_image_from_hex_values(interpolacion, 396, 396, interpolacion_imagen_path)
 
 '''
 Nota: 

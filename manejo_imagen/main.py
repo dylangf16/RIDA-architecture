@@ -112,7 +112,7 @@ else:
 
     # Si la imagen es divisible en sectores, guardar todos los sectores
     if sector_matrices:
-        save_sectors_to_file(sector_matrices, output_sector, ' ', 10)
+        save_sectors_to_file(sector_matrices, output_sector, ' ', 16)
         save_combined_sectors_to_file(sector_matrices, output_completo)
 
 
