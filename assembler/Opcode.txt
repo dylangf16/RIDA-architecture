@@ -1,0 +1,61 @@
+Especificación Final de Opcode
+
+1. Estructura del Opcode
+
+[2 bits: Condición][2 bits: Tipo][3 bits: Opcode][4 bits: Rd][4 bits: Rn][12 bits: Operando2]
+
+
+2. Tablas de Codificación
+
+## 2.1 Tabla de Condiciones
+| Condición | Código | Descripción |
+|-----------|--------|-------------|
+| AL        | 00     | Siempre     |
+| EQ        | 01     | Igual       |
+| NE        | 10     | No igual    |
+| GE        | 11     | Mayor o igual|
+
+## 2.2 Tabla de Tipos
+| Tipo | Código | Descripción |
+|------|--------|-------------|
+| REG  | 00     | Operación entre registros |
+| IMM  | 01     | Operación con inmediato   |
+| MEM  | 10     | Operación de memoria      |
+| CTRL | 11     | Control de flujo          |
+
+## 2.3 Tablas de Opcodes
+
+### 2.3.1 Tipo REG (00)
+| Operación | Opcode | Descripción |
+|-----------|--------|-------------|
+| ADD       | 000    | Suma registros |
+| SUB       | 001    | Resta registros|
+| AND       | 010    | AND lógico     |
+| MOV       | 011    | Mover registro |
+| LSL       | 100    | Shift izquierda|
+| UDIV      | 101    | División sin signo|
+| SUBS      | 110    | Resta y actualiza flags|
+
+### 2.3.2 Tipo IMM (01)
+| Operación | Opcode | Descripción |
+|-----------|--------|-------------|
+| ADD       | 000    | Suma inmediato |
+| SUB       | 001    | Resta inmediato|
+| MOV       | 010    | Mover inmediato|
+| CMP       | 011    | Comparar con inmediato|
+| LSL       | 100    | Shift izquierda inmediato|
+
+### 2.3.3 Tipo MEM (10)
+| Operación | Opcode | Descripción |
+|-----------|--------|-------------|
+| LDR       | 000    | Cargar palabra  |
+| LDRB      | 001    | Cargar byte     |
+| STR       | 010    | Guardar palabra |
+| STRB      | 011    | Guardar byte    |
+
+### 2.3.4 Tipo CTRL (11)
+| Operación | Opcode | Descripción |
+|-----------|--------|-------------|
+| B         | 000    | Salto incondicional |
+| PUSH      | 001    | Push registros      |
+| POP       | 010    | Pop registros       |
