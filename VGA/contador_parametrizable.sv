@@ -1,6 +1,6 @@
-module contador_parametrizable #(parameter n = 5) (input logic reloj,      
-																	input logic reset,              
-																	output reg [n-1:0] out);  
+module contador_parametrizable #(parameter n = 5) (input  logic         reloj,      
+																	input  logic         reset,              
+																	output reg   [n-1:0] out);  
 						
 	reg [n-1:0] contador = 0;
 	
