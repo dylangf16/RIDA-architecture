@@ -3,147 +3,147 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
-Slack : -4.697
-TNS   : -124.972
+Slack : -4.488
+TNS   : -113.295
 
 Type  : Slow 1100mV 85C Model Setup 'clock_50'
-Slack : -3.636
-TNS   : -7318.833
+Slack : -3.573
+TNS   : -13615.665
 
 Type  : Slow 1100mV 85C Model Setup 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
-Slack : -2.158
-TNS   : -28.576
-
-Type  : Slow 1100mV 85C Model Hold 'clock_50'
-Slack : 0.240
-TNS   : 0.000
+Slack : -2.006
+TNS   : -24.046
 
 Type  : Slow 1100mV 85C Model Hold 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
-Slack : 0.418
+Slack : -0.019
+TNS   : -0.019
+
+Type  : Slow 1100mV 85C Model Hold 'clock_50'
+Slack : 0.184
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
-Slack : 0.990
+Slack : 0.738
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock_50'
 Slack : -2.174
-TNS   : -32225.074
+TNS   : -55527.771
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
 Slack : -0.394
-TNS   : -15.073
+TNS   : -16.268
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
 Slack : -0.394
-TNS   : -7.738
+TNS   : -6.262
 
 Type  : Slow 1100mV 0C Model Setup 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
-Slack : -4.466
-TNS   : -119.934
+Slack : -4.357
+TNS   : -110.008
 
 Type  : Slow 1100mV 0C Model Setup 'clock_50'
-Slack : -3.192
-TNS   : -6395.351
+Slack : -3.128
+TNS   : -11674.524
 
 Type  : Slow 1100mV 0C Model Setup 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
-Slack : -2.248
-TNS   : -28.873
+Slack : -2.029
+TNS   : -23.501
 
 Type  : Slow 1100mV 0C Model Hold 'clock_50'
-Slack : -0.156
-TNS   : -0.740
+Slack : -0.235
+TNS   : -4.475
 
 Type  : Slow 1100mV 0C Model Hold 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
-Slack : 0.435
+Slack : 0.105
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
-Slack : 0.960
+Slack : 0.725
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock_50'
 Slack : -2.174
-TNS   : -32157.988
+TNS   : -55403.949
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
 Slack : -0.394
-TNS   : -14.946
+TNS   : -15.866
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
 Slack : -0.394
-TNS   : -7.672
+TNS   : -6.300
 
 Type  : Fast 1100mV 85C Model Setup 'clock_50'
-Slack : -2.668
-TNS   : -5033.219
+Slack : -2.526
+TNS   : -9343.916
 
 Type  : Fast 1100mV 85C Model Setup 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
-Slack : -2.559
-TNS   : -68.201
+Slack : -2.444
+TNS   : -61.399
 
 Type  : Fast 1100mV 85C Model Setup 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
-Slack : -0.968
-TNS   : -12.589
-
-Type  : Fast 1100mV 85C Model Hold 'clock_50'
-Slack : 0.058
-TNS   : 0.000
+Slack : -0.880
+TNS   : -10.549
 
 Type  : Fast 1100mV 85C Model Hold 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
-Slack : 0.137
+Slack : -0.146
+TNS   : -0.507
+
+Type  : Fast 1100mV 85C Model Hold 'clock_50'
+Slack : 0.012
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
-Slack : 0.525
+Slack : 0.374
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock_50'
 Slack : -2.174
-TNS   : -32096.380
+TNS   : -55306.595
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
-Slack : 0.107
+Slack : 0.017
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
-Slack : 0.139
+Slack : 0.162
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
-Slack : -2.309
-TNS   : -61.067
+Slack : -2.209
+TNS   : -54.916
 
 Type  : Fast 1100mV 0C Model Setup 'clock_50'
-Slack : -2.102
-TNS   : -3772.756
+Slack : -2.027
+TNS   : -6947.771
 
 Type  : Fast 1100mV 0C Model Setup 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
-Slack : -0.877
-TNS   : -11.145
+Slack : -0.768
+TNS   : -9.210
 
 Type  : Fast 1100mV 0C Model Hold 'clock_50'
-Slack : -0.225
-TNS   : -9.781
+Slack : -0.281
+TNS   : -35.180
 
 Type  : Fast 1100mV 0C Model Hold 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
-Slack : 0.123
-TNS   : 0.000
+Slack : -0.117
+TNS   : -0.377
 
 Type  : Fast 1100mV 0C Model Hold 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
-Slack : 0.472
+Slack : 0.340
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock_50'
 Slack : -2.174
-TNS   : -32115.226
+TNS   : -55339.552
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]'
-Slack : 0.110
+Slack : 0.044
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]'
-Slack : 0.137
+Slack : 0.161
 TNS   : 0.000
 
 ------------------------------------------------------------

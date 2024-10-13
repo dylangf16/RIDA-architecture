@@ -116,15 +116,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
 					"strict" : false
 				},
 				{
 					"name" : "clock_50",
-					"strict" : false
-				},
-				{
-					"name" : "start",
 					"strict" : false
 				},
 				{

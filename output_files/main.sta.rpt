@@ -1,5 +1,5 @@
 Timing Analyzer report for main
-Sun Oct 13 14:13:04 2024
+Sun Oct 13 16:26:02 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -100,22 +100,22 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 3.38        ;
+; Average used               ; 4.16        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  21.9%      ;
-;     Processor 3            ;  21.8%      ;
-;     Processor 4            ;  21.8%      ;
-;     Processor 5            ;  21.5%      ;
-;     Processor 6            ;  21.5%      ;
-;     Processor 7            ;  21.5%      ;
-;     Processor 8            ;  21.5%      ;
-;     Processor 9            ;  21.5%      ;
-;     Processor 10           ;  21.5%      ;
-;     Processor 11           ;  21.5%      ;
-;     Processor 12           ;  21.5%      ;
+;     Processor 2            ;  29.0%      ;
+;     Processor 3            ;  29.0%      ;
+;     Processor 4            ;  29.0%      ;
+;     Processor 5            ;  28.7%      ;
+;     Processor 6            ;  28.6%      ;
+;     Processor 7            ;  28.6%      ;
+;     Processor 8            ;  28.6%      ;
+;     Processor 9            ;  28.6%      ;
+;     Processor 10           ;  28.6%      ;
+;     Processor 11           ;  28.6%      ;
+;     Processor 12           ;  28.6%      ;
 +----------------------------+-------------+
 
 
@@ -135,9 +135,9 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                                                       ; Note                                           ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
-; 197.59 MHz ; 197.59 MHz      ; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ;                                                ;
-; 316.66 MHz ; 316.66 MHz      ; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ;                                                ;
-; 433.28 MHz ; 315.06 MHz      ; clock_50                                                                                                         ; limit due to minimum period restriction (tmin) ;
+; 234.3 MHz  ; 234.3 MHz       ; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ;                                                ;
+; 332.67 MHz ; 332.67 MHz      ; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ;                                                ;
+; 432.9 MHz  ; 315.06 MHz      ; clock_50                                                                                                         ; limit due to minimum period restriction (tmin) ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -153,21 +153,21 @@ HTML report is unavailable in plain text report export.
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                            ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -4.697 ; -124.972      ;
-; clock_50                                                                                                         ; -3.636 ; -7318.833     ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -2.158 ; -28.576       ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -4.488 ; -113.295      ;
+; clock_50                                                                                                         ; -3.573 ; -13615.665    ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -2.006 ; -24.046       ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1100mV 85C Model Hold Summary                                                                                                       ;
-+------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; Clock                                                                                                            ; Slack ; End Point TNS ;
-+------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; clock_50                                                                                                         ; 0.240 ; 0.000         ;
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 0.418 ; 0.000         ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.990 ; 0.000         ;
-+------------------------------------------------------------------------------------------------------------------+-------+---------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Hold Summary                                                                                                        ;
++------------------------------------------------------------------------------------------------------------------+--------+---------------+
+; Clock                                                                                                            ; Slack  ; End Point TNS ;
++------------------------------------------------------------------------------------------------------------------+--------+---------------+
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -0.019 ; -0.019        ;
+; clock_50                                                                                                         ; 0.184  ; 0.000         ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.738  ; 0.000         ;
++------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
 ------------------------------------------
@@ -187,9 +187,9 @@ No paths to report.
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                            ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock_50                                                                                                         ; -2.174 ; -32225.074    ;
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -0.394 ; -15.073       ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -0.394 ; -7.738        ;
+; clock_50                                                                                                         ; -2.174 ; -55527.771    ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -0.394 ; -16.268       ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -0.394 ; -6.262        ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -205,9 +205,9 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                                                       ; Note                                           ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
-; 201.65 MHz ; 201.65 MHz      ; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ;                                                ;
-; 307.88 MHz ; 307.88 MHz      ; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ;                                                ;
-; 427.72 MHz ; 315.06 MHz      ; clock_50                                                                                                         ; limit due to minimum period restriction (tmin) ;
+; 238.95 MHz ; 238.95 MHz      ; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ;                                                ;
+; 330.14 MHz ; 330.14 MHz      ; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ;                                                ;
+; 427.35 MHz ; 315.06 MHz      ; clock_50                                                                                                         ; limit due to minimum period restriction (tmin) ;
 +------------+-----------------+------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -217,9 +217,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                            ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -4.466 ; -119.934      ;
-; clock_50                                                                                                         ; -3.192 ; -6395.351     ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -2.248 ; -28.873       ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -4.357 ; -110.008      ;
+; clock_50                                                                                                         ; -3.128 ; -11674.524    ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -2.029 ; -23.501       ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -228,9 +228,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                            ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock_50                                                                                                         ; -0.156 ; -0.740        ;
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 0.435  ; 0.000         ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.960  ; 0.000         ;
+; clock_50                                                                                                         ; -0.235 ; -4.475        ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 0.105  ; 0.000         ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.725  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -251,9 +251,9 @@ No paths to report.
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                            ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock_50                                                                                                         ; -2.174 ; -32157.988    ;
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -0.394 ; -14.946       ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -0.394 ; -7.672        ;
+; clock_50                                                                                                         ; -2.174 ; -55403.949    ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -0.394 ; -15.866       ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -0.394 ; -6.300        ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -269,21 +269,21 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                            ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock_50                                                                                                         ; -2.668 ; -5033.219     ;
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -2.559 ; -68.201       ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -0.968 ; -12.589       ;
+; clock_50                                                                                                         ; -2.526 ; -9343.916     ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -2.444 ; -61.399       ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -0.880 ; -10.549       ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Fast 1100mV 85C Model Hold Summary                                                                                                       ;
-+------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; Clock                                                                                                            ; Slack ; End Point TNS ;
-+------------------------------------------------------------------------------------------------------------------+-------+---------------+
-; clock_50                                                                                                         ; 0.058 ; 0.000         ;
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 0.137 ; 0.000         ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.525 ; 0.000         ;
-+------------------------------------------------------------------------------------------------------------------+-------+---------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1100mV 85C Model Hold Summary                                                                                                        ;
++------------------------------------------------------------------------------------------------------------------+--------+---------------+
+; Clock                                                                                                            ; Slack  ; End Point TNS ;
++------------------------------------------------------------------------------------------------------------------+--------+---------------+
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -0.146 ; -0.507        ;
+; clock_50                                                                                                         ; 0.012  ; 0.000         ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.374  ; 0.000         ;
++------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
 ------------------------------------------
@@ -303,9 +303,9 @@ No paths to report.
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                            ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock_50                                                                                                         ; -2.174 ; -32096.380    ;
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 0.107  ; 0.000         ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.139  ; 0.000         ;
+; clock_50                                                                                                         ; -2.174 ; -55306.595    ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 0.017  ; 0.000         ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.162  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -316,7 +316,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 5
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 0.171 ns
+Worst Case Available Settling Time: 0.234 ns
 
 
 
@@ -326,9 +326,9 @@ Worst Case Available Settling Time: 0.171 ns
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                            ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -2.309 ; -61.067       ;
-; clock_50                                                                                                         ; -2.102 ; -3772.756     ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -0.877 ; -11.145       ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -2.209 ; -54.916       ;
+; clock_50                                                                                                         ; -2.027 ; -6947.771     ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -0.768 ; -9.210        ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -337,9 +337,9 @@ Worst Case Available Settling Time: 0.171 ns
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                            ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock_50                                                                                                         ; -0.225 ; -9.781        ;
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 0.123  ; 0.000         ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.472  ; 0.000         ;
+; clock_50                                                                                                         ; -0.281 ; -35.180       ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -0.117 ; -0.377        ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.340  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -360,9 +360,9 @@ No paths to report.
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                                            ; Slack  ; End Point TNS ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
-; clock_50                                                                                                         ; -2.174 ; -32115.226    ;
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 0.110  ; 0.000         ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.137  ; 0.000         ;
+; clock_50                                                                                                         ; -2.174 ; -55339.552    ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 0.044  ; 0.000         ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0.161  ; 0.000         ;
 +------------------------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -373,25 +373,25 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 5
 Shortest Synchronizer Chain: 2 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 0.202 ns
+Worst Case Available Settling Time: 0.263 ns
 
 
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                                                                                               ;
-+-------------------------------------------------------------------------------------------------------------------+-----------+--------+----------+---------+---------------------+
-; Clock                                                                                                             ; Setup     ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
-+-------------------------------------------------------------------------------------------------------------------+-----------+--------+----------+---------+---------------------+
-; Worst-case Slack                                                                                                  ; -4.697    ; -0.225 ; N/A      ; N/A     ; -2.174              ;
-;  clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -4.697    ; 0.123  ; N/A      ; N/A     ; -0.394              ;
-;  clock_50                                                                                                         ; -3.636    ; -0.225 ; N/A      ; N/A     ; -2.174              ;
-;  controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -2.248    ; 0.472  ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS                                                                                                   ; -7472.381 ; -9.781 ; 0.0      ; 0.0     ; -32247.885          ;
-;  clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -124.972  ; 0.000  ; N/A      ; N/A     ; -15.073             ;
-;  clock_50                                                                                                         ; -7318.833 ; -9.781 ; N/A      ; N/A     ; -32225.074          ;
-;  controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -28.873   ; 0.000  ; N/A      ; N/A     ; -7.738              ;
-+-------------------------------------------------------------------------------------------------------------------+-----------+--------+----------+---------+---------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                                                                                 ;
++-------------------------------------------------------------------------------------------------------------------+------------+---------+----------+---------+---------------------+
+; Clock                                                                                                             ; Setup      ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
++-------------------------------------------------------------------------------------------------------------------+------------+---------+----------+---------+---------------------+
+; Worst-case Slack                                                                                                  ; -4.488     ; -0.281  ; N/A      ; N/A     ; -2.174              ;
+;  clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -4.488     ; -0.146  ; N/A      ; N/A     ; -0.394              ;
+;  clock_50                                                                                                         ; -3.573     ; -0.281  ; N/A      ; N/A     ; -2.174              ;
+;  controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -2.029     ; 0.340   ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS                                                                                                   ; -13753.006 ; -35.557 ; 0.0      ; 0.0     ; -55550.301          ;
+;  clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; -113.295   ; -0.507  ; N/A      ; N/A     ; -16.268             ;
+;  clock_50                                                                                                         ; -13615.665 ; -35.180 ; N/A      ; N/A     ; -55527.771          ;
+;  controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; -24.046    ; 0.000   ; N/A      ; N/A     ; -6.300              ;
++-------------------------------------------------------------------------------------------------------------------+------------+---------+----------+---------+---------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -435,9 +435,9 @@ Worst Case Available Settling Time: 0.202 ns
 +----------+--------------+-----------------+-----------------+
 ; Pin      ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +----------+--------------+-----------------+-----------------+
+; start    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; reset    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; clock_50 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; start    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; button   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 +----------+--------------+-----------------+-----------------+
 
@@ -591,11 +591,11 @@ Worst Case Available Settling Time: 0.202 ns
 +------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                                                       ; To Clock                                                                                                         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 900      ; 0        ; 0        ; 0        ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 882      ; 0        ; 0        ; 0        ;
 ; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 56       ; 542      ; 0        ; 0        ;
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; clock_50                                                                                                         ; 2886     ; 1        ; 0        ; 0        ;
-; clock_50                                                                                                         ; clock_50                                                                                                         ; 352      ; 0        ; 0        ; 0        ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0        ; 0        ; 0        ; 216      ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; clock_50                                                                                                         ; 5766     ; 1        ; 0        ; 0        ;
+; clock_50                                                                                                         ; clock_50                                                                                                         ; 511      ; 0        ; 0        ; 0        ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0        ; 0        ; 0        ; 185      ;
 +------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -605,11 +605,11 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                                                       ; To Clock                                                                                                         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 900      ; 0        ; 0        ; 0        ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 882      ; 0        ; 0        ; 0        ;
 ; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; 56       ; 542      ; 0        ; 0        ;
-; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; clock_50                                                                                                         ; 2886     ; 1        ; 0        ; 0        ;
-; clock_50                                                                                                         ; clock_50                                                                                                         ; 352      ; 0        ; 0        ; 0        ;
-; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0        ; 0        ; 0        ; 216      ;
+; clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]                                                ; clock_50                                                                                                         ; 5766     ; 1        ; 0        ; 0        ;
+; clock_50                                                                                                         ; clock_50                                                                                                         ; 511      ; 0        ; 0        ; 0        ;
+; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] ; 0        ; 0        ; 0        ; 185      ;
 +------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -634,9 +634,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 3     ; 3    ;
-; Unconstrained Input Port Paths  ; 53    ; 53   ;
+; Unconstrained Input Port Paths  ; 77    ; 77   ;
 ; Unconstrained Output Ports      ; 28    ; 28   ;
-; Unconstrained Output Port Paths ; 1137  ; 1137 ;
+; Unconstrained Output Port Paths ; 1817  ; 1817 ;
 +---------------------------------+-------+------+
 
 
@@ -751,7 +751,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Sun Oct 13 14:12:58 2024
+    Info: Processing started: Sun Oct 13 16:25:55 2024
 Info: Command: quartus_sta RIDA -c main
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -761,35 +761,35 @@ Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'main.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]
     Info (332105): create_clock -period 1.000 -name clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] clock25mh:clock|contador_parametrizable:divisor_clock|contador[0]
     Info (332105): create_clock -period 1.000 -name clock_50 clock_50
+    Info (332105): create_clock -period 1.000 -name controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0]
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.697
+Info (332146): Worst-case setup slack is -4.488
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.697            -124.972 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):    -3.636           -7318.833 clock_50 
-    Info (332119):    -2.158             -28.576 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
-Info (332146): Worst-case hold slack is 0.240
+    Info (332119):    -4.488            -113.295 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):    -3.573          -13615.665 clock_50 
+    Info (332119):    -2.006             -24.046 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+Info (332146): Worst-case hold slack is -0.019
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.240               0.000 clock_50 
-    Info (332119):     0.418               0.000 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):     0.990               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+    Info (332119):    -0.019              -0.019 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):     0.184               0.000 clock_50 
+    Info (332119):     0.738               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174          -32225.074 clock_50 
-    Info (332119):    -0.394             -15.073 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):    -0.394              -7.738 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+    Info (332119):    -2.174          -55527.771 clock_50 
+    Info (332119):    -0.394             -16.268 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):    -0.394              -6.262 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
 Info (332114): Report Metastability: Found 5 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Slow 1100mV 0C Model
@@ -798,26 +798,26 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.466
+Info (332146): Worst-case setup slack is -4.357
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.466            -119.934 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):    -3.192           -6395.351 clock_50 
-    Info (332119):    -2.248             -28.873 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
-Info (332146): Worst-case hold slack is -0.156
+    Info (332119):    -4.357            -110.008 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):    -3.128          -11674.524 clock_50 
+    Info (332119):    -2.029             -23.501 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+Info (332146): Worst-case hold slack is -0.235
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.156              -0.740 clock_50 
-    Info (332119):     0.435               0.000 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):     0.960               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+    Info (332119):    -0.235              -4.475 clock_50 
+    Info (332119):     0.105               0.000 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):     0.725               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174          -32157.988 clock_50 
-    Info (332119):    -0.394             -14.946 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):    -0.394              -7.672 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+    Info (332119):    -2.174          -55403.949 clock_50 
+    Info (332119):    -0.394             -15.866 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):    -0.394              -6.300 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
 Info (332114): Report Metastability: Found 5 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 85C Model
@@ -826,70 +826,70 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.668
+Info (332146): Worst-case setup slack is -2.526
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.668           -5033.219 clock_50 
-    Info (332119):    -2.559             -68.201 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):    -0.968             -12.589 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
-Info (332146): Worst-case hold slack is 0.058
+    Info (332119):    -2.526           -9343.916 clock_50 
+    Info (332119):    -2.444             -61.399 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):    -0.880             -10.549 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+Info (332146): Worst-case hold slack is -0.146
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.058               0.000 clock_50 
-    Info (332119):     0.137               0.000 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):     0.525               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+    Info (332119):    -0.146              -0.507 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):     0.012               0.000 clock_50 
+    Info (332119):     0.374               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174          -32096.380 clock_50 
-    Info (332119):     0.107               0.000 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):     0.139               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+    Info (332119):    -2.174          -55306.595 clock_50 
+    Info (332119):     0.017               0.000 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):     0.162               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
 Info (332114): Report Metastability: Found 5 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 5
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 0.171 ns
+    Info (332114): Worst Case Available Settling Time: 0.234 ns
     Info (332114): 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.309
+Info (332146): Worst-case setup slack is -2.209
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.309             -61.067 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):    -2.102           -3772.756 clock_50 
-    Info (332119):    -0.877             -11.145 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
-Info (332146): Worst-case hold slack is -0.225
+    Info (332119):    -2.209             -54.916 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):    -2.027           -6947.771 clock_50 
+    Info (332119):    -0.768              -9.210 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+Info (332146): Worst-case hold slack is -0.281
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.225              -9.781 clock_50 
-    Info (332119):     0.123               0.000 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):     0.472               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+    Info (332119):    -0.281             -35.180 clock_50 
+    Info (332119):    -0.117              -0.377 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):     0.340               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174          -32115.226 clock_50 
-    Info (332119):     0.110               0.000 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
-    Info (332119):     0.137               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
+    Info (332119):    -2.174          -55339.552 clock_50 
+    Info (332119):     0.044               0.000 clock25mh:clock|contador_parametrizable:divisor_clock|contador[0] 
+    Info (332119):     0.161               0.000 controlador_vga:controlador|contador_horizontal:contador_horizontal|contador_parametrizable:contador|contador[0] 
 Info (332114): Report Metastability: Found 5 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 5
     Info (332114): Shortest Synchronizer Chain: 2 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 0.202 ns
+    Info (332114): Worst Case Available Settling Time: 0.263 ns
     Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5326 megabytes
-    Info: Processing ended: Sun Oct 13 14:13:04 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 5361 megabytes
+    Info: Processing ended: Sun Oct 13 16:26:02 2024
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:09
 
 

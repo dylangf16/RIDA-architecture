@@ -1,5 +1,5 @@
 Flow report for main
-Sun Oct 13 14:13:04 2024
+Sun Oct 13 16:26:02 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Sun Oct 13 14:12:57 2024          ;
+; Flow Status                     ; Successful - Sun Oct 13 16:25:54 2024          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; main                                           ;
 ; Top-level Entity Name           ; main                                           ;
 ; Family                          ; Cyclone V                                      ;
 ; Device                          ; 5CSXFC6D6F31C6                                 ;
 ; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 148 / 41,910 ( < 1 % )                         ;
-; Total registers                 ; 61                                             ;
+; Logic utilization (in ALMs)     ; 266 / 41,910 ( < 1 % )                         ;
+; Total registers                 ; 58                                             ;
 ; Total pins                      ; 32 / 499 ( 6 % )                               ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 1,280,000 / 5,662,720 ( 23 % )                 ;
+; Total block memory bits         ; 2,560,000 / 5,662,720 ( 45 % )                 ;
 ; Total DSP Blocks                ; 0 / 112 ( 0 % )                                ;
 ; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                  ;
 ; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                  ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/13/2024 14:10:47 ;
+; Start date & time ; 10/13/2024 16:22:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; main                ;
 +-------------------+---------------------+
@@ -79,10 +79,11 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 4931003785295.172885024720760          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 4931003785295.172885814320472          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; Memory/drom_bb.v                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; Memory/dram_bb.v                       ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -97,11 +98,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4904 MB             ; 00:00:06                           ;
-; Fitter               ; 00:01:57     ; 1.1                     ; 7392 MB             ; 00:03:04                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4900 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:06     ; 3.4                     ; 5326 MB             ; 00:00:05                           ;
-; Total                ; 00:02:14     ; --                      ; --                  ; 00:03:17                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4958 MB             ; 00:00:07                           ;
+; Fitter               ; 00:03:15     ; 1.1                     ; 7385 MB             ; 00:05:54                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4903 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:07     ; 4.2                     ; 5361 MB             ; 00:00:09                           ;
+; Total                ; 00:03:36     ; --                      ; --                  ; 00:06:13                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

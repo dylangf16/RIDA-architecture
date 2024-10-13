@@ -14,11 +14,11 @@ def generarPixelesMIF(imagen_path):
     return salida
 
 # Ejemplo de uso
-imagen_path = "image.png"  # Ruta de la imagen
+imagen_path = "zoom_image.png"  # Ruta de la imagen
 resultado = generarPixelesMIF(imagen_path)
 
 # Guardar el resultado en un archivo de texto
-with open("resultado_pixeles.txt", "w") as archivo:
+with open("resultado_pixeles_zoom.txt", "w") as archivo:
     archivo.write(resultado)
 
 print("Proceso completado. Resultado guardado en 'resultado_pixeles.txt'")

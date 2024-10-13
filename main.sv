@@ -15,8 +15,9 @@ module main ( input 			clock_50,
 	logic clock_25;
 	
 	// ROM
-	reg   [31:0] pixel_address;
-	logic [31:0] pixel_data;
+	reg   [17:0] pixel_address;
+	logic [7:0]  pixel_data;
+	logic [7:0]  pixel_result;
 	logic [4:0]  quadrant;
 		
 	//Modulos
@@ -30,8 +31,10 @@ module main ( input 			clock_50,
 	
 	controlador_vga controlador (.clock_25(clock_25),
 										  .reset(reset),
+										  .start(start),
 										  .quadrant(quadrant),
 										  .data_drom(pixel_data),
+										  .data_dram(pixel_result),
 										  .address(pixel_address),
 										  .red(red_out),
 										  .green(green_out),
@@ -43,6 +46,10 @@ module main ( input 			clock_50,
 	drom rom_image (.clock(clock_50),
 						.address_b(pixel_address),
 						.q_b(pixel_data));		
+						
+	dram ram_result(.clock(clock_50),
+						 .rdaddress(pixel_address),
+						 .q(pixel_result));
 				
 	assign vgaclock = clock_25;
 		
