@@ -1,6 +1,7 @@
 module main ( input 			clock_50,
 				  input 			reset,
 				  input 			start,
+				  input 			button,
 				  output [7:0] red_out,
 				  output [7:0] green_out,
 				  output [7:0] blue_out,
@@ -16,13 +17,20 @@ module main ( input 			clock_50,
 	// ROM
 	reg   [31:0] pixel_address;
 	logic [31:0] pixel_data;
+	logic [4:0]  quadrant;
 		
 	//Modulos
 	clock25mh clock(clock_50, clock_25);
 	
+	contador_cuadrante contador(.clock(clock_50),            
+										 .reset(reset),        
+										 .button(button),
+										 .enable(~start),
+										 .count(quadrant));    
+	
 	controlador_vga controlador (.clock_25(clock_25),
 										  .reset(reset),
-										  .start(start),
+										  .quadrant(quadrant),
 										  .data_drom(pixel_data),
 										  .address(pixel_address),
 										  .red(red_out),

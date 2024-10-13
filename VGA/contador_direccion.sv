@@ -13,7 +13,7 @@ module contador_direccion #(parameter n = 5) (input  logic         clk,
 		
 		else begin
 			if (x == 0 && y == 0) contador = 0;
-			else if ((x >= 0 && x <= 399) && (y >= 0 && y <= 399)) contador = contador + 1'b1;			
+			else if ((x >= 20 && x <= 419) && (y >= 40 && y <= 439)) contador = contador + 1'b1;			
 		end
 				
 	end 

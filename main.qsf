@@ -38,7 +38,7 @@
 
 
 set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CGXFC7C7F23C8
+set_global_assignment -name DEVICE 5CSXFC6D6F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY main
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.2
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:03:28  OCTOBER 09, 2024"
@@ -65,4 +65,37 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name MIF_FILE Memory/image.mif
 set_global_assignment -name QIP_FILE Memory/drom.qip
+set_location_assignment PIN_AK29 -to red_out[0]
+set_location_assignment PIN_AK28 -to red_out[1]
+set_location_assignment PIN_AK27 -to red_out[2]
+set_location_assignment PIN_AJ27 -to red_out[3]
+set_location_assignment PIN_AH27 -to red_out[4]
+set_location_assignment PIN_AF26 -to red_out[5]
+set_location_assignment PIN_AG26 -to red_out[6]
+set_location_assignment PIN_AJ26 -to red_out[7]
+set_location_assignment PIN_AK22 -to n_blank
+set_location_assignment PIN_AK21 -to vgaclock
+set_location_assignment PIN_AK18 -to vsync
+set_location_assignment PIN_AK19 -to hsync
+set_location_assignment PIN_AK26 -to green_out[0]
+set_location_assignment PIN_AJ25 -to green_out[1]
+set_location_assignment PIN_AH25 -to green_out[2]
+set_location_assignment PIN_AK24 -to green_out[3]
+set_location_assignment PIN_AJ24 -to green_out[4]
+set_location_assignment PIN_AH24 -to green_out[5]
+set_location_assignment PIN_AK23 -to green_out[6]
+set_location_assignment PIN_AH23 -to green_out[7]
+set_location_assignment PIN_AJ21 -to blue_out[0]
+set_location_assignment PIN_AJ20 -to blue_out[1]
+set_location_assignment PIN_AH20 -to blue_out[2]
+set_location_assignment PIN_AJ19 -to blue_out[3]
+set_location_assignment PIN_AH19 -to blue_out[4]
+set_location_assignment PIN_AJ17 -to blue_out[5]
+set_location_assignment PIN_AJ16 -to blue_out[6]
+set_location_assignment PIN_AK16 -to blue_out[7]
+set_location_assignment PIN_AF14 -to clock_50
+set_location_assignment PIN_AB30 -to reset
+set_global_assignment -name SYSTEMVERILOG_FILE VGA/contador_cuadrante.sv
+set_location_assignment PIN_AJ4 -to button
+set_location_assignment PIN_AA30 -to start
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
