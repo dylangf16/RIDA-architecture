@@ -179,7 +179,7 @@ def save_combined_sectors_color_to_file(sector_matrices, filename="output_sector
 
 # Construir la ruta relativa a partir del directorio del script
 repo_base_path = os.path.dirname(__file__)
-path_imagen = os.path.join(repo_base_path, 'imagenes', 'wallhaven-m3ky79_400x400.png')
+path_imagen = os.path.join(repo_base_path, 'imagenes', 'unlobo400x400.jpeg')
 
 output_sector_greyscale = os.path.join(repo_base_path, 'memoria', 'sectores_100x100_greyscale.txt')
 output_completo_greyscale = os.path.join(repo_base_path, 'memoria', 'imagen_completa_greyscale.txt')
