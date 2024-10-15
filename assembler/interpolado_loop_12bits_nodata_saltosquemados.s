@@ -1,18 +1,12 @@
 .arch armv7ve
-.data
-MATRICES_BASE: .word 0x204
-RESULTADO_BASE: .word 0x27310
-SECTOR_SELECT: .word 0x200
-
 .text
 .global main
 
 main:
-    LDR R0, =MATRICES_BASE
+    MOV R0, #0x214 
     LDR R0, [R0]                @ R0 = dirección base de las matrices
-    LDR R1, =SECTOR_SELECT
+    MOV R1, #0x210 
     LDR R1, [R1]
-    LDRB R1, [R1]               @ R1 = número de sector (0-15)
     MOV R2, #100                 @ R2 = tamaño de incremento básico (64 bytes)
     @ Dividir 39700 en operaciones más pequeñas
     MOV R3, #0                  @ Inicializar R3
@@ -35,25 +29,31 @@ main:
 
 calculate_sector:
     CMP R4, R1
-    BGE continue_main           @ Si hemos alcanzado el sector deseado, terminamos
+    BGE 0x78           @ Si hemos alcanzado el sector deseado, terminamos
     ADD R4, R4, #1              @ Incrementamos el contador de sectores
     AND R5, R4, #3              @ Comprobamos si es múltiplo de 3
     CMP R5, #0
     ADDEQ R10, R10, R3          @ Si es múltiplo de 3, sumamos 0x9b14
     ADDNE R10, R10, R2          @ Si no es múltiplo de 3, sumamos 64 bytes
-    B calculate_sector
+    B 0x58
 
 continue_main:
     @ Actualizar MATRICES_BASE con el nuevo valor
-    LDR R9, =MATRICES_BASE
+    MOV R9, #0x214 
     STR R10, [R9]
 
-    LDR R11, =RESULTADO_BASE
+    MOV R11, #0x218
     LDR R11, [R11]               @ R11 = dirección base del resultado
     MOV R12, #99                 @ Contador de matrices 100x2 (ahora procesamos 2)
 
 loop_100x2:
-    PUSH {R10-R12}               @ Guardar registros importantes
+    @ Guardar R10-R12 en direcciones específicas
+	MOV R9, #0x21c
+	STR R10, [R9]
+	MOV R9, #0x220
+	STR R11, [R9]
+	MOV R9, #0x224
+	STR R12, [R9]
     MOV R12, #99                 @ Contador de matrices 2x2 de matrices horizontales
 
 loop_matrices:
@@ -163,18 +163,24 @@ loop_matrices:
 
     @ Preparar para la siguiente matriz
     ADD R10, R10, #1             @ Avanzar a la siguiente matriz en la entrada
-    LDR R11, =RESULTADO_BASE
+    MOV R11, #0x218
     LDR R11, [R11]               @ Restaurar R11 a la base del resultado
     SUBS R12, R12, #1            @ Decrementar el contador de matrices
-    BNE loop_matrices            @ Si no hemos terminado, continuar con la siguiente matriz
+    BNE 0xa8                        @ Si no hemos terminado, continuar con la siguiente matriz
 
-    POP {R10-R12}                @ Restaurar registros importantes
+    @ Recuperar R10-R12 de las direcciones específicas
+	MOV R9, #0x21c
+	LDR R10, [R9]
+	MOV R9, #0x220
+	LDR R11, [R9]
+	MOV R9, #0x224
+	LDR R12, [R9]
     ADD R10, R10, #400           @ Mover a la siguiente columna de la matriz 100x2
     ADD R11, R11, #1584        	 @ (396*4) 396 = 99*4
-    LDR R9, =RESULTADO_BASE      @ Cargar la dirección de RESULTADO_BASE
+    MOV R9, #0x218      @ Cargar la dirección de RESULTADO_BASE
     STR R11, [R9]                @ Actualizar el valor de RESULTADO_BASE
     SUBS R12, R12, #1            @ Decrementar el contador de matrices 100x2
-    BNE loop_100x2               @ Si no hemos terminado, continuar con la siguiente matriz 100x2
+    BNE 0x8c                              @ Si no hemos terminado, continuar con la siguiente matriz 100x2
 
     @ ---- Terminar el programa de forma segura ----
     MOV R0, #0x18

@@ -32,18 +32,32 @@ Especificación Final de Opcode
 | SUB       | 001    | Resta registros|
 | AND       | 010    | AND lógico     |
 | MOV       | 011    | Mover registro |
-| LSL       | 100    | Shift izquierda|
+| CMP       | 100    | Comparar con inmediato|
 | UDIV      | 101    | División sin signo|
 | SUBS      | 110    | Resta y actualiza flags|
+| MUL       | 111    | Mul con registros | 
+
+### 2.3.1.1 MOV con Shift (10 100)
+| Operación extra | Opcode | Descripción|
+|-----------------|--------|------------|
+| Normal          | 00     |Mov normal  |
+| MOV con LSR     | 01     | LSR a Rn   |
+| MOV con LSL     | 10     | LSL a Rn   |
+
+Estructura custom para el MOV con shift:
+[2 bits: Condición][2 bits: Tipo][3 bits: Opcode][4 bits: Rd][4 bits: Rn][2 bit: LSL o LSR][10 bits: cuanto el LSL o LSR]
+
 
 ### 2.3.2 Tipo IMM (01)
 | Operación | Opcode | Descripción |
 |-----------|--------|-------------|
 | ADD       | 000    | Suma inmediato |
 | SUB       | 001    | Resta inmediato|
-| MOV       | 010    | Mover inmediato|
-| CMP       | 011    | Comparar con inmediato|
-| LSL       | 100    | Shift izquierda inmediato|
+| AND       | 010    | And con Inmediato|
+| MOV       | 011    | Mover inmediato|
+| CMP       | 100    | Comparar con inmediato|
+| LSL       | 101    | Shift izquierda inmediato|
+
 
 ### 2.3.3 Tipo MEM (10)
 | Operación | Opcode | Descripción |
@@ -53,9 +67,20 @@ Especificación Final de Opcode
 | STR       | 010    | Guardar palabra |
 | STRB      | 011    | Guardar byte    |
 
+### 2.3.3.1 Flag de índice
+| Operación | Opcode | Descripción |
+|-----------|--------|-------------|
+| Índice    | 0      | mem sin índice  |
+| No índice | 1      | Mem con índice  |
+
+Estructura custom para índices:
+[2 bits: Condición][2 bits: Tipo][3 bits: Opcode][4 bits: Rd][4 bits: Rn][1bit: flag índice][11 bits: Operando2]
+
+
 ### 2.3.4 Tipo CTRL (11)
 | Operación | Opcode | Descripción |
 |-----------|--------|-------------|
 | B         | 000    | Salto incondicional |
 | PUSH      | 001    | Push registros      |
 | POP       | 010    | Pop registros       |
+| CMP       | 100    | Comparar con registro|
