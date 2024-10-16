@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at Fetch_tb.sv(43): always construct contains both blocking and non-blocking assignments File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/Fetch_tb.sv Line: 43

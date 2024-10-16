@@ -1,0 +1,35 @@
+module Fetch (
+    input wire clk,
+    input wire reset,
+    input wire [26:0] branch_address,
+    input wire branch_taken,
+    output wire [26:0] instruction
+);
+
+    // Declaración de señales internas
+    reg [6:0] pc;  // Cambiado a 7 bits para coincidir con la entrada de dirección de instrROM
+    wire [6:0] next_pc;
+    wire [6:0] pc_plus_one;
+
+    // PC Mux
+    assign next_pc = branch_taken ? branch_address[6:0] : pc_plus_one;
+
+    // Program Counter (PC)
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            pc <= 7'b0;
+        else
+            pc <= next_pc;
+    end
+
+    // PC Adder
+    assign pc_plus_one = pc + 1;
+
+    // Instruction ROM
+    instrROM imem (
+        .address(pc),
+        .clock(clk),
+        .q(instruction)
+    );
+
+endmodule

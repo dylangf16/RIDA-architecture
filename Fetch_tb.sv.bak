@@ -1,0 +1,58 @@
+`timescale 1ns/1ps
+
+module fetch_tb;
+
+    // Señales para el testbench
+    reg clk;
+    reg reset;
+    reg [26:0] branch_address;
+    reg branch_taken;
+    wire [26:0] instruction;
+
+    // Instancia del módulo fetch
+    fetch uut (
+        .clk(clk),
+        .reset(reset),
+        .branch_address(branch_address),
+        .branch_taken(branch_taken),
+        .instruction(instruction)
+    );
+
+    // Generación de reloj
+    always begin
+        #5 clk = ~clk;
+    end
+
+    // Procedimiento de prueba
+    initial begin
+        // Inicialización de señales
+        clk = 0;
+        reset = 1;
+        branch_address = 0;
+        branch_taken = 0;
+
+        // Resetear el fetch
+        #10 reset = 0;
+
+        // Ejecutar 10 ciclos de instrucciones secuenciales
+        repeat(10) @(posedge clk);
+
+        // Probar un salto
+        branch_address = 27'd20;
+        branch_taken = 1;
+        @(posedge clk);
+        branch_taken = 0;
+
+        // Ejecutar 5 ciclos más
+        repeat(5) @(posedge clk);
+
+        // Finalizar la simulación
+        #10 $finish;
+    end
+
+    // Monitor para imprimir las instrucciones
+    always @(posedge clk) begin
+        $display("Time=%0t, PC=%0d, Instruction=%b", $time, uut.pc, instruction);
+    end
+
+endmodule
