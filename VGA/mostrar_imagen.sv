@@ -1,13 +1,13 @@
-module mostrar_imagen (input        [0:9] x, 
-							  input        [0:9] y,
-							  input              reset,
-							  input              start,
-							  input  logic [4:0] quadrant,
-							  input  reg   [7:0] data_drom,
-							  input  reg   [7:0] data_dram,
-							  output logic [7:0] red,
-							  output logic [7:0] green,
-							  output logic [7:0] blue);
+module mostrar_imagen (input        [0:9]  x, 
+							  input        [0:9]  y,
+							  input               reset,
+							  input               start,
+							  input  logic [4:0]  quadrant,
+							  input  reg   [7:0]  data_drom,
+							  input  reg   [31:0] data_dram,
+							  output logic [7:0]  red,
+							  output logic [7:0]  green,
+							  output logic [7:0]  blue);
 	
 	logic [7:0] pixel_data;
 	logic       in_border;
@@ -32,7 +32,7 @@ module mostrar_imagen (input        [0:9] x,
 			if ((x >= 20 && x <= 419) && (y >= 40 && y <= 439)) begin	
 			
 				if (start) begin
-				pixel_data = data_dram;
+				pixel_data = data_dram[7:0];
 				
 				red = pixel_data;
 				green = pixel_data;

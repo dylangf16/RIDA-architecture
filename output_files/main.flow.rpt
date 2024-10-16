@@ -1,5 +1,5 @@
 Flow report for main
-Sun Oct 13 16:26:02 2024
+Wed Oct 16 17:21:30 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Sun Oct 13 16:25:54 2024          ;
+; Flow Status                     ; Successful - Wed Oct 16 17:21:20 2024          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; main                                           ;
 ; Top-level Entity Name           ; main                                           ;
 ; Family                          ; Cyclone V                                      ;
 ; Device                          ; 5CSXFC6D6F31C6                                 ;
 ; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 266 / 41,910 ( < 1 % )                         ;
-; Total registers                 ; 58                                             ;
+; Logic utilization (in ALMs)     ; 291 / 41,910 ( < 1 % )                         ;
+; Total registers                 ; 70                                             ;
 ; Total pins                      ; 32 / 499 ( 6 % )                               ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 2,560,000 / 5,662,720 ( 45 % )                 ;
+; Total block memory bits         ; 2,560,048 / 5,662,720 ( 45 % )                 ;
 ; Total DSP Blocks                ; 0 / 112 ( 0 % )                                ;
 ; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                                  ;
 ; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                                  ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/13/2024 16:22:23 ;
+; Start date & time ; 10/16/2024 17:18:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; main                ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 4931003785295.172885814320472          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 187549579636331.172912073101228        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; Memory/drom_bb.v                       ; --            ; --          ; --         ;
@@ -98,11 +98,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4958 MB             ; 00:00:07                           ;
-; Fitter               ; 00:03:15     ; 1.1                     ; 7385 MB             ; 00:05:54                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4903 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:07     ; 4.2                     ; 5361 MB             ; 00:00:09                           ;
-; Total                ; 00:03:36     ; --                      ; --                  ; 00:06:13                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4910 MB             ; 00:00:09                           ;
+; Fitter               ; 00:02:12     ; 1.1                     ; 6589 MB             ; 00:03:58                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4908 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:09     ; 2.2                     ; 5249 MB             ; 00:00:11                           ;
+; Total                ; 00:02:35     ; --                      ; --                  ; 00:04:24                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,10 +111,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; Poseidón         ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; Poseidón         ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; Poseidón         ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; Poseidón         ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; Zeus             ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Zeus             ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Zeus             ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Zeus             ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
