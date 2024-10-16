@@ -1,0 +1,13 @@
+module Instruction_Memory(
+    input rst,
+    input [26:0] A,
+    output [26:0] RD
+);
+    reg [26:0] mem [111:0];  // 112 instructions as per the .mif file
+    
+    assign RD = (rst == 1'b0) ? 27'h0000000 : mem[A];
+    
+    initial begin
+        $readmemb("memory.mif", mem);
+    end
+endmodule

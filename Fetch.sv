@@ -1,54 +1,49 @@
-module Fetch(
-input clk, rst,
-input PCSrcE,
-input [26:0] PCTargetE,
-output reg [26:0] InstrD,
-output reg [26:0] PCD, PCPlus4D,
-// Debug outputs
-output [26:0] PCF_debug,
-output [26:0] InstrF_debug
+module Fetch (
+    clk, 
+    reset, 
+    i_Freeze, 
+    i_Branch_Taken, 
+    i_Branch_Address,
+    o_Pc, 
+    o_Instruction
 );
-// Declaring interim wires and registers
-wire [26:0] PC_F, PCPlus4F;
-reg [26:0] PCF;
-wire [26:0] InstrF;
-// Debug assignments
-assign PCF_debug = PCF;
-assign InstrF_debug = InstrF;
+    parameter DATA_WIDTH = 27;
+    
+    input clk;
+    input reset;
+    input i_Freeze;
+    input i_Branch_Taken; 
+    input [DATA_WIDTH - 1:0] i_Branch_Address;
+    output [DATA_WIDTH - 1:0] o_Pc;
+    output [DATA_WIDTH - 1:0] o_Instruction;
 
-// PC Mux
-assign PC_F = PCSrcE ? PCTargetE : PCPlus4F;
+    wire [DATA_WIDTH - 1:0] w_Mux_In;
+    wire [DATA_WIDTH - 1:0] w_Mux_Out;
+    wire [DATA_WIDTH - 1:0] w_Pc_In;
+    wire [DATA_WIDTH - 1:0] w_Pc_Out;
+    wire [DATA_WIDTH - 1:0] w_Pc_Added;
 
-// PC Counter
-always @(posedge clk or negedge rst) begin
-    if (!rst) begin
-        PCF <= 27'b0;
-    end else begin
-        PCF <= PC_F;
-    end
-end
+    assign w_Mux_Out = i_Branch_Taken ? i_Branch_Address : w_Mux_In;
+    assign w_Pc_In = w_Mux_Out;
+    assign w_Pc_Added = w_Pc_Out + 1;
+    assign w_Mux_In = w_Pc_Added;
+    assign o_Pc = w_Pc_Added;
 
-// Instruction ROM (now using combinational read)
-instrROM IMEM (
-    .address(PC_F),  // Use PC_F instead of PCF
-    .clock(clk),
-    .q(InstrF)
-);
+    // Instantiate the PC module
+    PC_Module #(DATA_WIDTH) Pc (
+        .clk(clk),
+        .reset(reset),
+        .i_Load(~i_Freeze),
+        .i_PC(w_Pc_In),
+        .o_PC(w_Pc_Out)
+    );
 
-// PC Adder (increment by 1 instruction word)
-assign PCPlus4F = PCF + 27'h0000001;
-
-// Fetch Cycle Register Logic
-always @(posedge clk or negedge rst) begin
-    if (!rst) begin
-        InstrD <= 27'b0;
-        PCD <= 27'b0;
-        PCPlus4D <= 27'b0;
-    end else begin
-        InstrD <= InstrF;
-        PCD <= PCF;
-        PCPlus4D <= PCPlus4F;
-    end
-end
+    // Instantiate the instruction memory module
+    Instruction_Memory #(DATA_WIDTH) Instruction_Mem (
+        .clk(clk),
+        .reset(reset),
+        .i_Address(w_Pc_Out[6:0]), // Use only the lower 7 bits
+        .o_Instruction(o_Instruction)
+    );
 
 endmodule
