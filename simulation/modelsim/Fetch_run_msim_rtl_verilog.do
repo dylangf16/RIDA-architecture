@@ -48,7 +48,6 @@ vmap work rtl_work
 vlog -vlog01compat -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture {/home/dylanggf/Documents/Arqui1/RIDA-architecture/instrROM.v}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture {/home/dylanggf/Documents/Arqui1/RIDA-architecture/Fetch.sv}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture {/home/dylanggf/Documents/Arqui1/RIDA-architecture/Instruction_Memory.sv}
-vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture {/home/dylanggf/Documents/Arqui1/RIDA-architecture/PC_Module.sv}
 
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture {/home/dylanggf/Documents/Arqui1/RIDA-architecture/Fetch_tb.sv}
 
