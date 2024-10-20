@@ -1,8 +1,8 @@
 .arch armv7ve
 .data
-MATRICES_BASE: .word 0x1d0
-RESULTADO_BASE: .word 0x272d0
-SECTOR_SELECT: .word 0x1c8
+MATRICES_BASE: .word 0x214 
+RESULTADO_BASE: .word 0x218
+SECTOR_SELECT: .word 0x210 
 
 .text
 .global main
