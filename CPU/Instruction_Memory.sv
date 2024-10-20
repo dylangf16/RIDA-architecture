@@ -1,27 +1,24 @@
-module Instruction_Memory(rst,A,RD);
+module Instruction_Memory(
+    input wire clk,
+    input wire rst,
+    input wire [31:0] A,
+    output wire [31:0] RD
+);
 
-  input rst;
-  input [31:0]A;
-  output [31:0]RD;
+    wire [6:0] rom_address;
+    wire [31:0] rom_data;
 
-  reg [31:0] mem [1023:0];
-  
-  assign RD = (rst == 1'b0) ? {32{1'b0}} : mem[A[31:2]];
+    // Convert byte address to word address
+    assign rom_address = A[8:2];  // We use 7 bits to address 128 words
 
-  initial begin
-    $readmemh("memfile.hex",mem);
-  end
+    // Instantiate the ROM module
+    instrROM rom_inst (
+        .address(rom_address),
+        .clock(clk),
+        .q(rom_data)
+    );
 
+    // Output logic
+    assign RD = (rst == 1'b0) ? 32'b0 : rom_data;
 
-/*
-  initial begin
-    //mem[0] = 32'hFFC4A303;
-    //mem[1] = 32'h00832383;
-    // mem[0] = 32'h0064A423;
-    // mem[1] = 32'h00B62423;
-    mem[0] = 32'h0062E233;
-    // mem[1] = 32'h00B62423;
-
-  end
-*/
 endmodule

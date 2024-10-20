@@ -1,35 +1,33 @@
-Analysis & Synthesis report for cpu
-Sun Oct 20 00:17:57 2024
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Analysis & Elaboration report for cpu
+Sun Oct 20 13:54:39 2024
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration IP Cores Summary
+  5. Source assignments for Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component|altsyncram_9nf1:auto_generated
+  6. Parameter Settings for User Entity Instance: Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component
+  7. altsyncram Parameter Settings by Entity Instance
+  8. Analysis & Elaboration Settings
   9. Port Connectivity Checks: "Execute_Cycle:Execute|ALU:alu"
  10. Port Connectivity Checks: "Decode_Cycle:Decode|Sign_Extend:extension"
  11. Port Connectivity Checks: "Decode_Cycle:Decode|Register_File:rf"
  12. Port Connectivity Checks: "Fetch_Cycle:Fetch|PC_Adder:PC_adder"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 13. Analysis & Elaboration Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -39,35 +37,146 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 20 00:17:57 2024       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; cpu                                         ;
-; Top-level Entity Name           ; cpu                                         ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 2                                           ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sun Oct 20 13:54:39 2024          ;
+; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                 ; cpu                                            ;
+; Top-level Entity Name         ; cpu                                            ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration IP Cores Summary                                                                                                            ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                  ; IP Include File ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+-----------------+
+; Altera ; ROM: 1-PORT  ; 22.1    ; N/A          ; N/A          ; |cpu|Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst ; instrROM.v      ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component|altsyncram_9nf1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                  ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                   ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                                         ;
++------------------------------------+----------------------+------------------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                                      ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                                   ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                                 ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                                 ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                               ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                                      ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                                                      ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                                               ;
+; WIDTHAD_A                          ; 7                    ; Signed Integer                                                               ;
+; NUMWORDS_A                         ; 128                  ; Signed Integer                                                               ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                                                      ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                                      ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                                      ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                                      ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                                      ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                                      ;
+; WIDTH_B                            ; 1                    ; Untyped                                                                      ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                                                      ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                                                      ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                                      ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                                      ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                                      ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                                      ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                                      ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                                      ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                                      ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                      ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                                      ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                                      ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                      ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                                      ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                               ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                                      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                                      ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                                      ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                                      ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                      ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                      ;
+; INIT_FILE                          ; instrMEM.mif         ; Untyped                                                                      ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                                      ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                                      ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                                      ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                                                      ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                                      ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                                                      ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                                      ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                                      ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                                      ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                                      ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                                      ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                                      ;
+; CBXI_PARAMETER                     ; altsyncram_9nf1      ; Untyped                                                                      ;
++------------------------------------+----------------------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                                        ;
++-------------------------------------------+---------------------------------------------------------------------------------------------+
+; Name                                      ; Value                                                                                       ;
++-------------------------------------------+---------------------------------------------------------------------------------------------+
+; Number of entity instances                ; 1                                                                                           ;
+; Entity Instance                           ; Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                                                                         ;
+;     -- WIDTH_A                            ; 32                                                                                          ;
+;     -- NUMWORDS_A                         ; 128                                                                                         ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                                                      ;
+;     -- WIDTH_B                            ; 1                                                                                           ;
+;     -- NUMWORDS_B                         ; 1                                                                                           ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                      ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                   ;
++-------------------------------------------+---------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -153,102 +262,6 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 10          ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                             ; File Name with Absolute Path                                           ; Library ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------+---------+
-; memfile.hex                      ; yes             ; User Hexadecimal (Intel-Format) File  ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/memfile.hex           ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU.sv                ;         ;
-; ALU_Decoder.sv                   ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU_Decoder.sv        ;         ;
-; Control_Unit.sv                  ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv       ;         ;
-; Data_Memory.sv                   ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv        ;         ;
-; Decode_Cycle.sv                  ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv       ;         ;
-; Execute_Cycle.sv                 ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv      ;         ;
-; Fetch_Cycle.sv                   ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv        ;         ;
-; Hazard_Unit.sv                   ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Hazard_Unit.sv        ;         ;
-; Instruction_Memory.sv            ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv ;         ;
-; Main_Decoder.sv                  ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Main_Decoder.sv       ;         ;
-; Memory_Cycle.sv                  ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv       ;         ;
-; Mux.sv                           ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux.sv                ;         ;
-; Mux_3_by_1.sv                    ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv         ;         ;
-; PC_Module.sv                     ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Module.sv          ;         ;
-; PC_Adder.sv                      ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Adder.sv           ;         ;
-; Register_File.sv                 ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv      ;         ;
-; Sign_Extend.sv                   ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Sign_Extend.sv        ;         ;
-; Writeback_Cycle.sv               ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv    ;         ;
-; cpu.sv                           ; yes             ; User SystemVerilog HDL File           ; /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv                ;         ;
-+----------------------------------+-----------------+---------------------------------------+------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 0     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 0     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 0     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 0     ;
-;     -- <=3 input functions                  ; 0     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 2     ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 2     ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |cpu                       ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 2    ; 0            ; |cpu                ; cpu         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
 +-----------------------------------------------------------+
 ; Port Connectivity Checks: "Execute_Cycle:Execute|ALU:alu" ;
 +----------+--------+----------+----------------------------+
@@ -290,115 +303,105 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+-------+----------+-----------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 2                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 20 00:17:34 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpu -c cpu
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Sun Oct 20 13:54:32 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpu -c cpu --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ALU.sv
-    Info (12023): Found entity 1: ALU File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ALU_Decoder.sv
-    Info (12023): Found entity 1: ALU_Decoder File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU_Decoder.sv Line: 1
+    Info (12023): Found entity 1: ALU_Decoder File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU_Decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Control_Unit.sv
-    Info (12023): Found entity 1: Control_Unit File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv Line: 1
+    Info (12023): Found entity 1: Control_Unit File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Data_Memory.sv
-    Info (12023): Found entity 1: Data_Memory File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv Line: 1
+    Info (12023): Found entity 1: Data_Memory File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Data_Memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Decode_Cycle.sv
-    Info (12023): Found entity 1: Decode_Cycle File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 1
+    Info (12023): Found entity 1: Decode_Cycle File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Execute_Cycle.sv
-    Info (12023): Found entity 1: Execute_Cycle File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv Line: 1
+    Info (12023): Found entity 1: Execute_Cycle File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Fetch_Cycle.sv
-    Info (12023): Found entity 1: Fetch_Cycle File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 1
+    Info (12023): Found entity 1: Fetch_Cycle File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Hazard_Unit.sv
-    Info (12023): Found entity 1: Hazard_Unit File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Hazard_Unit.sv Line: 1
+    Info (12023): Found entity 1: Hazard_Unit File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Hazard_Unit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Instruction_Memory.sv
-    Info (12023): Found entity 1: Instruction_Memory File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv Line: 1
+    Info (12023): Found entity 1: Instruction_Memory File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Instruction_Memory.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Main_Decoder.sv
-    Info (12023): Found entity 1: Main_Decoder File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Main_Decoder.sv Line: 1
+    Info (12023): Found entity 1: Main_Decoder File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Main_Decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Memory_Cycle.sv
-    Info (12023): Found entity 1: Memory_Cycle File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv Line: 1
-Warning (12090): Entity "Mux" obtained from "Mux.sv" instead of from Quartus Prime megafunction library File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux.sv Line: 1
+    Info (12023): Found entity 1: Memory_Cycle File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Memory_Cycle.sv Line: 1
+Warning (12090): Entity "Mux" obtained from "Mux.sv" instead of from Quartus Prime megafunction library File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Mux.sv
-    Info (12023): Found entity 1: Mux File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux.sv Line: 1
+    Info (12023): Found entity 1: Mux File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Mux_3_by_1.sv
-    Info (12023): Found entity 1: Mux_3_by_1 File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv Line: 1
+    Info (12023): Found entity 1: Mux_3_by_1 File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file PC_Module.sv
-    Info (12023): Found entity 1: PC_Module File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Module.sv Line: 1
+    Info (12023): Found entity 1: PC_Module File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file PC_Adder.sv
-    Info (12023): Found entity 1: PC_Adder File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Adder.sv Line: 1
+    Info (12023): Found entity 1: PC_Adder File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Register_File.sv
-    Info (12023): Found entity 1: Register_File File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv Line: 1
+    Info (12023): Found entity 1: Register_File File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Sign_Extend.sv
-    Info (12023): Found entity 1: Sign_Extend File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Sign_Extend.sv Line: 1
+    Info (12023): Found entity 1: Sign_Extend File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Sign_Extend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file Writeback_Cycle.sv
-    Info (12023): Found entity 1: Writeback_Cycle File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv Line: 1
+    Info (12023): Found entity 1: Writeback_Cycle File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Writeback_Cycle.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cpu.sv
-    Info (12023): Found entity 1: cpu File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 1
+    Info (12023): Found entity 1: cpu File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_tb.sv
-    Info (12023): Found entity 1: cpu_tb File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu_tb.sv Line: 1
+    Info (12023): Found entity 1: cpu_tb File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file instrROM.v
+    Info (12023): Found entity 1: instrROM File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v Line: 40
 Info (12127): Elaborating entity "cpu" for the top level hierarchy
-Info (12128): Elaborating entity "Fetch_Cycle" for hierarchy "Fetch_Cycle:Fetch" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 26
-Info (12128): Elaborating entity "Mux" for hierarchy "Fetch_Cycle:Fetch|Mux:PC_MUX" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 25
-Info (12128): Elaborating entity "PC_Module" for hierarchy "Fetch_Cycle:Fetch|PC_Module:Program_Counter" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 33
-Info (12128): Elaborating entity "Instruction_Memory" for hierarchy "Fetch_Cycle:Fetch|Instruction_Memory:IMEM" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 40
-Warning (10850): Verilog HDL warning at Instruction_Memory.sv(12): number of words (6) in memory file does not match the number of elements in the address range [0:1023] File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv Line: 12
-Warning (10030): Net "mem.data_a" at Instruction_Memory.sv(7) has no driver or initial value, using a default initial value '0' File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv Line: 7
-Warning (10030): Net "mem.waddr_a" at Instruction_Memory.sv(7) has no driver or initial value, using a default initial value '0' File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv Line: 7
-Warning (10030): Net "mem.we_a" at Instruction_Memory.sv(7) has no driver or initial value, using a default initial value '0' File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv Line: 7
-Info (12128): Elaborating entity "PC_Adder" for hierarchy "Fetch_Cycle:Fetch|PC_Adder:PC_adder" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 47
-Info (12128): Elaborating entity "Decode_Cycle" for hierarchy "Decode_Cycle:Decode" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 52
-Warning (10036): Verilog HDL or VHDL warning at Decode_Cycle.sv(32): object "flag_mem_index" assigned a value but never read File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 32
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "Decode_Cycle:Decode|Control_Unit:control" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 59
-Info (12128): Elaborating entity "Main_Decoder" for hierarchy "Decode_Cycle:Decode|Control_Unit:control|Main_Decoder:Main_Decoder" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv Line: 24
-Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "Decode_Cycle:Decode|Control_Unit:control|ALU_Decoder:ALU_Decoder" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv Line: 32
-Info (12128): Elaborating entity "Register_File" for hierarchy "Decode_Cycle:Decode|Register_File:rf" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 73
-Info (12128): Elaborating entity "Sign_Extend" for hierarchy "Decode_Cycle:Decode|Sign_Extend:extension" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 80
-Info (12128): Elaborating entity "Execute_Cycle" for hierarchy "Execute_Cycle:Execute" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 82
-Info (12128): Elaborating entity "Mux_3_by_1" for hierarchy "Execute_Cycle:Execute|Mux_3_by_1:srca_mux" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv Line: 36
-Info (12128): Elaborating entity "ALU" for hierarchy "Execute_Cycle:Execute|ALU:alu" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv Line: 64
-Info (12128): Elaborating entity "Memory_Cycle" for hierarchy "Memory_Cycle:Memory" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 101
-Info (12128): Elaborating entity "Data_Memory" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv Line: 29
-Info (12128): Elaborating entity "Writeback_Cycle" for hierarchy "Writeback_Cycle:WriteBack" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 112
-Info (12128): Elaborating entity "Hazard_Unit" for hierarchy "Hazard_Unit:Forwarding_block" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 125
+Info (12128): Elaborating entity "Fetch_Cycle" for hierarchy "Fetch_Cycle:Fetch" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv Line: 26
+Info (12128): Elaborating entity "Mux" for hierarchy "Fetch_Cycle:Fetch|Mux:PC_MUX" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 26
+Info (12128): Elaborating entity "PC_Module" for hierarchy "Fetch_Cycle:Fetch|PC_Module:Program_Counter" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 34
+Info (12128): Elaborating entity "Instruction_Memory" for hierarchy "Fetch_Cycle:Fetch|Instruction_Memory:IMEM" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 42
+Info (12128): Elaborating entity "instrROM" for hierarchy "Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Instruction_Memory.sv Line: 19
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v Line: 82
+Info (12130): Elaborated megafunction instantiation "Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v Line: 82
+Info (12133): Instantiated megafunction "Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component" with the following parameter: File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v Line: 82
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "instrMEM.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "128"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "widthad_a" = "7"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9nf1.tdf
+    Info (12023): Found entity 1: altsyncram_9nf1 File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/db/altsyncram_9nf1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_9nf1" for hierarchy "Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component|altsyncram_9nf1:auto_generated" File: /home/dylanggf/intelFPGA_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "PC_Adder" for hierarchy "Fetch_Cycle:Fetch|PC_Adder:PC_adder" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 49
+Info (12128): Elaborating entity "Decode_Cycle" for hierarchy "Decode_Cycle:Decode" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv Line: 52
+Warning (10036): Verilog HDL or VHDL warning at Decode_Cycle.sv(32): object "flag_mem_index" assigned a value but never read File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv Line: 32
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "Decode_Cycle:Decode|Control_Unit:control" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv Line: 59
+Info (12128): Elaborating entity "Main_Decoder" for hierarchy "Decode_Cycle:Decode|Control_Unit:control|Main_Decoder:Main_Decoder" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv Line: 24
+Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "Decode_Cycle:Decode|Control_Unit:control|ALU_Decoder:ALU_Decoder" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv Line: 32
+Info (12128): Elaborating entity "Register_File" for hierarchy "Decode_Cycle:Decode|Register_File:rf" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv Line: 73
+Info (12128): Elaborating entity "Sign_Extend" for hierarchy "Decode_Cycle:Decode|Sign_Extend:extension" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv Line: 80
+Info (12128): Elaborating entity "Execute_Cycle" for hierarchy "Execute_Cycle:Execute" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv Line: 82
+Info (12128): Elaborating entity "Mux_3_by_1" for hierarchy "Execute_Cycle:Execute|Mux_3_by_1:srca_mux" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv Line: 36
+Info (12128): Elaborating entity "ALU" for hierarchy "Execute_Cycle:Execute|ALU:alu" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv Line: 64
+Info (12128): Elaborating entity "Memory_Cycle" for hierarchy "Memory_Cycle:Memory" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv Line: 101
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Memory_Cycle.sv Line: 29
+Info (12128): Elaborating entity "Writeback_Cycle" for hierarchy "Writeback_Cycle:WriteBack" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv Line: 112
+Info (12128): Elaborating entity "Hazard_Unit" for hierarchy "Hazard_Unit:Forwarding_block" File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv Line: 125
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 4
-    Warning (15610): No output dependent on input pin "rst" File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 4
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 981 megabytes
-    Info: Processing ended: Sun Oct 20 00:17:57 2024
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:59
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 960 megabytes
+    Info: Processing ended: Sun Oct 20 13:54:39 2024
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:19
 
 
