@@ -1,26 +1,29 @@
-module ALU_Decoder(ALUOp,funct3,funct7,op,ALUControl);
+module ALU_Decoder(
+    input [1:0] ALUOp,             // Proviene del Main Decoder
+    input [2:0] opcode,            // Opcode de la instrucción (ADD, SUB, etc.)
+    input [1:0] flag_mov_shift,    // Flags MOV con Shift
+    output reg [2:0] ALUControl    // Señal de control para la ALU
+);
 
-    input [1:0]ALUOp;
-    input [2:0]funct3;
-    input [6:0]funct7,op;
-    output [2:0]ALUControl;
+    always @(*) begin
+        case (ALUOp)
+            2'b00: ALUControl = 3'b000;  // Operación de carga o movimiento
+            2'b01: ALUControl = 3'b001;  // Instrucciones de control de flujo (branch)
+            2'b10: begin  // Operaciones REG
+                case (opcode)
+                    3'b000: ALUControl = 3'b010;  // ADD
+                    3'b001: ALUControl = 3'b110;  // SUB
+                    3'b010: ALUControl = 3'b000;  // AND
+                    3'b011: ALUControl = (flag_mov_shift == 2'b00) ? 3'b011 :  // MOV normal
+                                         (flag_mov_shift == 2'b01) ? 3'b100 :  // MOV con LSR
+                                         (flag_mov_shift == 2'b10) ? 3'b101 :  // MOV con LSL
+                                         3'b011;
+                    3'b111: ALUControl = 3'b001;  // MUL
+                    default: ALUControl = 3'b000; // Default
+                endcase
+            end
+            default: ALUControl = 3'b000;  // Default
+        endcase
+    end
 
-    // Method 1 
-    // assign ALUControl = (ALUOp == 2'b00) ? 3'b000 :
-    //                     (ALUOp == 2'b01) ? 3'b001 :
-    //                     (ALUOp == 2'b10) ? ((funct3 == 3'b000) ? ((({op[5],funct7[5]} == 2'b00) | ({op[5],funct7[5]} == 2'b01) | ({op[5],funct7[5]} == 2'b10)) ? 3'b000 : 3'b001) : 
-    //                                         (funct3 == 3'b010) ? 3'b101 : 
-    //                                         (funct3 == 3'b110) ? 3'b011 : 
-    //                                         (funct3 == 3'b111) ? 3'b010 : 3'b000) :
-    //                                        3'b000;
-
-    // Method 2
-    assign ALUControl = (ALUOp == 2'b00) ? 3'b000 :
-                        (ALUOp == 2'b01) ? 3'b001 :
-                        ((ALUOp == 2'b10) & (funct3 == 3'b000) & ({op[5],funct7[5]} == 2'b11)) ? 3'b001 : 
-                        ((ALUOp == 2'b10) & (funct3 == 3'b000) & ({op[5],funct7[5]} != 2'b11)) ? 3'b000 : 
-                        ((ALUOp == 2'b10) & (funct3 == 3'b010)) ? 3'b101 : 
-                        ((ALUOp == 2'b10) & (funct3 == 3'b110)) ? 3'b011 : 
-                        ((ALUOp == 2'b10) & (funct3 == 3'b111)) ? 3'b010 : 
-                                                                  3'b000 ;
 endmodule

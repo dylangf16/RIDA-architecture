@@ -1,0 +1,197 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_Pc[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Pc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Pc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Pc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Pc[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Pc[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Pc[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[8]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[9]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[10]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[11]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[12]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[13]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[14]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[15]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[16]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[17]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[18]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[19]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[20]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[21]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[22]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[23]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[24]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[25]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Instruction[26]",
+					"strict" : false
+				},
+				{
+					"name" : "o_Prediction",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "i_Freeze",
+					"strict" : false
+				},
+				{
+					"name" : "i_Branch_Address[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_Branch_Taken",
+					"strict" : false
+				},
+				{
+					"name" : "i_Branch_Address[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_Branch_Address[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_Branch_Address[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_Branch_Address[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_Branch_Address[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_Branch_Address[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_Branch_Result",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
