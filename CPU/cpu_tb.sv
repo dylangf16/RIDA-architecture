@@ -20,5 +20,5 @@ module cpu_tb();
         $dumpvars(0);
     end
 
-    Pipeline_top dut (.clk(clk), .rst(rst));
+    cpu dut (.clk(clk), .rst(rst));
 endmodule
