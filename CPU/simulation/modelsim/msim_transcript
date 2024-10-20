@@ -12,7 +12,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:43 on Oct 20,2024
+# Start time: 14:56:00 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -94,7 +94,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 13:54:43 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:01 on Oct 20,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -105,7 +105,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:44 on Oct 20,2024
+# Start time: 14:56:01 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -169,7 +169,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 13:54:44 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:01 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -180,7 +180,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:44 on Oct 20,2024
+# Start time: 14:56:01 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -222,7 +222,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 13:54:44 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:01 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -233,7 +233,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:44 on Oct 20,2024
+# Start time: 14:56:02 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -363,7 +363,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 13:54:45 on Oct 20,2024, Elapsed time: 0:00:01
+# End time: 14:56:02 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -374,7 +374,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:45 on Oct 20,2024
+# Start time: 14:56:03 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -457,7 +457,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 13:54:46 on Oct 20,2024, Elapsed time: 0:00:01
+# End time: 14:56:03 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -468,23 +468,23 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:46 on Oct 20,2024
+# Start time: 14:56:03 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 13:54:48 on Oct 20,2024, Elapsed time: 0:00:02
+# End time: 14:56:05 on Oct 20,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:48 on Oct 20,2024
+# Start time: 14:56:05 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 13:54:49 on Oct 20,2024, Elapsed time: 0:00:01
+# End time: 14:56:06 on Oct 20,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:49 on Oct 20,2024
+# Start time: 14:56:06 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -624,7 +624,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 13:54:49 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:06 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -635,15 +635,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:50 on Oct 20,2024
+# Start time: 14:56:07 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 13:54:51 on Oct 20,2024, Elapsed time: 0:00:01
+# End time: 14:56:08 on Oct 20,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:51 on Oct 20,2024
+# Start time: 14:56:08 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -743,7 +743,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 13:54:51 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:08 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -754,22 +754,22 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:51 on Oct 20,2024
+# Start time: 14:56:08 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 13:54:53 on Oct 20,2024, Elapsed time: 0:00:02
+# End time: 14:56:10 on Oct 20,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:53 on Oct 20,2024
+# Start time: 14:56:10 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 13:54:53 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:10 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -783,219 +783,219 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:53 on Oct 20,2024
+# Start time: 14:56:10 on Oct 20,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v 
 # -- Compiling module instrROM
 # 
 # Top level modules:
 # 	instrROM
-# End time: 13:54:53 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:10 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:53 on Oct 20,2024
+# Start time: 14:56:10 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 13:54:53 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:10 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU_Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:53 on Oct 20,2024
+# Start time: 14:56:10 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU_Decoder.sv 
 # -- Compiling module ALU_Decoder
 # 
 # Top level modules:
 # 	ALU_Decoder
-# End time: 13:54:53 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:10 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:53 on Oct 20,2024
+# Start time: 14:56:10 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 13:54:53 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:10 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Data_Memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:10 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Data_Memory.sv 
 # -- Compiling module Data_Memory
 # 
 # Top level modules:
 # 	Data_Memory
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:10 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:10 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv 
 # -- Compiling module Decode_Cycle
 # 
 # Top level modules:
 # 	Decode_Cycle
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:10 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv 
 # -- Compiling module Execute_Cycle
 # 
 # Top level modules:
 # 	Execute_Cycle
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv 
 # -- Compiling module Fetch_Cycle
 # 
 # Top level modules:
 # 	Fetch_Cycle
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Hazard_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Hazard_Unit.sv 
 # -- Compiling module Hazard_Unit
 # 
 # Top level modules:
 # 	Hazard_Unit
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Instruction_Memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Instruction_Memory.sv 
 # -- Compiling module Instruction_Memory
 # 
 # Top level modules:
 # 	Instruction_Memory
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Main_Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Main_Decoder.sv 
 # -- Compiling module Main_Decoder
 # 
 # Top level modules:
 # 	Main_Decoder
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Memory_Cycle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Memory_Cycle.sv 
 # -- Compiling module Memory_Cycle
 # 
 # Top level modules:
 # 	Memory_Cycle
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux.sv 
 # -- Compiling module Mux
 # 
 # Top level modules:
 # 	Mux
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv 
 # -- Compiling module Mux_3_by_1
 # 
 # Top level modules:
 # 	Mux_3_by_1
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Module.sv 
 # -- Compiling module PC_Module
 # 
 # Top level modules:
 # 	PC_Module
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Adder.sv 
 # -- Compiling module PC_Adder
 # 
 # Top level modules:
 # 	PC_Adder
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv 
 # -- Compiling module Register_File
 # 
 # Top level modules:
 # 	Register_File
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Sign_Extend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Sign_Extend.sv 
 # -- Compiling module Sign_Extend
 # 
 # Top level modules:
 # 	Sign_Extend
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Writeback_Cycle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Writeback_Cycle.sv 
 # -- Compiling module Writeback_Cycle
 # 
 # Top level modules:
 # 	Writeback_Cycle
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv 
 # -- Compiling module cpu
 # 
 # Top level modules:
 # 	cpu
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv 
 # -- Compiling module cpu_tb
 # 
 # Top level modules:
 # 	cpu_tb
-# End time: 13:54:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 14:56:11 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  cpu_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" cpu_tb 
-# Start time: 13:54:54 on Oct 20,2024
+# Start time: 14:56:11 on Oct 20,2024
 # Loading sv_std.std
 # Loading work.cpu_tb
 # Loading work.Fetch_Cycle
@@ -1005,9 +1005,19 @@
 # Loading work.instrROM
 # Loading altera_mf_ver.altsyncram
 # Loading work.PC_Adder
+# Loading work.Decode_Cycle
+# Loading work.Control_Unit
+# Loading work.Main_Decoder
+# Loading work.ALU_Decoder
+# Loading work.Register_File
+# Loading work.Sign_Extend
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'A1'. The port definition is at: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/decode/rf File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv Line: 63
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'A2'. The port definition is at: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/decode/rf File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv Line: 63
 # 
 # add wave *
 # view structure
@@ -1015,91 +1025,117 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Time=15000 ns: PC=0, Instruction=00000000000000000000000000000000
-# Time=25000 ns: PC=0, Instruction=00000000000000000000000000000000
-# Time=35000 ns: PC=1, Instruction=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# Time=45000 ns: PC=2, Instruction=00010110000000000000000000000001
-# Time=55000 ns: PC=3, Instruction=00100000000000000100000000000000
-# Time=65000 ns: PC=4, Instruction=00010110001000000000000000000000
-# Time=75000 ns: PC=5, Instruction=00100000001000100100000000000000
-# Time=85000 ns: PC=6, Instruction=00010110010000000000000001100100
-# Time=95000 ns: PC=7, Instruction=00010110011000000000000000000000
-# Time=105000 ns: PC=8, Instruction=00010000011001100000111111110000
-# Time=115000 ns: PC=9, Instruction=00010000011001100000111111110000
-# Time=125000 ns: PC=10, Instruction=00010000011001100000111111110000
-# Time=135000 ns: PC=11, Instruction=00010000011001100000111111110000
-# Time=145000 ns: PC=12, Instruction=00010000011001100000111111110000
-# Time=155000 ns: PC=13, Instruction=00010000011001100000111111110000
-# Time=165000 ns: PC=14, Instruction=00010000011001100000111111110000
-# Time=175000 ns: PC=15, Instruction=00010000011001100000111111110000
-# Time=185000 ns: PC=16, Instruction=00010000011001100000111111110000
-# Time=195000 ns: PC=17, Instruction=00010000011001100000001001010100
-# Time=205000 ns: PC=18, Instruction=00010000011001100000001001010100
-# Time=215000 ns: PC=19, Instruction=00010000011001100000001001010100
-# Time=225000 ns: PC=20, Instruction=00010000011001100000001001010100
-# Time=235000 ns: PC=21, Instruction=00010000011001100000001001010100
-# Time=245000 ns: PC=22, Instruction=00010110100000000000000000000000
-# Time=255000 ns: PC=23, Instruction=00000111010000000000000000000000
-# Time=265000 ns: PC=24, Instruction=00001000100000000000000000000001
-# Time=275000 ns: PC=25, Instruction=11110000000000000000000001111000
-# Time=285000 ns: PC=26, Instruction=00010000100010000000000000000001
-# Time=295000 ns: PC=27, Instruction=00010100101010000000000000000011
-# Time=305000 ns: PC=28, Instruction=00011000101000000000000000000000
-# Time=315000 ns: PC=29, Instruction=01000001010101000000000000000011
-# Time=325000 ns: PC=30, Instruction=10000001010101000000000000000010
-# Time=335000 ns: PC=31, Instruction=00110000000000000000000001011000
-# Time=345000 ns: PC=32, Instruction=00010111001000000000000000000001
-# Time=355000 ns: PC=33, Instruction=00100101010100100100000000000000
-# Time=365000 ns: PC=34, Instruction=00010111011000000000000000000010
-# Time=375000 ns: PC=35, Instruction=00100001011101100100000000000000
-# Time=385000 ns: PC=36, Instruction=00010111100000000000000001100011
-# Time=395000 ns: PC=37, Instruction=00010111001000000000000000000011
-# Time=405000 ns: PC=38, Instruction=00100101010100100100000000000000
-# Time=415000 ns: PC=39, Instruction=00010111001000000000000000000100
-# Time=425000 ns: PC=40, Instruction=00100101011100100100000000000000
-# Time=435000 ns: PC=41, Instruction=00010111001000000000000000000101
-# Time=445000 ns: PC=42, Instruction=00100101100100100100000000000000
-# Time=455000 ns: PC=43, Instruction=00010111100000000000000001100011
-# Time=465000 ns: PC=44, Instruction=00100010000101000100000000000000
-# Time=475000 ns: PC=45, Instruction=00100010001101000100000000000001
-# Time=485000 ns: PC=46, Instruction=00100010010101000100000110010000
-# Time=495000 ns: PC=47, Instruction=00100010011101000100000110010001
-# Time=505000 ns: PC=48, Instruction=00010111001000000000000000000011
-# Time=515000 ns: PC=49, Instruction=00010111000000000000000001100011
-# Time=525000 ns: PC=50, Instruction=00000011000100000000000000001100
-# Time=535000 ns: PC=70, Instruction=00010100111100000000000000000011
-# Time=545000 ns: PC=71, Instruction=00011010111011110000000000000010
-# Time=555000 ns: PC=72, Instruction=00100010101101100100000000000001
-# Time=565000 ns: PC=73, Instruction=00000110110010110000000000000001
-# Time=575000 ns: PC=74, Instruction=00000000110011000000000000000001
-# Time=585000 ns: PC=75, Instruction=00001010110011000000000000001001
-# Time=595000 ns: PC=76, Instruction=00100110110101100100000110001101
-# Time=605000 ns: PC=77, Instruction=00000110111000110000000000000001
-# Time=615000 ns: PC=78, Instruction=00000000111011100000000000000101
-# Time=625000 ns: PC=79, Instruction=00001010111011100000000000001001
-# Time=635000 ns: PC=80, Instruction=00100110111101100100000110001110
-# Time=645000 ns: PC=10, Instruction=00000110100000110000000000000001
-# Time=655000 ns: PC=11, Instruction=00000000100010000000000000000011
-# Time=665000 ns: PC=12, Instruction=00010000011001100000111111110000
-# Time=675000 ns: PC=13, Instruction=00010000011001100000111111110000
-# Time=685000 ns: PC=14, Instruction=00010000011001100000111111110000
-# Time=695000 ns: PC=15, Instruction=00010000011001100000111111110000
-# Time=705000 ns: PC=16, Instruction=00010000011001100000111111110000
-# Time=715000 ns: PC=17, Instruction=00010000011001100000001001010100
-# Time=725000 ns: PC=18, Instruction=00010000011001100000001001010100
-# Time=735000 ns: PC=19, Instruction=00010000011001100000001001010100
-# Time=745000 ns: PC=20, Instruction=00010000011001100000001001010100
-# Time=755000 ns: PC=21, Instruction=00010000011001100000001001010100
-# Time=765000 ns: PC=22, Instruction=00010110100000000000000000000000
-# Time=775000 ns: PC=23, Instruction=00000111010000000000000000000000
-# Time=785000 ns: PC=24, Instruction=00001000100000000000000000000001
-# Time=795000 ns: PC=25, Instruction=11110000000000000000000001111000
-# Time=805000 ns: PC=26, Instruction=00010000100010000000000000000001
-# Time=815000 ns: PC=27, Instruction=00010100101010000000000000000011
-# Time=825000 ns: PC=28, Instruction=00011000101000000000000000000000
-# ** Note: $finish    : /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv(63)
-#    Time: 835 ns  Iteration: 0  Instance: /cpu_tb
+# Time: 46000
+# Instruction: 00100000000000000100000000000000
+# Condition: 00
+# Type: 10
+# Opcode: 000
+# Rd: 0000
+# Rn: 0000
+# Flag MOV with Shift: 00
+# Flag Memory Index: 1
+# Operand2: 00000000000000
+# -----------------------------
+# Time: 56000
+# Instruction: 00010110001000000000000000000000
+# Condition: 00
+# Type: 01
+# Opcode: 011
+# Rd: 0001
+# Rn: 0000
+# Flag MOV with Shift: 00
+# Flag Memory Index: 0
+# Operand2: 00000000000000
+# -----------------------------
+# Time: 66000
+# Instruction: 00100000001000100100000000000000
+# Condition: 00
+# Type: 10
+# Opcode: 000
+# Rd: 0001
+# Rn: 0001
+# Flag MOV with Shift: 00
+# Flag Memory Index: 1
+# Operand2: 00000000000000
+# -----------------------------
+# Time: 76000
+# Instruction: 00010110010000000000000001100100
+# Condition: 00
+# Type: 01
+# Opcode: 011
+# Rd: 0010
+# Rn: 0000
+# Flag MOV with Shift: 00
+# Flag Memory Index: 0
+# Operand2: 00000001100100
+# -----------------------------
+# Time: 86000
+# Instruction: 00010110011000000000000000000000
+# Condition: 00
+# Type: 01
+# Opcode: 011
+# Rd: 0011
+# Rn: 0000
+# Flag MOV with Shift: 00
+# Flag Memory Index: 0
+# Operand2: 00000000000000
+# -----------------------------
+# Time: 96000
+# Instruction: 00010000011001100000111111110000
+# Condition: 00
+# Type: 01
+# Opcode: 000
+# Rd: 0011
+# Rn: 0011
+# Flag MOV with Shift: 00
+# Flag Memory Index: 0
+# Operand2: 00111111110000
+# -----------------------------
+# Time: 106000
+# Instruction: 00010000011001100000111111110000
+# Condition: 00
+# Type: 01
+# Opcode: 000
+# Rd: 0011
+# Rn: 0011
+# Flag MOV with Shift: 00
+# Flag Memory Index: 0
+# Operand2: 00111111110000
+# -----------------------------
+# Time: 116000
+# Instruction: 00010000011001100000111111110000
+# Condition: 00
+# Type: 01
+# Opcode: 000
+# Rd: 0011
+# Rn: 0011
+# Flag MOV with Shift: 00
+# Flag Memory Index: 0
+# Operand2: 00111111110000
+# -----------------------------
+# Time: 126000
+# Instruction: 00010000011001100000111111110000
+# Condition: 00
+# Type: 01
+# Opcode: 000
+# Rd: 0011
+# Rn: 0011
+# Flag MOV with Shift: 00
+# Flag Memory Index: 0
+# Operand2: 00111111110000
+# -----------------------------
+# Time: 136000
+# Instruction: 00010000011001100000111111110000
+# Condition: 00
+# Type: 01
+# Opcode: 000
+# Rd: 0011
+# Rn: 0011
+# Flag MOV with Shift: 00
+# Flag Memory Index: 0
+# Operand2: 00111111110000
+# -----------------------------
+# ** Note: $finish    : /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv(112)
+#    Time: 136 ns  Iteration: 0  Instance: /cpu_tb
 # 1
-# Break in Module cpu_tb at /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv line 63
-# End time: 13:56:52 on Oct 20,2024, Elapsed time: 0:01:58
-# Errors: 0, Warnings: 0
+# Break in Module cpu_tb at /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv line 112
