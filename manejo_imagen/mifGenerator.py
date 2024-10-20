@@ -10,7 +10,7 @@ def generate_mif_file(input_file, output_file):
         f.write("CONTENT BEGIN\n")
 
         for i, opcode in enumerate(opcodes):
-            f.write(f"    {i} : {opcode[:-4]};\n")
+            f.write(f"    {i} : {opcode};\n")
 
         f.write("END;\n")
 
