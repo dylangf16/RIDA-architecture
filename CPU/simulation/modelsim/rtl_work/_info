@@ -11,30 +11,30 @@ cModel Technology
 Z0 d/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/simulation/modelsim
 vALU
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1729457770
+Z2 !s110 1729462496
 !i10b 1
-!s100 `iz?gWhfS8zXbL?OVY88V0
+!s100 ;iz5Xl8:7?h:EH<Yb`zh50
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IjcH<UA_3IL>hQVm2PY1863
+I8JBCb8b46eOC?;Tg;=6;e2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1729445531
+w1729462246
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU.sv
 !i122 1
-L0 1 26
-Z6 OV;L;2020.1;71
+L0 1 41
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1729457770.000000
+Z6 !s108 1729462496.000000
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU.sv|
 !i113 1
-Z8 o-sv -work work
-Z9 !s92 -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU
-Z10 tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU
+Z9 tCvgOpt 0
 n@a@l@u
 vALU_Decoder
 R1
@@ -46,22 +46,22 @@ IX;E9YhWlhcYEL>zKBE1<N1
 R4
 S1
 R0
-R5
+Z10 w1729445531
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU_Decoder.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU_Decoder.sv
 !i122 2
 L0 1 29
-R6
+R5
 r1
 !s85 0
 31
-R7
+R6
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU_Decoder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU_Decoder.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@a@l@u_@decoder
 vControl_Unit
 R1
@@ -73,26 +73,26 @@ IH1DB;Z5PYK43RgFoXTn<F1
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv
 !i122 3
 L0 1 34
-R6
+R5
 r1
 !s85 0
 31
-R7
+R6
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@control_@unit
 vcpu
 R1
-Z11 !s110 1729457771
+Z11 !s110 1729462497
 !i10b 1
 !s100 GUba^;eJ:n3b5O=Y7YNi[1
 R3
@@ -100,38 +100,38 @@ IKLDjmFCV78O0Fb^doiZ^g3
 R4
 S1
 R0
-R5
+w1729461976
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv
 !i122 19
 L0 1 126
-R6
+R5
 r1
 !s85 0
 31
-Z12 !s108 1729457771.000000
+Z12 !s108 1729462497.000000
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv|
 !i113 1
+R7
 R8
 R9
-R10
 vcpu_tb
 R1
 R11
 !i10b 1
-!s100 N4H?Uj3Bm<ImWi:gZiNeB1
+!s100 be`FYEVnf`P3dE8Ae_TDN0
 R3
-IPDJWnTF4JGiH_A;ANN_`K3
+Ic]WUzA?lmm>^?n[>QXj1Z1
 R4
 S1
 R0
-w1729457745
+w1729462462
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv
 !i122 20
-L0 3 113
-R6
+L0 3 206
+R5
 r1
 !s85 0
 31
@@ -139,9 +139,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv|
 !i113 1
+R7
 R8
 R9
-R10
 vData_Memory
 R1
 R2
@@ -152,26 +152,26 @@ IVZkTLenGYCE3H[n`99Mi10
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Data_Memory.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Data_Memory.sv
 !i122 4
 Z13 L0 1 23
-R6
+R5
 r1
 !s85 0
 31
-R7
+R6
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Data_Memory.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Data_Memory.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@data_@memory
 vDecode_Cycle
 R1
-R2
+R11
 !i10b 1
 !s100 oiOGTZLZEI>O1O[C>oYaZ0
 R3
@@ -179,39 +179,39 @@ I_L60A?3dNFD8ABa28fS@U1
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv
 !i122 5
 L0 1 134
-R6
+R5
 r1
 !s85 0
 31
-R7
+R6
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@decode_@cycle
 vExecute_Cycle
 R1
 R11
 !i10b 1
-!s100 [a3Ml?_94R5UP<Fla6P?Z1
+!s100 E6UFSQ]0KE=98`jFoUkQn1
 R3
-IYeai>hb9168o8MB7oYm=03
+IOGFITMP5M5Y]Vg2N6=65k0
 R4
 S1
 R0
-R5
+w1729462292
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv
 !i122 6
-L0 1 105
-R6
+L0 1 110
+R5
 r1
 !s85 0
 31
@@ -219,9 +219,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@execute_@cycle
 vFetch_Cycle
 R1
@@ -238,7 +238,7 @@ w1729453163
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv
 !i122 7
 L0 1 70
-R6
+R5
 r1
 !s85 0
 31
@@ -246,9 +246,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@fetch_@cycle
 vHazard_Unit
 R1
@@ -260,12 +260,12 @@ I1OEOZNo7R6iV^UnjfXYUW3
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Hazard_Unit.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Hazard_Unit.sv
 !i122 8
 Z14 L0 1 16
-R6
+R5
 r1
 !s85 0
 31
@@ -273,9 +273,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Hazard_Unit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Hazard_Unit.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@hazard_@unit
 vinstrROM
 R2
@@ -290,17 +290,17 @@ w1729446867
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v
 !i122 0
 L0 40 61
-R6
+R5
 r1
 !s85 0
 31
-R7
+R6
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v|
 !i113 1
 o-vlog01compat -work work
 !s92 -vlog01compat -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU
-R10
+R9
 ninstr@r@o@m
 vInstruction_Memory
 R1
@@ -317,7 +317,7 @@ w1729453993
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Instruction_Memory.sv
 !i122 9
 L0 1 24
-R6
+R5
 r1
 !s85 0
 31
@@ -325,9 +325,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Instruction_Memory.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Instruction_Memory.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@instruction_@memory
 vMain_Decoder
 R1
@@ -339,12 +339,12 @@ IdT9UCB_1aGITVgEb<lW]b3
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Main_Decoder.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Main_Decoder.sv
 !i122 10
 L0 1 33
-R6
+R5
 r1
 !s85 0
 31
@@ -352,9 +352,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Main_Decoder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Main_Decoder.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@main_@decoder
 vMemory_Cycle
 R1
@@ -366,12 +366,12 @@ IelgXa9KgZmM72?M@ImN[G0
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Memory_Cycle.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Memory_Cycle.sv
 !i122 11
 L0 1 59
-R6
+R5
 r1
 !s85 0
 31
@@ -379,9 +379,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Memory_Cycle.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Memory_Cycle.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@memory_@cycle
 vMux
 R1
@@ -393,12 +393,12 @@ ILmdZ`AM@:fNz]F8QXm8mR0
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux.sv
 !i122 12
 L0 1 9
-R6
+R5
 r1
 !s85 0
 31
@@ -406,9 +406,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@mux
 vMux_3_by_1
 R1
@@ -420,12 +420,12 @@ IV<69Qa02j7;J5>fI;XS:32
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv
 !i122 13
 Z15 L0 1 8
-R6
+R5
 r1
 !s85 0
 31
@@ -433,9 +433,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@mux_3_by_1
 vPC_Adder
 R1
@@ -447,12 +447,12 @@ I4?DzcgcE5H8OlZS5o]K:m1
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Adder.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Adder.sv
 !i122 15
 R15
-R6
+R5
 r1
 !s85 0
 31
@@ -460,9 +460,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Adder.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@p@c_@adder
 vPC_Module
 R1
@@ -474,12 +474,12 @@ IlYYcU^l=HCVhQHEdkTKED3
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Module.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Module.sv
 !i122 14
 L0 1 14
-R6
+R5
 r1
 !s85 0
 31
@@ -487,9 +487,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Module.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Module.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@p@c_@module
 vRegister_File
 R1
@@ -501,12 +501,12 @@ I4ddPKDzH?k48_AK97[T7^2
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv
 !i122 16
 R13
-R6
+R5
 r1
 !s85 0
 31
@@ -514,9 +514,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@register_@file
 vSign_Extend
 R1
@@ -528,12 +528,12 @@ I@J@[7>KBf?>bPMF@F?gAf2
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Sign_Extend.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Sign_Extend.sv
 !i122 17
 R14
-R6
+R5
 r1
 !s85 0
 31
@@ -541,9 +541,9 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Sign_Extend.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Sign_Extend.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@sign_@extend
 vWriteback_Cycle
 R1
@@ -555,12 +555,12 @@ IZC`TaXB3l7R9jQAlWYUC33
 R4
 S1
 R0
-R5
+R10
 8/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Writeback_Cycle.sv
 F/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Writeback_Cycle.sv
 !i122 18
 R14
-R6
+R5
 r1
 !s85 0
 31
@@ -568,7 +568,7 @@ R12
 !s107 /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Writeback_Cycle.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU|/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Writeback_Cycle.sv|
 !i113 1
+R7
 R8
 R9
-R10
 n@writeback_@cycle
