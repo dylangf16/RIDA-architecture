@@ -33,7 +33,7 @@ Especificación Final de Opcode
 | SUB       | 001    | Resta registros|
 | AND       | 010    | AND lógico     |
 | MOV       | 011    | Mover registro |
-| CMP       | 100    | Comparar con inmediato|
+| CMP       | 100    | Comparar con Registro|
 | UDIV      | 101    | División sin signo|
 | SUBS      | 110    | Resta y actualiza flags|
 | MUL       | 111    | Mul con registros | 
@@ -78,4 +78,3 @@ Especificación Final de Opcode
 | B         | 000    | Salto incondicional |
 | PUSH      | 001    | Push registros      |
 | POP       | 010    | Pop registros       |
-| CMP       | 100    | Comparar con registro|
