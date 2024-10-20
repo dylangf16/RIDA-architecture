@@ -10,9 +10,9 @@ main:
     MOV R2, #100                 @ R2 = tamaño de incremento básico (64 bytes)
     @ Dividir 39700 en operaciones más pequeñas
     MOV R3, #0                  @ Inicializar R3
-    ADD R3, R3, #4080
-    ADD R3, R3, #4080
-	ADD R3, R3, #4080          
+    ADD R3, R3, #16383 
+    ADD R3, R3, #16383
+	ADD R3, R3, #6934          
     ADD R3, R3, #4080          
     ADD R3, R3, #4080          
     ADD R3, R3, #4080         

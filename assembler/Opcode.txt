@@ -2,8 +2,9 @@ Especificación Final de Opcode
 
 1. Estructura del Opcode
 
-[2 bits: Condición][2 bits: Tipo][3 bits: Opcode][4 bits: Rd][4 bits: Rn][12 bits: Operando2]
+[2 bits: Condición][2 bits: Tipo][3 bits: Opcode][4 bits: Rd][4 bits: Rn][2 bit: Flag MOV con Shift][1bit: flag índice MEM][14 bits: Operando2] 32bits
 
+[Tabla 2.1][Tabla 2.2][Tabla 2.3.x][R0-R12][R0-R12][Tabla 2.3.1.1][Tabla 2.3.3.1][R0-R12 o Imm]
 
 2. Tablas de Codificación
 
@@ -44,9 +45,6 @@ Especificación Final de Opcode
 | MOV con LSR     | 01     | LSR a Rn   |
 | MOV con LSL     | 10     | LSL a Rn   |
 
-Estructura custom para el MOV con shift:
-[2 bits: Condición][2 bits: Tipo][3 bits: Opcode][4 bits: Rd][4 bits: Rn][2 bit: LSL o LSR][10 bits: cuanto el LSL o LSR]
-
 
 ### 2.3.2 Tipo IMM (01)
 | Operación | Opcode | Descripción |
@@ -72,9 +70,6 @@ Estructura custom para el MOV con shift:
 |-----------|--------|-------------|
 | Índice    | 0      | mem sin índice  |
 | No índice | 1      | Mem con índice  |
-
-Estructura custom para índices:
-[2 bits: Condición][2 bits: Tipo][3 bits: Opcode][4 bits: Rd][4 bits: Rn][1bit: flag índice][11 bits: Operando2]
 
 
 ### 2.3.4 Tipo CTRL (11)

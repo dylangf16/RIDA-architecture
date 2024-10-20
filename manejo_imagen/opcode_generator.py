@@ -1,174 +1,132 @@
 import re
 
+# Diccionarios para mapear operaciones a sus códigos binarios
+conditions = {"AL": "00", "EQ": "01", "NE": "10", "GE": "11"}
+types = {"REG": "00", "IMM": "01", "MEM": "10", "CTRL": "11"}
+opcodes = {
+    "REG": {"ADD": "000", "SUB": "001", "AND": "010", "MOV": "011", "CMP": "100", "UDIV": "101", "SUBS": "110", "MUL": "111"},
+    "IMM": {"ADD": "000", "SUB": "001", "AND": "010", "MOV": "011", "CMP": "100", "LSL": "101"},
+    "MEM": {"LDR": "000", "LDRB": "001", "STR": "010", "STRB": "011"},
+    "CTRL": {"B": "000", "PUSH": "001", "POP": "010", "CMP": "100"}
+}
+mov_shifts = {"Normal": "00", "LSR": "01", "LSL": "10"}
+mem_index = {"No índice": "0", "Índice": "1"}
+
+def int_to_binary(n, bits):
+    return format(n & ((1 << bits) - 1), f'0{bits}b')
+
+def parse_register(reg_str):
+    return int(reg_str[1:])
+
+def parse_immediate(imm_str, is_ctrl=False):
+    print(f"Parsing immediate: {imm_str}")
+    if not is_ctrl and not imm_str.startswith('#'):
+        raise ValueError(f"Inmediato inválido: {imm_str}. Debe comenzar con '#'")
+    value = imm_str[1:] if imm_str.startswith('#') else imm_str
+    return int(value, 16) if value.startswith('0x') else int(value)
+
+def generate_opcode(condition, op_type, operation, rd, rn, op2, mov_shift="Normal", mem_idx="No índice"):
+    opcode = conditions[condition] + types[op_type] + opcodes[op_type][operation]
+    opcode += int_to_binary(rd, 4) + int_to_binary(rn, 4)
+    opcode += mov_shifts[mov_shift]
+    opcode += mem_index[mem_idx]
+    if isinstance(op2, int):
+        opcode += int_to_binary(op2, 14)
+    else:  # op2 es un registro
+        opcode += int_to_binary(op2, 4) + "0" * 10
+    return opcode
+
 def parse_instruction(instruction):
-    parts = instruction.split(None, 1)
-    opcode = parts[0].lower()
-    operands = parts[1] if len(parts) > 1 else ""
-    return opcode, operands
+    print(f"Parsing instruction: {instruction}")
+    parts = instruction.strip().split()
+    operation = parts[0]
 
-def get_condition(opcode):
-    if opcode.endswith('eq'):
-        return '01'
-    elif opcode.endswith('ne'):
-        return '10'
-    elif opcode.endswith('ge'):
-        return '11'
-    else:
-        return '00'
+    condition = "AL"
+    for cond in conditions.keys():
+        if operation.endswith(cond) and operation != cond:
+            condition = cond
+            operation = operation[:-len(cond)]
+            break
 
-def get_type_and_opcode(opcode):
-    opcodes = {
-        'add': '000', 'sub': '001', 'and': '010', 'mov': '011', 'udiv': '101', 'subs': '110', 'cmp': '100',
-        'lsl': '101', 'ldr': '000', 'ldrb': '001', 'str': '010', 'strb': '011',
-        'b': '000', 'push': '001', 'pop': '010',
-        'mul': '111',
-    }
+    print(f"Operation: {operation}, Condition: {condition}")
 
-    base_opcode = opcode.rstrip('eqneg')
+    mov_shift = "Normal"
+    if operation in ["LSR", "LSL"]:
+        mov_shift = operation
+        operation = "MOV"
 
-    if base_opcode in opcodes:
-        return opcodes[base_opcode]
-    else:
-        raise ValueError(f"Opcode desconocido: {opcode}")
-
-def parse_register(reg):
-    match = re.match(r'R(\d+)', reg)
-    if match:
-        reg_num = int(match.group(1))
-        if 0 <= reg_num <= 12:
-            return format(reg_num, '04b')
-    raise ValueError(f"Registro inválido: {reg}. Debe ser R0-R12.")
-
-def parse_immediate(imm, with_hash=True, bits=12):
-    if with_hash and not imm.startswith('#'):
-        raise ValueError(f"Inmediato inválido: {imm}. Debe comenzar con '#'.")
-    imm = imm[1:] if with_hash else imm  # Eliminar el '#' inicial si es necesario
-    if imm.startswith('0x'):
-        value = int(imm, 16)
-    else:
-        value = int(imm)
-    if value < 0 or value >= (1 << bits):
-        raise ValueError(f"Valor inmediato fuera de rango: {imm}")
-    return format(value, f'0{bits}b')
-
-def generate_opcode(instruction):
-    opcode, operands = parse_instruction(instruction)
-    condition = get_condition(opcode)
-
-    if opcode.startswith('b'):
-        # Instrucción de control (branch)
-        type_bits = '11'
-        opcode_bits = get_type_and_opcode(opcode)
-        rd = rn = '0000'
-        operand2 = parse_immediate(operands.strip(), with_hash=False)
-    elif opcode in ['ldr', 'ldrb', 'str', 'strb']:
-        # Instrucción de memoria
-        type_bits = '10'
-        opcode_bits = get_type_and_opcode(opcode)
-        rd, memory_op = operands.split(',', 1)
-        rd = parse_register(rd.strip())
-        memory_op = memory_op.strip()[1:-1]  # Remover corchetes
-        if ',' in memory_op:
-            # Modo indexado
-            rn, offset = memory_op.split(',')
-            rn = parse_register(rn.strip())
-            operand2 = '1' + parse_immediate(offset.strip(), bits=11)
+    if operation in ["LDR", "STR", "LDRB", "STRB"]:
+        rd = parse_register(parts[1].rstrip(','))
+        mem_parts = re.findall(r'\[([^\]]+)\]', instruction)[0].split(',')
+        rn = parse_register(mem_parts[0].strip())
+        if len(mem_parts) > 1:
+            op2_str = mem_parts[1].strip()
+            op2 = parse_immediate(op2_str) if op2_str.startswith('#') else parse_register(op2_str)
+            mem_idx = "Índice"
         else:
-            # Modo indirecto
-            rn = parse_register(memory_op.strip())
-            operand2 = '0' + '0' * 11
-    elif opcode in ['push', 'pop']:
-        # Operación de control (push/pop)
-        type_bits = '11'
-        opcode_bits = get_type_and_opcode(opcode)
-        rd = parse_register(operands.strip())
-        rn = '0000'
-        operand2 = '0' * 12
-    elif opcode == 'mul':
-        # Instrucción MUL
-        type_bits = '10'
-        opcode_bits = get_type_and_opcode(opcode)
-        parts = operands.split(',')
-        rd = parse_register(parts[0].strip())
-        rn = parse_register(parts[1].strip())
-        rm = parse_register(parts[2].strip())
-        operand2 = '00000000' + rm
-    elif opcode.startswith('mov'):
-        # Caso especial MOV
-        type_bits = '00'
-        opcode_bits = get_type_and_opcode('mov')
-        parts = operands.split(',')
-        rd = parse_register(parts[0].strip())
-        if 'lsl' in parts[1].lower():
-            rn, shift = parts[1].split('lsl')
-            rn = parse_register(rn.strip())
-            mov_type = '10'
-            shift_amount = parse_immediate(shift.strip(), bits=10)
-        elif 'lsr' in parts[1].lower():
-            rn, shift = parts[1].split('lsr')
-            rn = parse_register(rn.strip())
-            mov_type = '01'
-            shift_amount = parse_immediate(shift.strip(), bits=10)
-        elif parts[1].strip().startswith('#'):
-            # MOV con inmediato
-            type_bits = '01'
-            rn = '0000'
-            mov_type = '00'
-            shift_amount = parse_immediate(parts[1].strip(), bits=12)
-            operand2 = shift_amount
+            op2 = 0
+            mem_idx = "No índice"
+        op_type = "MEM"
+    elif operation in ["ADD", "SUB", "AND", "MOV", "CMP", "UDIV", "SUBS", "MUL"]:
+        rd = parse_register(parts[1].rstrip(','))
+        if operation == "MOV" and mov_shift != "Normal":
+            rn = parse_register(parts[2].rstrip(','))
+            op2 = parse_immediate(parts[3])
+            op_type = "IMM"
+        elif operation == "MUL":
+            rn = parse_register(parts[2].rstrip(','))
+            op2 = parse_register(parts[3].rstrip(','))
+            op_type = "REG"
+        elif operation == "UDIV":
+            rn = parse_register(parts[2].rstrip(','))
+            op2 = parse_register(parts[3].rstrip(','))
+            op_type = "REG"
+        elif operation == "SUBS":
+            rn = parse_register(parts[2].rstrip(','))
+            op2 = parse_register(parts[3].rstrip(','))
+            op_type = "REG"
         else:
-            rn = parse_register(parts[1].strip())
-            mov_type = '00'
-            shift_amount = '0' * 10
-        if type_bits == '00':
-            operand2 = mov_type + shift_amount
-    elif '#' in operands:
-        # Operación con inmediato
-        type_bits = '01'
-        opcode_bits = get_type_and_opcode(opcode)
-        parts = operands.split(',')
-        rd = parse_register(parts[0].strip())
-        if len(parts) > 2:
-            rn = parse_register(parts[1].strip())
-            operand2 = parse_immediate(parts[2].strip())
-        else:
-            rn = '0000' if opcode.startswith('mov') else rd
-            operand2 = parse_immediate(parts[1].strip())
+            rn = parse_register(parts[2].rstrip(',')) if len(parts) > 2 and parts[2].startswith('R') else 0
+            op2 = parse_immediate(parts[-1]) if parts[-1].startswith('#') else parse_register(parts[-1])
+            op_type = "IMM" if isinstance(op2, int) else "REG"
+    elif operation == "B":
+        op_type = "CTRL"
+        rd = rn = 0
+        op2 = parse_immediate(parts[1], is_ctrl=True)
     else:
-        # Operación con registros
-        type_bits = '00'
-        opcode_bits = get_type_and_opcode(opcode)
-        parts = operands.split(',')
-        rd = parse_register(parts[0].strip())
-        rn = parse_register(parts[1].strip())
-        rm = parse_register(parts[2].strip()) if len(parts) > 2 else '0000'
-        operand2 = '00000000' + rm
+        raise ValueError(f"Operación no soportada: {operation}")
 
-    return condition + type_bits + opcode_bits + rd + rn + operand2
+    print(f"Parsed instruction: op_type={op_type}, operation={operation}, rd={rd}, rn={rn}, op2={op2}, mov_shift={mov_shift}, mem_idx={mem_idx if 'mem_idx' in locals() else 'No índice'}")
+    return condition, op_type, operation, rd, rn, op2, mov_shift, mem_idx if 'mem_idx' in locals() else "No índice"
 
-def process_file(input_file, hex_output_file, bin_output_file):
-    with open(input_file, 'r') as f, open(hex_output_file, 'w') as f_hex, open(bin_output_file, 'w') as f_bin:
-        for line_num, line in enumerate(f, 1):
-            line = line.strip()
-            if line:
+
+def process_instructions(input_file, output_file):
+    with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
+        for line in infile:
+            if line.strip():
+                print(f"Analizando instrucción: {line.strip()}")
                 try:
-                    binary_opcode = generate_opcode(line)
-                    hex_opcode = format(int(binary_opcode, 2), '08x')
-                    f_bin.write(f"{binary_opcode}\n")
-                    f_hex.write(f"{hex_opcode}\n")
-                    print(f"Instrucción: {line}")
-                    print(f"Opcode (binario): {binary_opcode}")
-                    print(f"Opcode (hexadecimal): {hex_opcode}")
-                    print("--------------------")
-                except ValueError as e:
-                    print(f"Error en la línea {line_num}: {line}")
-                    print(f"  {str(e)}")
-                    print("--------------------")
+                    params = parse_instruction(line)
+                    opcode = generate_opcode(*params)
+                    print(f"Opcode generado: {opcode}")
+                    outfile.write(opcode + '\n')
+                    print("--------------------------------------------------------------------------------------------")
+                except Exception as e:
+                    print(f"Error al procesar la instrucción: {line.strip()}")
+                    print(f"Error: {str(e)}")
+                    import traceback
+                    print(traceback.format_exc())
+                    return 0
+    return 1
 
-# Uso del script
+# Archivos de entrada y salida
 input_file = 'interpolado_loop_12bits_limpio.txt'
-hex_output_file = 'opcode_hex.txt'
 bin_output_file = 'opcode_bin.txt'
 
-process_file(input_file, hex_output_file, bin_output_file)
-print(f"Opcode generado en {hex_output_file} (hexadecimal) y {bin_output_file} (binario)")
+# Procesar las instrucciones
+result = process_instructions(input_file, bin_output_file)
+
+if result != 0:
+    print(f"Procesamiento completado. Los opcodes se han guardado en {bin_output_file}")
+else:
+    print("El procesamiento se detuvo debido a un error.")
