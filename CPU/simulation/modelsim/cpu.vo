@@ -16,14 +16,14 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "10/20/2024 00:19:16"
+// DATE "10/20/2024 20:58:16"
 
 // 
 // Device: Altera 5CSXFC5D6F31C6 Package FBGA896
 // 
 
 // 
-// This Verilog file should be used for ModelSim (Verilog) only
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
 // 
 
 `timescale 1 ps/ 1 ps

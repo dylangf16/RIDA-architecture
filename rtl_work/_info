@@ -1,0 +1,595 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ale/Documents/GitHub/RIDA-architecture
+vALU
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1729479792
+!i10b 1
+!s100 D9>k=O7`Gd`Y4I1oN21==0
+IY?AXJ3Z`dJJz`f_dUHHP70
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ALU_sv_unit
+S1
+R0
+w1729477568
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1729479792.000000
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU
+Z8 tCvgOpt 0
+n@a@l@u
+vALU_Decoder
+R1
+R2
+!i10b 1
+!s100 SdWL3YWzU6A[oZg;MM1k21
+IFMTU:EQ_Xl]e`9S32m<K`0
+R3
+!s105 ALU_Decoder_sv_unit
+S1
+R0
+w1729404073
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU_Decoder.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU_Decoder.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU_Decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU_Decoder.sv|
+!i113 1
+R6
+R7
+R8
+n@a@l@u_@decoder
+vControl_Unit
+R1
+Z9 !s110 1729479793
+!i10b 1
+!s100 8dL^d7LkINIg]^5j]62Jz3
+IeN[cobzATHN<e6H4MbGAX3
+R3
+!s105 Control_Unit_sv_unit
+S1
+R0
+w1729404076
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv|
+!i113 1
+R6
+R7
+R8
+n@control_@unit
+vcpu
+R1
+Z10 !s110 1729479794
+!i10b 1
+!s100 o6D5VL]i6Lii`ehL6IMaW2
+I?0CGm:oUBkoeY3gl[BZKd1
+R3
+!s105 cpu_sv_unit
+S1
+R0
+w1729472082
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z11 !s108 1729479794.000000
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv|
+!i113 1
+R6
+R7
+R8
+vcpu_tb2
+R1
+R10
+!i10b 1
+!s100 =aaRNTK0@:0SiQh@^7h`P0
+I0jLzkYZjg6We?cJk@HT]=1
+R3
+!s105 cpu_tb2_sv_unit
+S1
+R0
+w1729479722
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu_tb2.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu_tb2.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R11
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu_tb2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu_tb2.sv|
+!i113 1
+R6
+R7
+R8
+vData_Memory
+R1
+R9
+!i10b 1
+!s100 F>gnB]L7OcH88UNOYYf5<0
+IFe<j`EjUB@L7[PEFF@RWe2
+R3
+!s105 Data_Memory_sv_unit
+S1
+R0
+w1729469107
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z12 !s108 1729479793.000000
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv|
+!i113 1
+R6
+R7
+R8
+n@data_@memory
+vDecode_Cycle
+R1
+R9
+!i10b 1
+!s100 NeEg@MT@]]fbkBV<N`N:a1
+I9o0R4JGNozOX1DW]Un[D02
+R3
+!s105 Decode_Cycle_sv_unit
+S1
+R0
+w1729404903
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv|
+!i113 1
+R6
+R7
+R8
+n@decode_@cycle
+vdram
+R2
+!i10b 1
+!s100 WYdf_g7eKf5V:>L>^MY092
+IO=JEC1iI6X:^=Eb4hOGRG0
+R3
+R0
+Z13 w1729466573
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v
+Z14 L0 40
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v|
+!i113 1
+Z15 o-vlog01compat -work work
+Z16 !s92 -vlog01compat -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory
+R8
+vdrom
+R2
+!i10b 1
+!s100 KZF7KCc?FX6K>K2o4aWFn1
+IYYYSCHF9Jg1L2Ki0?C=7k0
+R3
+R0
+R13
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v
+R14
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v|
+!i113 1
+R15
+R16
+R8
+vExecute_Cycle
+R1
+R9
+!i10b 1
+!s100 Efefm@QKGY8;OjO;:HWz_0
+IC7Pmk_5^^DjD=ShJYh^:G3
+R3
+!s105 Execute_Cycle_sv_unit
+S1
+R0
+Z17 w1729466572
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv|
+!i113 1
+R6
+R7
+R8
+n@execute_@cycle
+vFetch_Cycle
+R1
+R9
+!i10b 1
+!s100 SDSbW^WOPWMl2X9;mm_g23
+ISJH_]^DS>]:e=TJ6@YThV0
+R3
+!s105 Fetch_Cycle_sv_unit
+S1
+R0
+R17
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv|
+!i113 1
+R6
+R7
+R8
+n@fetch_@cycle
+vHazard_Unit
+R1
+R9
+!i10b 1
+!s100 gQN:I=_bY^^`0BeP;l9Rh0
+Ie72?:3@YA:H21SWnCD2N=1
+R3
+!s105 Hazard_Unit_sv_unit
+S1
+R0
+Z18 w1729382248
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Hazard_Unit.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Hazard_Unit.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Hazard_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Hazard_Unit.sv|
+!i113 1
+R6
+R7
+R8
+n@hazard_@unit
+vinstrROM
+R2
+!i10b 1
+!s100 C:CFQjiKTVkVaQN`S<3^32
+IfR5Lf7meSHI7SQjRCI94?0
+R3
+R0
+R13
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/instrROM.v
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/instrROM.v
+R14
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/instrROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/instrROM.v|
+!i113 1
+R15
+!s92 -vlog01compat -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU
+R8
+ninstr@r@o@m
+vInstruction_Memory
+R1
+R9
+!i10b 1
+!s100 0QmZE@<cRiWH5;3kWER2d3
+IiTH^]nVakE:^G^lM^j7W80
+R3
+!s105 Instruction_Memory_sv_unit
+S1
+R0
+R17
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv|
+!i113 1
+R6
+R7
+R8
+n@instruction_@memory
+vMain_Decoder
+R1
+R9
+!i10b 1
+!s100 bl<Y4D[lD?]1nGmWCT6R83
+Idz4?>dDF;B>:jekdFinTX2
+R3
+!s105 Main_Decoder_sv_unit
+S1
+R0
+w1729404220
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Main_Decoder.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Main_Decoder.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Main_Decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Main_Decoder.sv|
+!i113 1
+R6
+R7
+R8
+n@main_@decoder
+vMemory_Cycle
+R1
+R9
+!i10b 1
+!s100 <27J46LI?Db?ULKQNO50G0
+I^V5KkPfB8[5hmQgib59823
+R3
+!s105 Memory_Cycle_sv_unit
+S1
+R0
+R18
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv|
+!i113 1
+R6
+R7
+R8
+n@memory_@cycle
+vMux
+R1
+R9
+!i10b 1
+!s100 77_Qzmo^QZbOl>g>jk8^91
+I<1i3OYojnfkT4N5^b;O1U2
+R3
+!s105 Mux_sv_unit
+S1
+R0
+R18
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux.sv|
+!i113 1
+R6
+R7
+R8
+n@mux
+vMux_3_by_1
+R1
+R9
+!i10b 1
+!s100 M7;EHUe7ON8`X<CQfUoK]3
+If6I`WQ0?kz]2Wh2OSZSV?1
+R3
+!s105 Mux_3_by_1_sv_unit
+S1
+R0
+R18
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv|
+!i113 1
+R6
+R7
+R8
+n@mux_3_by_1
+vPC_Adder
+R1
+R10
+!i10b 1
+!s100 hJCP]_S4mB?NSQC1=iJbZ3
+IAdPiLm6ETjhC`AAN`G>7S3
+R3
+!s105 PC_Adder_sv_unit
+S1
+R0
+R18
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Adder.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Adder.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Adder.sv|
+!i113 1
+R6
+R7
+R8
+n@p@c_@adder
+vPC_Module
+R1
+R10
+!i10b 1
+!s100 5cNZC7^0PHBR;71fDcCjR0
+I;LShF`7dEf[^;?SJWK0N[1
+R3
+!s105 PC_Module_sv_unit
+S1
+R0
+R18
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Module.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Module.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Module.sv|
+!i113 1
+R6
+R7
+R8
+n@p@c_@module
+vRegister_File
+R1
+R10
+!i10b 1
+!s100 H2Fi[oDj9U1M@a79VNEZb1
+II3<0oe>3Lz:R4Y`0iMinn0
+R3
+!s105 Register_File_sv_unit
+S1
+R0
+R18
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv|
+!i113 1
+R6
+R7
+R8
+n@register_@file
+vSign_Extend
+R1
+R10
+!i10b 1
+!s100 T`zS3e`b[WGj;T63oS=aJ2
+ITO2K87DZ8S5Rc@JD12WX;0
+R3
+!s105 Sign_Extend_sv_unit
+S1
+R0
+w1729405146
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Sign_Extend.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Sign_Extend.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Sign_Extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Sign_Extend.sv|
+!i113 1
+R6
+R7
+R8
+n@sign_@extend
+vWriteback_Cycle
+R1
+R10
+!i10b 1
+!s100 R7gH`l^9MERS2Q0D^nl`P3
+Ik`<CHGnj5a0l2ai_447P`1
+R3
+!s105 Writeback_Cycle_sv_unit
+S1
+R0
+w1729472067
+8/home/ale/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv
+F/home/ale/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R11
+!s107 /home/ale/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU|/home/ale/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv|
+!i113 1
+R6
+R7
+R8
+n@writeback_@cycle
