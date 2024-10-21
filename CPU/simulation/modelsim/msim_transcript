@@ -8,12 +8,12 @@
 # vmap altera_ver ./verilog_libs/altera_ver
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap altera_ver ./verilog_libs/altera_ver 
-# Copying /home/dylanggf/intelFPGA_lite/22.1std/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Copying /home/isa/intelFPGA_lite/22.1std/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# vlog -vlog01compat -work altera_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
+# vlog -vlog01compat -work altera_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:46 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work altera_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
+# Start time: 17:44:22 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work altera_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
 # -- Compiling module cascade
@@ -94,7 +94,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 16:14:47 on Oct 20,2024, Elapsed time: 0:00:01
+# End time: 17:44:23 on Oct 20,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -103,10 +103,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap lpm_ver ./verilog_libs/lpm_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work lpm_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/220model.v}
+# vlog -vlog01compat -work lpm_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:47 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work lpm_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/220model.v 
+# Start time: 17:44:23 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work lpm_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
 # -- Compiling module LPM_DEVICE_FAMILIES
@@ -169,7 +169,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 16:14:47 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:23 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -178,10 +178,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap sgate_ver ./verilog_libs/sgate_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work sgate_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/sgate.v}
+# vlog -vlog01compat -work sgate_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:47 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work sgate_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/sgate.v 
+# Start time: 17:44:23 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work sgate_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
 # -- Compiling module mux21
@@ -222,7 +222,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 16:14:47 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:23 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -231,10 +231,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap altera_mf_ver ./verilog_libs/altera_mf_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work altera_mf_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
+# vlog -vlog01compat -work altera_mf_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:48 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
+# Start time: 17:44:23 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
 # -- Compiling module ALTERA_MF_HINT_EVALUATION
@@ -363,7 +363,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 16:14:48 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:25 on Oct 20,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -372,10 +372,10 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
 # Modifying modelsim.ini
-# vlog -sv -work altera_lnsim_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
+# vlog -sv -work altera_lnsim_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:49 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work altera_lnsim_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
+# Start time: 17:44:25 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work altera_lnsim_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
 # -- Compiling module generic_pll
@@ -457,7 +457,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 16:14:49 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:26 on Oct 20,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -466,26 +466,26 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap cyclonev_ver ./verilog_libs/cyclonev_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:49 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
+# Start time: 17:44:26 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 16:14:51 on Oct 20,2024, Elapsed time: 0:00:02
+# End time: 17:44:28 on Oct 20,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:51 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
+# Start time: 17:44:28 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 16:14:52 on Oct 20,2024, Elapsed time: 0:00:01
+# End time: 17:44:30 on Oct 20,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
+# vlog -vlog01compat -work cyclonev_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:52 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
+# Start time: 17:44:30 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS_HIGH
@@ -624,7 +624,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 16:14:52 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:30 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -633,18 +633,18 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap cyclonev_hssi_ver ./verilog_libs/cyclonev_hssi_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_hssi_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_hssi_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:53 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
+# Start time: 17:44:31 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 16:14:54 on Oct 20,2024, Elapsed time: 0:00:01
+# End time: 17:44:32 on Oct 20,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_hssi_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
+# vlog -vlog01compat -work cyclonev_hssi_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:54 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
+# Start time: 17:44:32 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
 # -- Compiling module cyclonev_hssi_8g_tx_pcs
@@ -743,7 +743,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 16:14:54 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:32 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -752,24 +752,24 @@
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap cyclonev_pcie_hip_ver ./verilog_libs/cyclonev_pcie_hip_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_pcie_hip_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
+# vlog -vlog01compat -work cyclonev_pcie_hip_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:54 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
+# Start time: 17:44:32 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 16:14:56 on Oct 20,2024, Elapsed time: 0:00:02
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_pcie_hip_ver {/home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
+# vlog -vlog01compat -work cyclonev_pcie_hip_ver {/home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:56 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 16:14:56 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -781,221 +781,241 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v}
+# vlog -vlog01compat -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:56 on Oct 20,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v 
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v 
+# -- Compiling module drom
+# 
+# Top level modules:
+# 	drom
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v 
+# -- Compiling module dram
+# 
+# Top level modules:
+# 	dram
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/instrROM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/instrROM.v 
 # -- Compiling module instrROM
 # 
 # Top level modules:
 # 	instrROM
-# End time: 16:14:56 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/ALU.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:56 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU.sv 
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/ALU.sv 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 16:14:56 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU_Decoder.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/ALU_Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:56 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU_Decoder.sv 
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/ALU_Decoder.sv 
 # -- Compiling module ALU_Decoder
 # 
 # Top level modules:
 # 	ALU_Decoder
-# End time: 16:14:56 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:56 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv 
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv 
 # -- Compiling module Control_Unit
 # 
 # Top level modules:
 # 	Control_Unit
-# End time: 16:14:56 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Data_Memory.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:56 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Data_Memory.sv 
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv 
 # -- Compiling module Data_Memory
 # 
 # Top level modules:
 # 	Data_Memory
-# End time: 16:14:56 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:56 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv 
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv 
 # -- Compiling module Decode_Cycle
 # 
 # Top level modules:
 # 	Decode_Cycle
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:01
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv 
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv 
 # -- Compiling module Execute_Cycle
 # 
 # Top level modules:
 # 	Execute_Cycle
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv 
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv 
 # -- Compiling module Fetch_Cycle
 # 
 # Top level modules:
 # 	Fetch_Cycle
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Hazard_Unit.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Hazard_Unit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Hazard_Unit.sv 
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Hazard_Unit.sv 
 # -- Compiling module Hazard_Unit
 # 
 # Top level modules:
 # 	Hazard_Unit
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:35 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Instruction_Memory.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Instruction_Memory.sv 
+# Start time: 17:44:35 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv 
 # -- Compiling module Instruction_Memory
 # 
 # Top level modules:
 # 	Instruction_Memory
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Main_Decoder.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Main_Decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Main_Decoder.sv 
+# Start time: 17:44:36 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Main_Decoder.sv 
 # -- Compiling module Main_Decoder
 # 
 # Top level modules:
 # 	Main_Decoder
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Memory_Cycle.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Memory_Cycle.sv 
+# Start time: 17:44:36 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv 
 # -- Compiling module Memory_Cycle
 # 
 # Top level modules:
 # 	Memory_Cycle
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Mux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux.sv 
+# Start time: 17:44:36 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Mux.sv 
 # -- Compiling module Mux
 # 
 # Top level modules:
 # 	Mux
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv 
+# Start time: 17:44:36 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv 
 # -- Compiling module Mux_3_by_1
 # 
 # Top level modules:
 # 	Mux_3_by_1
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Module.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/PC_Module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Module.sv 
+# Start time: 17:44:36 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/PC_Module.sv 
 # -- Compiling module PC_Module
 # 
 # Top level modules:
 # 	PC_Module
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Adder.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/PC_Adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/PC_Adder.sv 
+# Start time: 17:44:36 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/PC_Adder.sv 
 # -- Compiling module PC_Adder
 # 
 # Top level modules:
 # 	PC_Adder
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv 
+# Start time: 17:44:36 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv 
 # -- Compiling module Register_File
 # 
 # Top level modules:
 # 	Register_File
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Sign_Extend.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Sign_Extend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Sign_Extend.sv 
+# Start time: 17:44:36 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Sign_Extend.sv 
 # -- Compiling module Sign_Extend
 # 
 # Top level modules:
 # 	Sign_Extend
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Writeback_Cycle.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Writeback_Cycle.sv 
+# Start time: 17:44:36 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv 
 # -- Compiling module Writeback_Cycle
 # 
 # Top level modules:
 # 	Writeback_Cycle
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv 
+# Start time: 17:44:36 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu.sv 
 # -- Compiling module cpu
 # 
 # Top level modules:
 # 	cpu
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv}
+# vlog -sv -work work +incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU {/home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:57 on Oct 20,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU" /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv 
+# Start time: 17:44:36 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/isa/Documents/GitHub/RIDA-architecture/CPU" /home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu_tb.sv 
 # -- Compiling module cpu_tb
 # 
 # Top level modules:
 # 	cpu_tb
-# End time: 16:14:57 on Oct 20,2024, Elapsed time: 0:00:00
+# End time: 17:44:36 on Oct 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  cpu_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" cpu_tb 
-# Start time: 16:14:57 on Oct 20,2024
+# Start time: 17:44:36 on Oct 20,2024
 # Loading sv_std.std
 # Loading work.cpu_tb
 # Loading work.Fetch_Cycle
@@ -1014,17 +1034,29 @@
 # Loading work.Execute_Cycle
 # Loading work.Mux_3_by_1
 # Loading work.ALU
+# Loading work.Memory_Cycle
+# Loading work.Data_Memory
+# Loading work.drom
+# Loading work.dram
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'A1'. The port definition is at: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/decode/rf File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv Line: 63
-# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'A2'. The port definition is at: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Register_File.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/decode/rf File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv Line: 63
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 's'. The port definition is at: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/execute/srca_mux File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv Line: 32
-# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 's'. The port definition is at: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/execute/srcb_mux File: /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Execute_Cycle.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'A1'. The port definition is at: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/decode/rf File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 63
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'A2'. The port definition is at: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/decode/rf File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 63
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 's'. The port definition is at: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/execute/srca_mux File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv Line: 32
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 's'. The port definition is at: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/execute/srcb_mux File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv Line: 41
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'rom_data'.  Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/memory/dmem/rom_data File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv Line: 14
+# ** Warning: (vsim-3722) /home/isa/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv(14): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) /home/isa/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv(14): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'ram_result'.  Expected 9, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/memory/dmem/ram_result File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv Line: 26
+# ** Warning: (vsim-3722) /home/isa/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv(26): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) /home/isa/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv(26): [TFMPC] - Missing connection for port 'wren_b'.
 # 
 # add wave *
 # view structure
@@ -1032,6 +1064,20 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "./Memory/image.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/memory/dmem/rom_data/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read ./Memory/image.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "./Memory/image.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v(48978)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/memory/dmem/rom_data/altsyncram_component/m_default/altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "./Memory/result.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v(264)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/memory/dmem/ram_result/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read ./Memory/result.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "./Memory/result.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v(48978)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb/memory/dmem/ram_result/altsyncram_component/m_default/altsyncram_inst
 # Time: 36000
 # Instruction: 00010110000000000000000000000001
 # Condition: 00
@@ -1045,6 +1091,13 @@
 # Operation: MOV R0, #1
 # ALU Result: x
 # ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: 1
+#   ResultSrcW: 0
+#   RD_W:  0
+#   PCPlus4W: 00000000
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: 00000000
 # -----------------------------
 # Time: 46000
 # Instruction: 00100000000000000100000000000000
@@ -1059,6 +1112,13 @@
 # Operation: LDR R0, [R0, #0]
 # ALU Result: x
 # ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: 1
+#   ResultSrcW: 0
+#   RD_W:  0
+#   PCPlus4W: 00000004
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: 00000000
 # -----------------------------
 # Time: 56000
 # Instruction: 00010110001000000000000000000000
@@ -1073,6 +1133,13 @@
 # Operation: MOV R1, #0
 # ALU Result: x
 # ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: 00000008
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
 # -----------------------------
 # Time: 66000
 # Instruction: 00100000001000100100000000000000
@@ -1087,6 +1154,13 @@
 # Operation: LDR R1, [R1, #0]
 # ALU Result: x
 # ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: 1
+#   ResultSrcW: 0
+#   RD_W:  0
+#   PCPlus4W: 0000000c
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
 # -----------------------------
 # Time: 76000
 # Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -1100,6 +1174,13 @@
 # Operand2: xxxxxxxxxxxxxx
 # ALU Result: x
 # ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: 0
+#   ResultSrcW: 1
+#   RD_W:  0
+#   PCPlus4W: 00000010
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
 # -----------------------------
 # Time: 86000
 # Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -1113,6 +1194,13 @@
 # Operand2: xxxxxxxxxxxxxx
 # ALU Result: x
 # ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: 1
+#   ResultSrcW: 0
+#   RD_W:  1
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
 # -----------------------------
 # Time: 96000
 # Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -1126,6 +1214,13 @@
 # Operand2: xxxxxxxxxxxxxx
 # ALU Result: x
 # ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: 0
+#   ResultSrcW: 1
+#   RD_W:  1
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
 # -----------------------------
 # Time: 106000
 # Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -1139,6 +1234,13 @@
 # Operand2: xxxxxxxxxxxxxx
 # ALU Result: x
 # ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
 # -----------------------------
 # Time: 116000
 # Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -1152,6 +1254,13 @@
 # Operand2: xxxxxxxxxxxxxx
 # ALU Result: x
 # ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
 # -----------------------------
 # Time: 126000
 # Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -1165,10 +1274,217 @@
 # Operand2: xxxxxxxxxxxxxx
 # ALU Result: x
 # ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
 # -----------------------------
-# ** Note: $finish    : /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv(206)
-#    Time: 126 ns  Iteration: 0  Instance: /cpu_tb
+# Time: 136000
+# Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Condition: xx
+# Type: xx
+# Opcode: xxx
+# Rd: xxxx
+# Rn: xxxx
+# Flag MOV with Shift: xx
+# Flag Memory Index: x
+# Operand2: xxxxxxxxxxxxxx
+# ALU Result: x
+# ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
+# -----------------------------
+# Time: 146000
+# Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Condition: xx
+# Type: xx
+# Opcode: xxx
+# Rd: xxxx
+# Rn: xxxx
+# Flag MOV with Shift: xx
+# Flag Memory Index: x
+# Operand2: xxxxxxxxxxxxxx
+# ALU Result: x
+# ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
+# -----------------------------
+# Time: 156000
+# Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Condition: xx
+# Type: xx
+# Opcode: xxx
+# Rd: xxxx
+# Rn: xxxx
+# Flag MOV with Shift: xx
+# Flag Memory Index: x
+# Operand2: xxxxxxxxxxxxxx
+# ALU Result: x
+# ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
+# -----------------------------
+# Time: 166000
+# Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Condition: xx
+# Type: xx
+# Opcode: xxx
+# Rd: xxxx
+# Rn: xxxx
+# Flag MOV with Shift: xx
+# Flag Memory Index: x
+# Operand2: xxxxxxxxxxxxxx
+# ALU Result: x
+# ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
+# -----------------------------
+# Time: 176000
+# Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Condition: xx
+# Type: xx
+# Opcode: xxx
+# Rd: xxxx
+# Rn: xxxx
+# Flag MOV with Shift: xx
+# Flag Memory Index: x
+# Operand2: xxxxxxxxxxxxxx
+# ALU Result: x
+# ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
+# -----------------------------
+# Time: 186000
+# Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Condition: xx
+# Type: xx
+# Opcode: xxx
+# Rd: xxxx
+# Rn: xxxx
+# Flag MOV with Shift: xx
+# Flag Memory Index: x
+# Operand2: xxxxxxxxxxxxxx
+# ALU Result: x
+# ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
+# -----------------------------
+# Time: 196000
+# Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Condition: xx
+# Type: xx
+# Opcode: xxx
+# Rd: xxxx
+# Rn: xxxx
+# Flag MOV with Shift: xx
+# Flag Memory Index: x
+# Operand2: xxxxxxxxxxxxxx
+# ALU Result: x
+# ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
+# -----------------------------
+# Time: 206000
+# Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Condition: xx
+# Type: xx
+# Opcode: xxx
+# Rd: xxxx
+# Rn: xxxx
+# Flag MOV with Shift: xx
+# Flag Memory Index: x
+# Operand2: xxxxxxxxxxxxxx
+# ALU Result: x
+# ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
+# -----------------------------
+# Time: 216000
+# Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Condition: xx
+# Type: xx
+# Opcode: xxx
+# Rd: xxxx
+# Rn: xxxx
+# Flag MOV with Shift: xx
+# Flag Memory Index: x
+# Operand2: xxxxxxxxxxxxxx
+# ALU Result: x
+# ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
+# -----------------------------
+# Time: 226000
+# Instruction: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Condition: xx
+# Type: xx
+# Opcode: xxx
+# Rd: xxxx
+# Rn: xxxx
+# Flag MOV with Shift: xx
+# Flag Memory Index: x
+# Operand2: xxxxxxxxxxxxxx
+# ALU Result: x
+# ALU Flags (NZCV): xxxx
+# Memory Cycle Outputs:
+#   RegWriteW: x
+#   ResultSrcW: x
+#   RD_W:  X
+#   PCPlus4W: xxxxxxxx
+#   ALU_ResultW: xxxxxxxx
+#   ReadDataW: xxxxxxxx
+# -----------------------------
+# ** Note: $finish    : /home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu_tb.sv(239)
+#    Time: 226 ns  Iteration: 0  Instance: /cpu_tb
 # 1
-# Break in Module cpu_tb at /home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv line 206
-# End time: 16:17:41 on Oct 20,2024, Elapsed time: 0:02:44
-# Errors: 0, Warnings: 4
+# Break in Module cpu_tb at /home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu_tb.sv line 239
+# End time: 17:48:20 on Oct 20,2024, Elapsed time: 0:03:44
+# Errors: 0, Warnings: 14

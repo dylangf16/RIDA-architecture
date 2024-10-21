@@ -25,6 +25,11 @@ module cpu_tb();
     wire [31:0] PCPlus4M, WriteDataM, ALU_ResultM;
     wire [3:0] ALUFlagsE;
 
+    // Signals for Memory Cycle
+    wire RegWriteW, ResultSrcW;
+    wire [4:0] RD_W;
+    wire [31:0] PCPlus4W, ALU_ResultW, ReadDataW;
+
     // Signals to extract from InstrD
     wire [1:0] cond, tipo, flag_mov_shift;
     wire [2:0] opcode;
@@ -47,12 +52,12 @@ module cpu_tb();
     Decode_Cycle decode (
         .clk(clk),
         .rst(rst),
-        .RegWriteW(1'b0),  // Not connected for this test
-        .RDW(5'b0),        // Not connected for this test
+        .RegWriteW(RegWriteW),
+        .RDW(RD_W),
         .InstrD(InstrD),
         .PCD(PCD),
         .PCPlus4D(PCPlus4D),
-        .ResultW(32'b0),   // Not connected for this test
+        .ResultW(ALU_ResultW),
         .RegWriteE(RegWriteE),
         .ALUSrcE(ALUSrcE),
         .MemWriteE(MemWriteE),
@@ -89,7 +94,7 @@ module cpu_tb();
         .RD_E(RD_E),
         .PCE(PCE),
         .PCPlus4E(PCPlus4E),
-        .ResultW(32'b0),  // Not connected for this test
+        .ResultW(ALU_ResultW),
         .ForwardA_E(2'b00),  // No forwarding for this test
         .ForwardB_E(2'b00),  // No forwarding for this test
         .PCSrcE(PCSrcE),
@@ -102,6 +107,25 @@ module cpu_tb();
         .ALU_ResultM(ALU_ResultM),
         .PCTargetE(PCTargetE),
         .ALUFlagsE(ALUFlagsE)
+    );
+
+    // Instantiate Memory Cycle
+    Memory_Cycle memory (
+        .clk(clk),
+        .rst(rst),
+        .RegWriteM(RegWriteM),
+        .MemWriteM(MemWriteM),
+        .ResultSrcM(ResultSrcM),
+        .RD_M(RD_M),
+        .PCPlus4M(PCPlus4M),
+        .WriteDataM(WriteDataM),
+        .ALU_ResultM(ALU_ResultM),
+        .RegWriteW(RegWriteW),
+        .ResultSrcW(ResultSrcW),
+        .RD_W(RD_W),
+        .PCPlus4W(PCPlus4W),
+        .ALU_ResultW(ALU_ResultW),
+        .ReadDataW(ReadDataW)
     );
 
     // Extract signals from InstrD
@@ -135,8 +159,8 @@ module cpu_tb();
         // Wait for a few clock cycles
         #20;
 
-        // Monitor and display signals for 10 clock cycles
-        repeat(10) begin
+        // Monitor and display signals for 20 clock cycles
+        repeat(20) begin
             @(posedge clk);
             #1; // Wait for signals to stabilize
             $display("Time: %0t", $time);
@@ -199,6 +223,15 @@ module cpu_tb();
 
             $display("ALU Result: %0d", ALU_ResultM);
             $display("ALU Flags (NZCV): %b", ALUFlagsE);
+            
+            // Display Memory Cycle outputs
+            $display("Memory Cycle Outputs:");
+            $display("  RegWriteW: %b", RegWriteW);
+            $display("  ResultSrcW: %b", ResultSrcW);
+            $display("  RD_W: %d", RD_W);
+            $display("  PCPlus4W: %h", PCPlus4W);
+            $display("  ALU_ResultW: %h", ALU_ResultW);
+            $display("  ReadDataW: %h", ReadDataW);
             $display("-----------------------------");
         end
 
