@@ -5,8 +5,8 @@ Info: NativeLink has detected Verilog design -- Verilog simulation models will b
 
 Sim Mode              :  RTL
 Family                :  cyclonev
-Quartus root          :  /home/isa/intelFPGA_lite/22.1std/quartus/linux64/
-Quartus sim root      :  /home/isa/intelFPGA_lite/22.1std/quartus/eda/sim_lib
+Quartus root          :  /home/dylanggf/intelFPGA_lite/22.1std/quartus/linux64/
+Quartus sim root      :  /home/dylanggf/intelFPGA_lite/22.1std/quartus/eda/sim_lib
 Simulation Tool       :  modelsim
 Simulation Language   :  verilog
 Simulation Mode       :  GUI
@@ -17,7 +17,7 @@ Sim dir               :  simulation/modelsim
 =======================================================
 
 Info: Starting NativeLink simulation with ModelSim software
-Sourced NativeLink script /home/isa/intelFPGA_lite/22.1std/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Sourced NativeLink script /home/dylanggf/intelFPGA_lite/22.1std/quartus/common/tcl/internal/nativelink/modelsim.tcl
 Warning: File cpu_run_msim_rtl_verilog.do already exists - backing up current file as cpu_run_msim_rtl_verilog.do.bak11
 Info: Spawning ModelSim Simulation software 
 Info: NativeLink simulation flow was successful

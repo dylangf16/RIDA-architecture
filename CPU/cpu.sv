@@ -77,8 +77,8 @@ module cpu(clk, rst);
                         .WriteDataM(WriteDataM), 
                         .ALU_ResultM(ALU_ResultM),
                         .ResultW(ResultW),
-                        .ForwardA_E(ForwardAE),
-                        .ForwardB_E(ForwardBE)
+                        .ForwardAE(ForwardAE),
+                        .ForwardBE(ForwardBE)
                     );
     
     // Memory Stage

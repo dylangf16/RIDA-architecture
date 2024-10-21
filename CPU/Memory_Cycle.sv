@@ -1,14 +1,18 @@
-module Memory_Cycle(clk, rst, RegWriteM, MemWriteM, ResultSrcM, RD_M, PCPlus4M, WriteDataM, 
-    ALU_ResultM, RegWriteW, ResultSrcW, RD_W, PCPlus4W, ALU_ResultW, ReadDataW);
-    
-    // Declaration of I/Os
-    input clk, rst, RegWriteM, MemWriteM, ResultSrcM;
-    input [4:0] RD_M; 
-    input [31:0] PCPlus4M, WriteDataM, ALU_ResultM;
+module Memory_Cycle(
+    input clk, rst,
+    input RegWriteM, MemWriteM, ResultSrcM,
+    input [4:0] RD_M,
+    input [31:0] PCPlus4M, WriteDataM, ALU_ResultM,
+    input IndexedAddrM,
+    input [31:0] RD2_M,
+    input ByteOpM,
+    input PushM, PopM,
 
-    output RegWriteW, ResultSrcW; 
-    output [4:0] RD_W;
-    output [31:0] PCPlus4W, ALU_ResultW, ReadDataW;
+    output RegWriteW, ResultSrcW,
+    output [4:0] RD_W,
+    output [31:0] PCPlus4W, ALU_ResultW, ReadDataW,
+    output reg [31:0] StackPointer
+);
 
     // Declaration of Interim Wires
     wire [31:0] ReadDataM;
@@ -18,25 +22,40 @@ module Memory_Cycle(clk, rst, RegWriteM, MemWriteM, ResultSrcM, RD_M, PCPlus4M, 
     reg [4:0] RD_M_r;
     reg [31:0] PCPlus4M_r, ALU_ResultM_r, ReadDataM_r;
 
+    // Stack Pointer Logic
+    always @(posedge clk or negedge rst) begin
+        if (rst == 1'b0)
+            StackPointer <= 32'hFFFFFFFF; // Initialize stack pointer
+        else if (PushM)
+            StackPointer <= StackPointer - 4;
+        else if (PopM)
+            StackPointer <= StackPointer + 4;
+    end
+
     // Declaration of Module Initiation
     Data_Memory dmem (
-                        .clk(clk),
-                        .rst(rst),
-                        .WE(MemWriteM),
-                        .WD(WriteDataM),
-                        .A(ALU_ResultM),
-                        .RD(ReadDataM)
-                    );
+        .clk(clk),
+        .rst(rst),
+        .WE(MemWriteM),
+        .WD(WriteDataM),
+        .A(ALU_ResultM),
+        .RD(ReadDataM),
+        .IndexedAddr(IndexedAddrM),
+        .IndexValue(RD2_M),
+        .ByteOp(ByteOpM),
+        .StackOp(PushM | PopM),
+        .StackPointer(StackPointer)
+    );
 
     // Memory Stage Register Logic
     always @(posedge clk or negedge rst) begin
         if (rst == 1'b0) begin
-            RegWriteM_r <= 1'b0; 
+            RegWriteM_r <= 1'b0;
             ResultSrcM_r <= 1'b0;
-            RD_M_r <= 5'h00;
-            PCPlus4M_r <= 32'h00000000; 
-            ALU_ResultM_r <= 32'h00000000; 
-            ReadDataM_r <= 32'h00000000;
+            RD_M_r <= 5'b0;
+            PCPlus4M_r <= 32'b0;
+            ALU_ResultM_r <= 32'b0;
+            ReadDataM_r <= 32'b0;
         end
         else begin
             RegWriteM_r <= RegWriteM; 

@@ -1,14 +1,16 @@
 module Execute_Cycle(
     input clk, rst,
     input RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE,
-    input [2:0] ALUControlE,
+    input [3:0] ALUControlE,
+    input [1:0] CondE,
+    input [1:0] TypeE,
     input [1:0] ShiftTypeE,
     input [4:0] ShiftAmountE,
     input [31:0] RD1_E, RD2_E, Imm_Ext_E,
     input [4:0] RS1_E, RS2_E, RD_E,
     input [31:0] PCE, PCPlus4E,
     input [31:0] ResultW,
-    input [1:0] ForwardA_E, ForwardB_E,
+    input [1:0] ForwardAE, ForwardBE,
 
     output PCSrcE, RegWriteM, MemWriteM, ResultSrcM,
     output [4:0] RD_M, 
@@ -21,12 +23,24 @@ module Execute_Cycle(
     wire [31:0] Src_A, Src_B_interim, Src_B;
     wire [31:0] ALU_Result;
     wire [3:0] ALUFlags;
-
-    // Declaration of Register
+    reg ConditionPassed;  // Declare ConditionPassed as a reg
+	 
+    // Declaration of Registers
     reg RegWriteE_r, MemWriteE_r, ResultSrcE_r;
     reg [4:0] RD_E_r;
     reg [31:0] PCPlus4E_r, WriteDataE_r, ALU_ResultE_r;
     reg [3:0] ALUFlagsE_r;
+
+    // Condition checking logic
+    always @(*) begin
+        case(CondE)
+            2'b00: ConditionPassed = 1'b1; // AL
+            2'b01: ConditionPassed = ALUFlags[2]; // EQ
+            2'b10: ConditionPassed = !ALUFlags[2]; // NE
+            2'b11: ConditionPassed = ALUFlags[3] == ALUFlags[1]; // GE
+            default: ConditionPassed = 1'b0; // Default case
+        endcase
+    end
 
     // 3 by 1 Mux for Source A
     Mux_3_by_1 srca_mux (
@@ -45,7 +59,7 @@ module Execute_Cycle(
         .s(ForwardBE),
         .d(Src_B_interim)
     );
-
+	 
     // ALU Src Mux
     Mux alu_src_mux (
         .a(Src_B_interim),
@@ -54,12 +68,13 @@ module Execute_Cycle(
         .c(Src_B)
     );
 
-    // Updated ALU Unit
+    // ALU Unit
     ALU alu (
         .A(Src_A),
         .B(Src_B),
         .ALUControl(ALUControlE),
         .ShiftType(ShiftTypeE),
+        .Type(TypeE),
         .ShiftAmount(ShiftAmountE),
         .Result(ALU_Result),
         .Flags(ALUFlags)
@@ -97,7 +112,7 @@ module Execute_Cycle(
     end
 
     // Output Assignments
-    assign PCSrcE = BranchE & ALUFlags[2]; // Branch if Z flag is set
+    assign PCSrcE = BranchE & ConditionPassed;
     assign RegWriteM = RegWriteE_r;
     assign MemWriteM = MemWriteE_r;
     assign ResultSrcM = ResultSrcE_r;

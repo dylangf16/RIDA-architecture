@@ -47,7 +47,6 @@ vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/instrROM.v}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU.sv}
-vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/ALU_Decoder.sv}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Control_Unit.sv}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Data_Memory.sv}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Decode_Cycle.sv}
@@ -55,7 +54,6 @@ vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CP
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Fetch_Cycle.sv}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Hazard_Unit.sv}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Instruction_Memory.sv}
-vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Main_Decoder.sv}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Memory_Cycle.sv}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux.sv}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Mux_3_by_1.sv}
@@ -66,9 +64,9 @@ vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CP
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/Writeback_Cycle.sv}
 vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu.sv}
 
-vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb.sv}
+vlog -sv -work work +incdir+/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU {/home/dylanggf/Documents/Arqui1/RIDA-architecture/CPU/cpu_tb2.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  cpu_tb
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  cpu_tb2
 
 add wave *
 view structure

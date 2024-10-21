@@ -1,0 +1,405 @@
+# ERROR: No extended dataflow license exists
+# do /home/ale/Documents/GitHub/RIDA-architecture/CPU/simulation/modelsim/cpu_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:58 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v 
+# -- Compiling module drom
+# 
+# Top level modules:
+# 	drom
+# End time: 21:15:58 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:58 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v 
+# -- Compiling module dram
+# 
+# Top level modules:
+# 	dram
+# End time: 21:15:58 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/instrROM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:58 on Oct 20,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/instrROM.v 
+# -- Compiling module instrROM
+# 
+# Top level modules:
+# 	instrROM
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU_Decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/ALU_Decoder.sv 
+# -- Compiling module ALU_Decoder
+# 
+# Top level modules:
+# 	ALU_Decoder
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv 
+# -- Compiling module Control_Unit
+# 
+# Top level modules:
+# 	Control_Unit
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv 
+# -- Compiling module Data_Memory
+# 
+# Top level modules:
+# 	Data_Memory
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv 
+# -- Compiling module Decode_Cycle
+# 
+# Top level modules:
+# 	Decode_Cycle
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv 
+# -- Compiling module Execute_Cycle
+# 
+# Top level modules:
+# 	Execute_Cycle
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv 
+# -- Compiling module Fetch_Cycle
+# 
+# Top level modules:
+# 	Fetch_Cycle
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Hazard_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Hazard_Unit.sv 
+# -- Compiling module Hazard_Unit
+# 
+# Top level modules:
+# 	Hazard_Unit
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Instruction_Memory.sv 
+# -- Compiling module Instruction_Memory
+# 
+# Top level modules:
+# 	Instruction_Memory
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Main_Decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Main_Decoder.sv 
+# -- Compiling module Main_Decoder
+# 
+# Top level modules:
+# 	Main_Decoder
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv 
+# -- Compiling module Memory_Cycle
+# 
+# Top level modules:
+# 	Memory_Cycle
+# End time: 21:15:59 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:59 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux.sv 
+# -- Compiling module Mux
+# 
+# Top level modules:
+# 	Mux
+# End time: 21:16:00 on Oct 20,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:16:00 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv 
+# -- Compiling module Mux_3_by_1
+# 
+# Top level modules:
+# 	Mux_3_by_1
+# End time: 21:16:00 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:16:00 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Module.sv 
+# -- Compiling module PC_Module
+# 
+# Top level modules:
+# 	PC_Module
+# End time: 21:16:00 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:16:00 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/PC_Adder.sv 
+# -- Compiling module PC_Adder
+# 
+# Top level modules:
+# 	PC_Adder
+# End time: 21:16:00 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:16:00 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv 
+# -- Compiling module Register_File
+# 
+# Top level modules:
+# 	Register_File
+# End time: 21:16:00 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Sign_Extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:16:00 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Sign_Extend.sv 
+# -- Compiling module Sign_Extend
+# 
+# Top level modules:
+# 	Sign_Extend
+# End time: 21:16:00 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:16:00 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv 
+# -- Compiling module Writeback_Cycle
+# 
+# Top level modules:
+# 	Writeback_Cycle
+# End time: 21:16:00 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:16:00 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu.sv 
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# End time: 21:16:00 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU {/home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu_tb2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:16:00 on Oct 20,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/ale/Documents/GitHub/RIDA-architecture/CPU" /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu_tb2.sv 
+# -- Compiling module cpu_tb2
+# 
+# Top level modules:
+# 	cpu_tb2
+# End time: 21:16:00 on Oct 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  cpu_tb2
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" cpu_tb2 
+# Start time: 21:16:00 on Oct 20,2024
+# Loading sv_std.std
+# Loading work.cpu_tb2
+# Loading work.Fetch_Cycle
+# Loading work.Mux
+# Loading work.PC_Module
+# Loading work.Instruction_Memory
+# Loading work.instrROM
+# Loading altera_mf_ver.altsyncram
+# Loading work.PC_Adder
+# Loading work.Decode_Cycle
+# Loading work.Control_Unit
+# Loading work.Main_Decoder
+# Loading work.ALU_Decoder
+# Loading work.Register_File
+# Loading work.Sign_Extend
+# Loading work.Execute_Cycle
+# Loading work.Mux_3_by_1
+# Loading work.ALU
+# Loading work.Memory_Cycle
+# Loading work.Data_Memory
+# Loading work.drom
+# Loading work.dram
+# Loading work.Writeback_Cycle
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) /home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv(63): [PCDPC] - Port size (5) does not match connection size (4) for port 'A1'. The port definition is at: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb2/decode/rf File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv
+# ** Warning: (vsim-3015) /home/ale/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv(63): [PCDPC] - Port size (5) does not match connection size (4) for port 'A2'. The port definition is at: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb2/decode/rf File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Register_File.sv
+# ** Warning: (vsim-3015) /home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv(32): [PCDPC] - Port size (2) does not match connection size (1) for port 's'. The port definition is at: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb2/execute/srca_mux File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv
+# ** Warning: (vsim-3015) /home/ale/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv(41): [PCDPC] - Port size (2) does not match connection size (1) for port 's'. The port definition is at: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb2/execute/srcb_mux File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Mux_3_by_1.sv
+# ** Warning: (vsim-3017) /home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv(14): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb2/memory/dmem/rom_data File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v
+# ** Warning: (vsim-3722) /home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv(14): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) /home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv(14): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3017) /home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv(26): [TFMPC] - Too few port connections. Expected 9, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb2/memory/dmem/ram_result File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v
+# ** Warning: (vsim-3722) /home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv(26): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) /home/ale/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv(26): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3015) /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu_tb2.sv(133): [PCDPC] - Port size (32) does not match connection size (1) for port 'ResultW'. The port definition is at: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb2/WriteBack File: /home/ale/Documents/GitHub/RIDA-architecture/CPU/Writeback_Cycle.sv
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libpthread.so.0 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/librt.so.1 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libdl.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libm.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libc.so.6 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/ld-linux.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3116) Problem reading symbols from /lib/i386-linux-gnu/libnss_files.so.2 : module was loaded at an absolute address.
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "./Memory/image.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/altera_mf.v(263)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb2/memory/dmem/rom_data/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read ./Memory/image.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "./Memory/image.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/altera_mf.v(48976)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb2/memory/dmem/rom_data/altsyncram_component/m_default/altsyncram_inst
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "./Memory/result.mif" for reading.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/altera_mf.v(263)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb2/memory/dmem/ram_result/altsyncram_component/m_default/altsyncram_inst
+# ERROR: cannot read ./Memory/result.mif.
+# ** Warning: (vsim-7) Failed to open readmem file "./Memory/result.ver" in read mode.
+# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/18.1std/625/l64/work/modelsim/eda/sim_lib/altera_mf.v(48976)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_tb2/memory/dmem/ram_result/altsyncram_component/m_default/altsyncram_inst
+# Time: 36000
+# Instruction: 00b00214
+# ALU Control: 000
+# RD1: xxxxxxxx, RD2: xxxxxxxx
+# ALU Result: xxxxxxxx
+# ALU Flags (NZCV): xxxx
+# Destination Register (RD_M):  0
+# -----------------------------
+# Time: 46000
+# Instruction: 01000000
+# ALU Control: 010
+# RD1: xxxxxxxx, RD2: xxxxxxxx
+# ALU Result: xxxxxxxx
+# ALU Flags (NZCV): xxxx
+# Destination Register (RD_M):  X
+# -----------------------------
+# Time: 56000
+# Instruction: 00b10210
+# ALU Control: 010
+# RD1: xxxxxxxx, RD2: xxxxxxxx
+# ALU Result: xxxxxxxx
+# ALU Flags (NZCV): xxxx
+# Destination Register (RD_M):  5
+# -----------------------------
+# Time: 66000
+# Instruction: 01011000
+# ALU Control: 010
+# RD1: xxxxxxxx, RD2: xxxxxxxx
+# ALU Result: xxxxxxxx
+# ALU Flags (NZCV): xxxx
+# Destination Register (RD_M):  8
+# -----------------------------
+# Time: 76000
+# Instruction: xxxxxxxx
+# ALU Control: 010
+# RD1: xxxxxxxx, RD2: xxxxxxxx
+# ALU Result: xxxxxxxx
+# ALU Flags (NZCV): xxxx
+# Destination Register (RD_M):  5
+# -----------------------------
+# Time: 86000
+# Instruction: xxxxxxxx
+# ALU Control: 000
+# RD1: xxxxxxxx, RD2: xxxxxxxx
+# ALU Result: xxxxxxxx
+# ALU Flags (NZCV): xxxx
+# Destination Register (RD_M):  8
+# -----------------------------
+# Time: 96000
+# Instruction: xxxxxxxx
+# ALU Control: 000
+# RD1: xxxxxxxx, RD2: xxxxxxxx
+# ALU Result: xxxxxxxx
+# ALU Flags (NZCV): xxxx
+# Destination Register (RD_M):  X
+# -----------------------------
+# Time: 106000
+# Instruction: xxxxxxxx
+# ALU Control: 000
+# RD1: xxxxxxxx, RD2: xxxxxxxx
+# ALU Result: xxxxxxxx
+# ALU Flags (NZCV): xxxx
+# Destination Register (RD_M):  X
+# -----------------------------
+# Time: 116000
+# Instruction: xxxxxxxx
+# ALU Control: 000
+# RD1: xxxxxxxx, RD2: xxxxxxxx
+# ALU Result: xxxxxxxx
+# ALU Flags (NZCV): xxxx
+# Destination Register (RD_M):  X
+# -----------------------------
+# Time: 126000
+# Instruction: xxxxxxxx
+# ALU Control: 000
+# RD1: xxxxxxxx, RD2: xxxxxxxx
+# ALU Result: xxxxxxxx
+# ALU Flags (NZCV): xxxx
+# Destination Register (RD_M):  X
+# -----------------------------
+# ** Note: $finish    : /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu_tb2.sv(189)
+#    Time: 126 ns  Iteration: 0  Instance: /cpu_tb2
+# 1
+# Break in Module cpu_tb2 at /home/ale/Documents/GitHub/RIDA-architecture/CPU/cpu_tb2.sv line 189
+# End time: 21:19:00 on Oct 20,2024, Elapsed time: 0:03:00
+# Errors: 0, Warnings: 23
