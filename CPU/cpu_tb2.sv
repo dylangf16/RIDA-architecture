@@ -3,6 +3,12 @@ module cpu_tb2;
     // Signals
     reg clk, rst;
     
+	 // Nuevas señales para Control_Unit
+    wire RegWrite, ALUSrc, MemWrite, ResultSrc, Branch;
+    wire [1:0] ImmSrc;
+    wire [3:0] ALUControl;
+    wire MemRead, Push, Pop;
+	 
     // Fetch Cycle
     wire [31:0] InstrD, PCD, PCPlus4D;
     wire [31:0] PCTargetE;
@@ -75,6 +81,24 @@ module cpu_tb2;
         .MemReadE(MemReadE),
         .PushE(PushE),
         .PopE(PopE)
+    );
+	 
+	 Control_Unit control_unit (
+        .cond(CondE),
+        .tipo(TypeE),
+        .opcode(InstrD[31:29]),  // Asumiendo que el opcode está en estos bits
+        .flag_mov_shift(ShiftTypeE),
+        .index_flag(IndexedAddrE),
+        .RegWrite(RegWrite),
+        .ALUSrc(ALUSrc),
+        .MemWrite(MemWrite),
+        .ResultSrc(ResultSrc),
+        .Branch(Branch),
+        .ImmSrc(ImmSrc),
+        .ALUControl(ALUControl),
+        .MemRead(MemRead),
+        .Push(Push),
+        .Pop(Pop)
     );
 
     Execute_Cycle execute (
@@ -173,7 +197,7 @@ module cpu_tb2;
         #10 rst = 1;
         
         // Run for some cycles
-        #200;
+        #10000;
         
         // End simulation
         $finish;
@@ -182,12 +206,14 @@ module cpu_tb2;
     // Display pipeline stage information
     always @(posedge clk) begin
         $display("\nTime: %0t", $time);
-        
-        // Fetch Stage
+		  
+		  // Fetch Stage
         $display("Fetch Stage:");
         $display("  InstrD: %b", InstrD);
         $display("  PCD: %0d", PCD);
         $display("  PCPlus4D: %0d", PCPlus4D);
+		  $display("--------------------------------");
+
         
         // Decode Stage
         $display("Decode Stage:");
@@ -213,6 +239,8 @@ module cpu_tb2;
         $display("  MemReadE: %b", MemReadE);
         $display("  PushE: %b", PushE);
         $display("  PopE: %b", PopE);
+		  $display("--------------------------------");
+
         
         // Execute Stage
         $display("Execute Stage:");
@@ -221,6 +249,8 @@ module cpu_tb2;
         $display("  ALUFlagsE: %b", ALUFlagsE);
         $display("  ForwardAE: %b", ForwardAE);
         $display("  ForwardBE: %b", ForwardBE);
+		  $display("--------------------------------");
+
         
         // Memory Stage
         $display("Memory Stage:");
@@ -232,6 +262,8 @@ module cpu_tb2;
         $display("  WriteDataM: %b", WriteDataM);
         $display("  ALU_ResultM: %b", ALU_ResultM);
         $display("  StackPointer: %0d", StackPointer);
+		  $display("--------------------------------");
+
         
         // Writeback Stage
         $display("Writeback Stage:");
@@ -242,6 +274,47 @@ module cpu_tb2;
         $display("  ALU_ResultW: %b", ALU_ResultW);
         $display("  ReadDataW: %b", ReadDataW);
         $display("  ResultW: %b", ResultW);
+		  $display("--------------------------------");
+
+        
+        // Nuevas impresiones de depuración para Control_Unit
+        $display("Control Unit:");
+        $display("  RegWrite: %b", RegWrite);
+        $display("  ALUSrc: %b", ALUSrc);
+        $display("  MemWrite: %b", MemWrite);
+        $display("  ResultSrc: %b", ResultSrc);
+        $display("  Branch: %b", Branch);
+        $display("  ImmSrc: %b", ImmSrc);
+        $display("  ALUControl: %b", ALUControl);
+        $display("  MemRead: %b", MemRead);
+        $display("  Push: %b", Push);
+        $display("  Pop: %b", Pop);
+		  $display("--------------------------------");
+
+        
+        // Impresiones de depuración para Register_File
+        $display("Register File:");
+        $display("  WE3: %b", RegWriteW);
+        $display("  A1: %b", RS1_E);
+        $display("  A2: %b", RS2_E);
+        $display("  A3: %b", RDW);
+        $display("  WD3: %b", ResultW);
+        $display("  RD1: %b", RD1_E);
+        $display("  RD2: %b", RD2_E);
+		  $display("--------------------------------");
+
+        
+        // Impresiones de depuración para Hazard_Unit
+        $display("Hazard Unit:");
+        $display("  RegWriteM: %b", RegWriteM);
+        $display("  RegWriteW: %b", RegWriteW);
+        $display("  RD_M: %b", RD_M);
+        $display("  RD_W: %b", RDW);
+        $display("  Rs1_E: %b", RS1_E);
+        $display("  Rs2_E: %b", RS2_E);
+        $display("  ForwardAE: %b", ForwardAE);
+        $display("  ForwardBE: %b", ForwardBE);
+        
         $display("--------------------------------------------------------------------------------------");
     end
 endmodule
