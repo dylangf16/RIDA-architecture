@@ -128,6 +128,17 @@ module cpu_tb2();
         .ALU_ResultW(ALU_ResultW),
         .ReadDataW(ReadDataW)
     );
+	 
+	     // Write Back Stage
+    Writeback_Cycle WriteBack (
+                        .clk(clk), 
+                        .rst(rst), 
+                        .ResultSrcW(ResultSrcW), 
+                        .PCPlus4W(PCPlus4W), 
+                        .ALU_ResultW(ALU_ResultW), 
+                        .ReadDataW(ReadDataW), 
+                        .ResultW(ResultW)
+                    );
 
     // Extract signals from InstrD
     assign cond = InstrD[31:30];
