@@ -173,15 +173,77 @@ module cpu_tb2();
 
 		          // Monitor and display signals for 10 clock cycles
         repeat(10) begin
-            @(posedge clk);
+           @(posedge clk);
             #1; // Wait for signals to stabilize
             $display("Time: %0t", $time);
-            $display("Instruction: %h", InstrD);
-            $display("ALU Control: %b", ALUControlE);
-            $display("RD1: %h, RD2: %h", RD1_E, RD2_E);
-            $display("ALU Result: %h", ALU_ResultM);
+            $display("Instruction: %b", InstrD);
+            $display("Condition: %b", cond);
+            $display("Type: %b", tipo);
+            $display("Opcode: %b", opcode);
+            $display("Rd: %b", Rd);
+            $display("Rn: %b", Rn);
+            $display("Flag MOV with Shift: %b", flag_mov_shift);
+            $display("Flag Memory Index: %b", flag_mem_index);
+            $display("Operand2: %b", Operando2);
+            
+            // Decode the instruction and display operation
+            case (tipo)
+                2'b00: begin // REG type
+                    case (opcode)
+                        3'b000: $display("Operation: ADD R%0d, R%0d, R%0d", Rd, Rn, Operando2[3:0]);
+                        3'b001: $display("Operation: SUB R%0d, R%0d, R%0d", Rd, Rn, Operando2[3:0]);
+                        3'b010: $display("Operation: AND R%0d, R%0d, R%0d", Rd, Rn, Operando2[3:0]);
+                        3'b011: begin
+                            case (flag_mov_shift)
+                                2'b00: $display("Operation: MOV R%0d, R%0d", Rd, Rn);
+                                2'b01: $display("Operation: MOV R%0d, R%0d, LSR #%0d", Rd, Rn, ShiftAmountE);
+                                2'b10: $display("Operation: MOV R%0d, R%0d, LSL #%0d", Rd, Rn, ShiftAmountE);
+                            endcase
+                        end
+                        3'b100: $display("Operation: CMP R%0d, R%0d", Rn, Operando2[3:0]);
+                        3'b101: $display("Operation: UDIV R%0d, R%0d, R%0d", Rd, Rn, Operando2[3:0]);
+                        3'b110: $display("Operation: SUBS R%0d, R%0d, R%0d", Rd, Rn, Operando2[3:0]);
+                        3'b111: $display("Operation: MUL R%0d, R%0d, R%0d", Rd, Rn, Operando2[3:0]);
+                    endcase
+                end
+                2'b01: begin // IMM type
+                    case (opcode)
+                        3'b000: $display("Operation: ADD R%0d, R%0d, #%0d", Rd, Rn, Operando2);
+                        3'b001: $display("Operation: SUB R%0d, R%0d, #%0d", Rd, Rn, Operando2);
+                        3'b010: $display("Operation: AND R%0d, R%0d, #%0d", Rd, Rn, Operando2);
+                        3'b011: $display("Operation: MOV R%0d, #%0d", Rd, Operando2);
+                        3'b100: $display("Operation: CMP R%0d, #%0d", Rn, Operando2);
+                        3'b101: $display("Operation: LSL R%0d, R%0d, #%0d", Rd, Rn, Operando2[4:0]);
+                    endcase
+                end
+                2'b10: begin // MEM type
+                    case (opcode)
+                        3'b000: $display("Operation: LDR R%0d, [R%0d, #%0d]", Rd, Rn, Operando2);
+                        3'b001: $display("Operation: LDRB R%0d, [R%0d, #%0d]", Rd, Rn, Operando2);
+                        3'b010: $display("Operation: STR R%0d, [R%0d, #%0d]", Rd, Rn, Operando2);
+                        3'b011: $display("Operation: STRB R%0d, [R%0d, #%0d]", Rd, Rn, Operando2);
+                    endcase
+                end
+                2'b11: begin // CTRL type
+                    case (opcode)
+                        3'b000: $display("Operation: B #%0d", {{18{Operando2[13]}}, Operando2});
+                        3'b001: $display("Operation: PUSH {R%0d}", Rd);
+                        3'b010: $display("Operation: POP {R%0d}", Rd);
+                    endcase
+                end
+            endcase
+
+            $display("ALU Result: %0d", ALU_ResultM);
             $display("ALU Flags (NZCV): %b", ALUFlagsE);
-            $display("Destination Register (RD_M): %d", RD_M);
+            
+            // Display Memory Cycle outputs
+            $display("Memory Cycle Outputs:");
+            $display("  RegWriteW: %b", RegWriteW);
+            $display("  ResultSrcW: %b", ResultSrcW);
+            $display("  RD_W: %d", RD_W);
+            $display("  PCPlus4W: %h", PCPlus4W);
+            $display("  ALU_ResultW: %h", ALU_ResultW);
+            $display("  ReadDataW: %h", ReadDataW);
             $display("-----------------------------");
         end
 
