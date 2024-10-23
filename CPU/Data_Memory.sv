@@ -1,34 +1,52 @@
 module Data_Memory(
-    input clk, rst, WE,
-    input [31:0] A, WD,
-    input IndexedAddr,
-    input [31:0] IndexValue,
-    input ByteOp,
-    input StackOp,
-    input [31:0] StackPointer,
-    output reg [31:0] RD
+    input clk,
+    input rst,
+    input WE,
+    input [31:0] A,
+    input [31:0] WD,
+    output [31:0] RD
 );
 
-    reg [7:0] mem [0:1023]; // Byte-addressable memory
+    // ROM for pixel data
+    logic [7:0] pixel_data;
+    logic [17:0] pixel_address;
+    
+    drom rom_data (
+    .clock(clk),
+    .address_a(pixel_address),
+    .q_a(pixel_data)
+    );
+    
+    // RAM for results
+    logic [31:0] pixel_result;
+    logic [31:0] ram_data;
+    logic [17:0] pixel_address_result;
+    logic [31:0] protected_write_data;
 
-    wire [31:0] EffectiveAddress = IndexedAddr ? A + IndexValue : 
-                                   StackOp ? StackPointer : A;
-
-    always @(posedge clk) begin
+    dram ram_result(
+        .address_a(A[17:0]),
+        .address_b(pixel_address_result),
+        .clock(clk),
+        .data_a(protected_write_data),
+        .wren_a(WE),  
+        .q_a(ram_data),
+        .q_b(pixel_result)
+    );
+    
+    always_comb begin
         if (WE) begin
-            if (ByteOp)
-                mem[EffectiveAddress] <= WD[7:0];
-            else
-                {mem[EffectiveAddress+3], mem[EffectiveAddress+2], 
-                 mem[EffectiveAddress+1], mem[EffectiveAddress]} <= WD;
+            protected_write_data[31:6] = WD[31:6];
+            protected_write_data[5:0] = ram_data[5:0];  // Preserve existing 6 bits
+        end else begin
+            protected_write_data = WD;  // Not used when not writing
         end
     end
-
-    always @(*) begin
-        if (ByteOp)
-            RD = {24'b0, mem[EffectiveAddress]};
-        else
-            RD = {mem[EffectiveAddress+3], mem[EffectiveAddress+2], 
-                  mem[EffectiveAddress+1], mem[EffectiveAddress]};
+    
+    assign RD = rst ? ram_data : 32'd0;
+    // Address calculation
+    always_comb begin
+        pixel_address = A[17:0];
+        pixel_address_result = A[17:0];
     end
+
 endmodule

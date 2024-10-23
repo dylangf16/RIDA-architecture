@@ -83,24 +83,7 @@ module cpu_tb2;
         .PopE(PopE)
     );
 	 
-	 Control_Unit control_unit (
-        .cond(CondE),
-        .tipo(TypeE),
-        .opcode(InstrD[31:29]),  // Asumiendo que el opcode está en estos bits
-        .flag_mov_shift(ShiftTypeE),
-        .index_flag(IndexedAddrE),
-        .RegWrite(RegWrite),
-        .ALUSrc(ALUSrc),
-        .MemWrite(MemWrite),
-        .ResultSrc(ResultSrc),
-        .Branch(Branch),
-        .ImmSrc(ImmSrc),
-        .ALUControl(ALUControl),
-        .MemRead(MemRead),
-        .Push(Push),
-        .Pop(Pop)
-    );
-
+	
     Execute_Cycle execute (
         .clk(clk),
         .rst(rst),
@@ -137,7 +120,7 @@ module cpu_tb2;
         .ALUFlagsE(ALUFlagsE)
     );
 
-    Memory_Cycle memory (
+    Memory_Cycle dut (
         .clk(clk),
         .rst(rst),
         .RegWriteM(RegWriteM),
@@ -147,18 +130,12 @@ module cpu_tb2;
         .PCPlus4M(PCPlus4M),
         .WriteDataM(WriteDataM),
         .ALU_ResultM(ALU_ResultM),
-        .IndexedAddrM(IndexedAddrE),
-        .RD2_M(RD2_E),
-        .ByteOpM(1'b0), // Assuming no byte operations for now
-        .PushM(PushE),
-        .PopM(PopE),
         .RegWriteW(RegWriteW),
         .ResultSrcW(ResultSrcW),
-        .RD_W(RDW),
+        .RD_W(RD_W),
         .PCPlus4W(PCPlus4W),
         .ALU_ResultW(ALU_ResultW),
-        .ReadDataW(ReadDataW),
-        .StackPointer(StackPointer)
+        .ReadDataW(ReadDataW)
     );
 
     Writeback_Cycle writeback (

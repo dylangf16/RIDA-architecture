@@ -45,22 +45,18 @@ module Decode_Cycle (
 
     // Unidad de Control
     Control_Unit control (
-        .cond(cond),
-        .tipo(tipo),
-        .opcode(opcode),
-        .flag_mov_shift(shift_flag),
-        .index_flag(index_flag),
-        .RegWrite(RegWriteD),
-        .ImmSrc(ImmSrcD),
-        .ALUSrc(ALUSrcD),
-        .MemWrite(MemWriteD),
-        .ResultSrc(ResultSrcD),
-        .Branch(BranchD),
-        .ALUControl(ALUControlD),
-        .MemRead(MemReadD),
-        .Push(PushD),
-        .Pop(PopD)
-    );
+    .cond(cond),               // Condición (Bits 31:30)
+    .tipo(tipo),               // Tipo de instrucción (Bits 29:28)
+    .opcode(opcode),           // Opcode (Bits 27:25)
+    .flag_mov_shift(flag_mov_shift),  // Flag MOV con Shift (Bits 16:15)
+    .RegWrite(RegWriteD),      // Señal de escritura en registro
+    .ImmSrc(ImmSrcD),          // Fuente del inmediato
+    .ALUSrc(ALUSrcD),          // Selección de ALU fuente (registro o inmediato)
+    .MemWrite(MemWriteD),      // Señal de escritura en memoria
+    .ResultSrc(ResultSrcD),    // Fuente del resultado (ALU o memoria)
+    .Branch(BranchD),          // Señal de branch (salto)
+    .ALUControl(ALUControlD)   // Control de la ALU
+	);
 
     // Archivo de Registros
     Register_File rf (

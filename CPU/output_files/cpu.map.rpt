@@ -1,5 +1,5 @@
 Analysis & Elaboration report for cpu
-Mon Oct 21 18:02:55 2024
+Wed Oct 23 10:52:33 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -11,17 +11,24 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   3. Parallel Compilation
   4. Analysis & Elaboration IP Cores Summary
   5. Source assignments for Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component|altsyncram_9nf1:auto_generated
-  6. Parameter Settings for User Entity Instance: Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component
-  7. altsyncram Parameter Settings by Entity Instance
-  8. Analysis & Elaboration Settings
-  9. Port Connectivity Checks: "Memory_Cycle:Memory|Data_Memory:dmem"
- 10. Port Connectivity Checks: "Memory_Cycle:Memory"
- 11. Port Connectivity Checks: "Execute_Cycle:Execute"
- 12. Port Connectivity Checks: "Decode_Cycle:Decode|Sign_Extend:extension"
- 13. Port Connectivity Checks: "Decode_Cycle:Decode|Register_File:rf"
- 14. Port Connectivity Checks: "Decode_Cycle:Decode"
- 15. Port Connectivity Checks: "Fetch_Cycle:Fetch|PC_Adder:PC_adder"
- 16. Analysis & Elaboration Messages
+  6. Source assignments for Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component|altsyncram_l092:auto_generated
+  7. Source assignments for Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result|altsyncram:altsyncram_component|altsyncram_agp2:auto_generated
+  8. Parameter Settings for User Entity Instance: Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component
+  9. Parameter Settings for User Entity Instance: Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component
+ 10. Parameter Settings for User Entity Instance: Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result|altsyncram:altsyncram_component
+ 11. altsyncram Parameter Settings by Entity Instance
+ 12. Analysis & Elaboration Settings
+ 13. Port Connectivity Checks: "Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result"
+ 14. Port Connectivity Checks: "Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data"
+ 15. Port Connectivity Checks: "Execute_Cycle:Execute"
+ 16. Port Connectivity Checks: "Decode_Cycle:Decode|Sign_Extend:extension"
+ 17. Port Connectivity Checks: "Decode_Cycle:Decode|Register_File:rf"
+ 18. Port Connectivity Checks: "Decode_Cycle:Decode|Control_Unit:control|ALU_Decoder:ALU_Decoder"
+ 19. Port Connectivity Checks: "Decode_Cycle:Decode|Control_Unit:control|Main_Decoder:Main_Decoder"
+ 20. Port Connectivity Checks: "Decode_Cycle:Decode|Control_Unit:control"
+ 21. Port Connectivity Checks: "Decode_Cycle:Decode"
+ 22. Port Connectivity Checks: "Fetch_Cycle:Fetch|PC_Adder:PC_adder"
+ 23. Analysis & Elaboration Messages
 
 
 
@@ -48,7 +55,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Oct 21 18:02:55 2024          ;
+; Analysis & Elaboration Status ; Successful - Wed Oct 23 10:52:33 2024          ;
 ; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                 ; cpu                                            ;
 ; Top-level Entity Name         ; cpu                                            ;
@@ -85,6 +92,7 @@ https://fpgasoftware.intel.com/eula.
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                  ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+-----------------+
 ; Altera ; ROM: 1-PORT  ; 22.1    ; N/A          ; N/A          ; |cpu|Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst ; instrROM.v      ;
+; Altera ; ROM: 2-PORT  ; 22.1    ; N/A          ; N/A          ; |cpu|Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data          ; Memory/drom.v   ;
 +--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+-----------------+
 
 
@@ -95,6 +103,24 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                   ;
 +---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component|altsyncram_l092:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                         ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                          ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result|altsyncram:altsyncram_component|altsyncram_agp2:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                           ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                            ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------+
@@ -158,12 +184,134 @@ https://fpgasoftware.intel.com/eula.
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+---------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                                ;
++------------------------------------+----------------------+---------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                             ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                        ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                             ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT      ; Untyped                                                             ;
+; WIDTH_A                            ; 8                    ; Signed Integer                                                      ;
+; WIDTHAD_A                          ; 18                   ; Signed Integer                                                      ;
+; NUMWORDS_A                         ; 160000               ; Signed Integer                                                      ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                                             ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                             ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                             ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                             ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                             ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                             ;
+; WIDTH_B                            ; 8                    ; Signed Integer                                                      ;
+; WIDTHAD_B                          ; 18                   ; Signed Integer                                                      ;
+; NUMWORDS_B                         ; 160000               ; Signed Integer                                                      ;
+; INDATA_REG_B                       ; CLOCK0               ; Untyped                                                             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK0               ; Untyped                                                             ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                             ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                             ;
+; OUTDATA_REG_B                      ; CLOCK0               ; Untyped                                                             ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                             ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                             ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                             ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                             ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                             ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                             ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                             ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                      ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                                                      ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                             ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                             ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                             ;
+; INIT_FILE                          ; ./Memory/image.mif   ; Untyped                                                             ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                             ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                             ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                             ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                             ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                             ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                             ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                             ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                             ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                             ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                             ;
+; CBXI_PARAMETER                     ; altsyncram_l092      ; Untyped                                                             ;
++------------------------------------+----------------------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-----------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                                  ;
++------------------------------------+----------------------+-----------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                               ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                            ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                          ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                          ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                        ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                               ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT      ; Untyped                                                               ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                                        ;
+; WIDTHAD_A                          ; 18                   ; Signed Integer                                                        ;
+; NUMWORDS_A                         ; 160006               ; Signed Integer                                                        ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                                               ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                               ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                               ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                               ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                               ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                               ;
+; WIDTH_B                            ; 32                   ; Signed Integer                                                        ;
+; WIDTHAD_B                          ; 18                   ; Signed Integer                                                        ;
+; NUMWORDS_B                         ; 160006               ; Signed Integer                                                        ;
+; INDATA_REG_B                       ; CLOCK0               ; Untyped                                                               ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK0               ; Untyped                                                               ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                               ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                               ;
+; OUTDATA_REG_B                      ; CLOCK0               ; Untyped                                                               ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                               ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                               ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                               ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                               ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                               ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                               ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                               ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                        ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                                                        ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                               ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                               ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                               ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                               ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                               ;
+; INIT_FILE                          ; ./Memory/result.mif  ; Untyped                                                               ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                               ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                               ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                               ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                               ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                               ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                               ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                               ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                               ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                               ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                               ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                               ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                               ;
+; CBXI_PARAMETER                     ; altsyncram_agp2      ; Untyped                                                               ;
++------------------------------------+----------------------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                                                                        ;
 +-------------------------------------------+---------------------------------------------------------------------------------------------+
 ; Name                                      ; Value                                                                                       ;
 +-------------------------------------------+---------------------------------------------------------------------------------------------+
-; Number of entity instances                ; 1                                                                                           ;
+; Number of entity instances                ; 3                                                                                           ;
 ; Entity Instance                           ; Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                                                                         ;
 ;     -- WIDTH_A                            ; 32                                                                                          ;
@@ -173,6 +321,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- NUMWORDS_B                         ; 1                                                                                           ;
 ;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                      ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                   ;
+; Entity Instance                           ; Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component          ;
+;     -- OPERATION_MODE                     ; BIDIR_DUAL_PORT                                                                             ;
+;     -- WIDTH_A                            ; 8                                                                                           ;
+;     -- NUMWORDS_A                         ; 160000                                                                                      ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                                                      ;
+;     -- WIDTH_B                            ; 8                                                                                           ;
+;     -- NUMWORDS_B                         ; 160000                                                                                      ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                                                      ;
+;     -- OUTDATA_REG_B                      ; CLOCK0                                                                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                   ;
+; Entity Instance                           ; Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result|altsyncram:altsyncram_component        ;
+;     -- OPERATION_MODE                     ; BIDIR_DUAL_PORT                                                                             ;
+;     -- WIDTH_A                            ; 32                                                                                          ;
+;     -- NUMWORDS_A                         ; 160006                                                                                      ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                                                      ;
+;     -- WIDTH_B                            ; 32                                                                                          ;
+;     -- NUMWORDS_B                         ; 160006                                                                                      ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                                                      ;
+;     -- OUTDATA_REG_B                      ; CLOCK0                                                                                      ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                        ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                   ;
 +-------------------------------------------+---------------------------------------------------------------------------------------------+
@@ -265,27 +435,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "Memory_Cycle:Memory|Data_Memory:dmem" ;
-+--------------------+-------+----------+--------------------------+
-; Port               ; Type  ; Severity ; Details                  ;
-+--------------------+-------+----------+--------------------------+
-; StackPointer[1..0] ; Input ; Info     ; Stuck at VCC             ;
-+--------------------+-------+----------+--------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result"                                                                                          ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                      ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; q_b    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
+; data_b ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; wren_b ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Memory_Cycle:Memory"                                                                                                                                 ;
-+--------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                                                                                      ;
-+--------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; IndexedAddrM ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; RD2_M        ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; ByteOpM      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; PushM        ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; PopM         ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; StackPointer ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-+--------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data"                                                                                               ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; q_a       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
+; address_b ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; q_b       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -323,6 +492,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Decode_Cycle:Decode|Control_Unit:control|ALU_Decoder:ALU_Decoder"                                                                             ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; ALUOp ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (2 bits) it drives.  Extra input bit(s) "ALUOp[1..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Decode_Cycle:Decode|Control_Unit:control|Main_Decoder:Main_Decoder"                                                       ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                  ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; ALUOp ; Output ; Warning  ; Output or bidir port (2 bits) is wider than the port expression (1 bits) it drives; bit(s) "ALUOp[1..1]" have no fanouts ;
++-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Decode_Cycle:Decode|Control_Unit:control"                                                                                                                                       ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                                                               ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; flag_mov_shift ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (2 bits) it drives.  Extra input bit(s) "flag_mov_shift[1..1]" will be connected to GND.                ;
+; ALUControl     ; Output ; Warning  ; Output or bidir port (3 bits) is smaller than the port expression (4 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND. ;
++----------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "Decode_Cycle:Decode"                                                                                                                   ;
 +--------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------+
@@ -357,7 +554,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Mon Oct 21 18:02:42 2024
+    Info: Processing started: Wed Oct 23 10:52:24 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpu -c cpu --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -416,11 +613,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file Execute
     Info (12023): Found entity 1: Execute_Cycle_tb File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file Memory_Cycle_tb.sv
     Info (12023): Found entity 1: Memory_Cycle_tb File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle_tb.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at Decode_Cycle.sv(53): created implicit net for "RegWriteD" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 53
-Warning (10236): Verilog HDL Implicit Net warning at Decode_Cycle.sv(55): created implicit net for "ALUSrcD" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 55
-Warning (10236): Verilog HDL Implicit Net warning at Decode_Cycle.sv(56): created implicit net for "MemWriteD" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 56
-Warning (10236): Verilog HDL Implicit Net warning at Decode_Cycle.sv(57): created implicit net for "ResultSrcD" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 57
-Warning (10236): Verilog HDL Implicit Net warning at Decode_Cycle.sv(58): created implicit net for "BranchD" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 58
+Warning (10236): Verilog HDL Implicit Net warning at Control_Unit.sv(20): created implicit net for "ALUOp" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at Decode_Cycle.sv(51): created implicit net for "flag_mov_shift" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 51
+Warning (10236): Verilog HDL Implicit Net warning at Decode_Cycle.sv(52): created implicit net for "RegWriteD" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 52
+Warning (10236): Verilog HDL Implicit Net warning at Decode_Cycle.sv(54): created implicit net for "ALUSrcD" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 54
+Warning (10236): Verilog HDL Implicit Net warning at Decode_Cycle.sv(55): created implicit net for "MemWriteD" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 55
+Warning (10236): Verilog HDL Implicit Net warning at Decode_Cycle.sv(56): created implicit net for "ResultSrcD" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 56
+Warning (10236): Verilog HDL Implicit Net warning at Decode_Cycle.sv(57): created implicit net for "BranchD" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at cpu_tb2.sv(135): created implicit net for "RD_W" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu_tb2.sv Line: 135
 Info (12127): Elaborating entity "cpu" for the top level hierarchy
 Info (12128): Elaborating entity "Fetch_Cycle" for hierarchy "Fetch_Cycle:Fetch" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 26
 Info (12128): Elaborating entity "Mux" for hierarchy "Fetch_Cycle:Fetch|Mux:PC_MUX" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 26
@@ -449,31 +649,108 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (12128): Elaborating entity "altsyncram_9nf1" for hierarchy "Fetch_Cycle:Fetch|Instruction_Memory:IMEM|instrROM:rom_inst|altsyncram:altsyncram_component|altsyncram_9nf1:auto_generated" File: /home/isa/intelFPGA_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "PC_Adder" for hierarchy "Fetch_Cycle:Fetch|PC_Adder:PC_adder" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Fetch_Cycle.sv Line: 49
 Info (12128): Elaborating entity "Decode_Cycle" for hierarchy "Decode_Cycle:Decode" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 52
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "Decode_Cycle:Decode|Control_Unit:control" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 63
-Warning (10270): Verilog HDL Case Statement warning at Control_Unit.sv(35): incomplete case statement has no default case item File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv Line: 35
-Info (10264): Verilog HDL Case Statement information at Control_Unit.sv(35): all case item expressions in this case statement are onehot File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv Line: 35
-Warning (10270): Verilog HDL Case Statement warning at Control_Unit.sv(53): incomplete case statement has no default case item File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv Line: 53
-Warning (10270): Verilog HDL Case Statement warning at Control_Unit.sv(68): incomplete case statement has no default case item File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv Line: 68
-Warning (10270): Verilog HDL Case Statement warning at Control_Unit.sv(79): incomplete case statement has no default case item File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv Line: 79
-Info (12128): Elaborating entity "Register_File" for hierarchy "Decode_Cycle:Decode|Register_File:rf" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 76
-Info (12128): Elaborating entity "Sign_Extend" for hierarchy "Decode_Cycle:Decode|Sign_Extend:extension" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 83
+Warning (10858): Verilog HDL warning at Decode_Cycle.sv(23): object MemReadD used but never assigned File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 23
+Warning (10858): Verilog HDL warning at Decode_Cycle.sv(23): object PushD used but never assigned File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 23
+Warning (10858): Verilog HDL warning at Decode_Cycle.sv(23): object PopD used but never assigned File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 23
+Warning (10030): Net "MemReadD" at Decode_Cycle.sv(23) has no driver or initial value, using a default initial value '0' File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 23
+Warning (10030): Net "PushD" at Decode_Cycle.sv(23) has no driver or initial value, using a default initial value '0' File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 23
+Warning (10030): Net "PopD" at Decode_Cycle.sv(23) has no driver or initial value, using a default initial value '0' File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 23
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "Decode_Cycle:Decode|Control_Unit:control" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 59
+Info (12128): Elaborating entity "Main_Decoder" for hierarchy "Decode_Cycle:Decode|Control_Unit:control|Main_Decoder:Main_Decoder" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv Line: 21
+Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "Decode_Cycle:Decode|Control_Unit:control|ALU_Decoder:ALU_Decoder" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Control_Unit.sv Line: 28
+Info (12128): Elaborating entity "Register_File" for hierarchy "Decode_Cycle:Decode|Register_File:rf" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 72
+Info (12128): Elaborating entity "Sign_Extend" for hierarchy "Decode_Cycle:Decode|Sign_Extend:extension" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Decode_Cycle.sv Line: 79
 Info (12128): Elaborating entity "Execute_Cycle" for hierarchy "Execute_Cycle:Execute" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 82
 Info (12128): Elaborating entity "Mux_3_by_1" for hierarchy "Execute_Cycle:Execute|Mux_3_by_1:srca_mux" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv Line: 52
 Info (12128): Elaborating entity "ALU" for hierarchy "Execute_Cycle:Execute|ALU:alu" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Execute_Cycle.sv Line: 81
 Warning (10270): Verilog HDL Case Statement warning at ALU.sv(21): incomplete case statement has no default case item File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/ALU.sv Line: 21
 Warning (10270): Verilog HDL Case Statement warning at ALU.sv(42): incomplete case statement has no default case item File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/ALU.sv Line: 42
 Info (12128): Elaborating entity "Memory_Cycle" for hierarchy "Memory_Cycle:Memory" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 101
-Warning (10240): Verilog HDL Always Construct warning at Memory_Cycle.sv(26): inferring latch(es) for variable "StackPointer", which holds its previous value in one or more paths through the always construct File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv Line: 26
-Info (10041): Inferred latch for "StackPointer[0]" at Memory_Cycle.sv(26) File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv Line: 26
-Info (10041): Inferred latch for "StackPointer[1]" at Memory_Cycle.sv(26) File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv Line: 26
-Info (12128): Elaborating entity "Data_Memory" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv Line: 48
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory_Cycle.sv Line: 29
+Info (12128): Elaborating entity "drom" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv Line: 18
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v Line: 94
+Info (12130): Elaborated megafunction instantiation "Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v Line: 94
+Info (12133): Instantiated megafunction "Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component" with the following parameter: File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory/drom.v Line: 94
+    Info (12134): Parameter "address_reg_b" = "CLOCK0"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK0"
+    Info (12134): Parameter "init_file" = "./Memory/image.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "160000"
+    Info (12134): Parameter "numwords_b" = "160000"
+    Info (12134): Parameter "operation_mode" = "BIDIR_DUAL_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "outdata_reg_b" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "widthad_a" = "18"
+    Info (12134): Parameter "widthad_b" = "18"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_b" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_l092.tdf
+    Info (12023): Found entity 1: altsyncram_l092 File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/db/altsyncram_l092.tdf Line: 34
+Info (12128): Elaborating entity "altsyncram_l092" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component|altsyncram_l092:auto_generated" File: /home/isa/intelFPGA_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_pma.tdf
+    Info (12023): Found entity 1: decode_pma File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/db/decode_pma.tdf Line: 23
+Info (12128): Elaborating entity "decode_pma" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component|altsyncram_l092:auto_generated|decode_pma:decode2" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/db/altsyncram_l092.tdf Line: 49
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_i2a.tdf
+    Info (12023): Found entity 1: decode_i2a File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/db/decode_i2a.tdf Line: 23
+Info (12128): Elaborating entity "decode_i2a" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component|altsyncram_l092:auto_generated|decode_i2a:rden_decode_a" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/db/altsyncram_l092.tdf Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_9hb.tdf
+    Info (12023): Found entity 1: mux_9hb File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/db/mux_9hb.tdf Line: 23
+Info (12128): Elaborating entity "mux_9hb" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem|drom:rom_data|altsyncram:altsyncram_component|altsyncram_l092:auto_generated|mux_9hb:mux4" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/db/altsyncram_l092.tdf Line: 53
+Info (12128): Elaborating entity "dram" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Data_Memory.sv Line: 34
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result|altsyncram:altsyncram_component" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v Line: 98
+Info (12130): Elaborated megafunction instantiation "Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result|altsyncram:altsyncram_component" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v Line: 98
+Info (12133): Instantiated megafunction "Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result|altsyncram:altsyncram_component" with the following parameter: File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/Memory/dram.v Line: 98
+    Info (12134): Parameter "address_reg_b" = "CLOCK0"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK0"
+    Info (12134): Parameter "init_file" = "./Memory/result.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone V"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "160006"
+    Info (12134): Parameter "numwords_b" = "160006"
+    Info (12134): Parameter "operation_mode" = "BIDIR_DUAL_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "outdata_reg_b" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "18"
+    Info (12134): Parameter "widthad_b" = "18"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_b" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_agp2.tdf
+    Info (12023): Found entity 1: altsyncram_agp2 File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/db/altsyncram_agp2.tdf Line: 34
+Info (12128): Elaborating entity "altsyncram_agp2" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result|altsyncram:altsyncram_component|altsyncram_agp2:auto_generated" File: /home/isa/intelFPGA_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_mib.tdf
+    Info (12023): Found entity 1: mux_mib File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/db/mux_mib.tdf Line: 23
+Info (12128): Elaborating entity "mux_mib" for hierarchy "Memory_Cycle:Memory|Data_Memory:dmem|dram:ram_result|altsyncram:altsyncram_component|altsyncram_agp2:auto_generated|mux_mib:mux4" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/db/altsyncram_agp2.tdf Line: 55
 Info (12128): Elaborating entity "Writeback_Cycle" for hierarchy "Writeback_Cycle:WriteBack" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 112
 Info (12128): Elaborating entity "Hazard_Unit" for hierarchy "Hazard_Unit:Forwarding_block" File: /home/isa/Documents/GitHub/RIDA-architecture/CPU/cpu.sv Line: 125
-Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 1015 megabytes
-    Info: Processing ended: Mon Oct 21 18:02:55 2024
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:33
+Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 1033 megabytes
+    Info: Processing ended: Wed Oct 23 10:52:33 2024
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:24
 
 

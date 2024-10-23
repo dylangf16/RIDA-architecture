@@ -1,5 +1,5 @@
 Flow report for cpu
-Mon Oct 21 18:02:55 2024
+Wed Oct 23 10:52:33 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-----------------------------+------------------------------------------------+
-; Flow Status                 ; Successful - Mon Oct 21 18:02:55 2024          ;
+; Flow Status                 ; Successful - Wed Oct 23 10:52:33 2024          ;
 ; Quartus Prime Version       ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name               ; cpu                                            ;
 ; Top-level Entity Name       ; cpu                                            ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/21/2024 18:02:43 ;
+; Start date & time ; 10/23/2024 10:52:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; cpu                 ;
 +-------------------+---------------------+
@@ -74,13 +74,13 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id       ;
 +--------------------------------------+----------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 77795283439939.172955536220269         ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                ; 86807781144879.172970234505322         ; --            ; --          ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; fetch_tb         ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; cpu_tb2          ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; cpu_tb           ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Memory_Cycle_tb  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Execute_Cycle_tb ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; fetch_tb                               ; --            ; --          ; eda_simulation   ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; cpu_tb2                                ; --            ; --          ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation   ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                     ; <None>        ; --          ; --               ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation   ;
@@ -119,8 +119,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:13     ; 1.0                     ; 1015 MB             ; 00:00:33                           ;
-; Total                  ; 00:00:13     ; --                      ; --                  ; 00:00:33                           ;
+; Analysis & Elaboration ; 00:00:09     ; 1.0                     ; 1033 MB             ; 00:00:24                           ;
+; Total                  ; 00:00:09     ; --                      ; --                  ; 00:00:24                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
