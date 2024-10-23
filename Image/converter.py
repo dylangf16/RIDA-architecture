@@ -11,46 +11,39 @@ def generarPixelesMIF(imagen_path):
         salida += f"\t{i}\t:\t{pixel:X};\n"  # Convertir los índices y los píxeles a hexadecimal
     salida += "END;"
     
-    return salida
+    with open("RomPixeles.txt", "w") as archivo:
+        archivo.write(salida)
 
-# Ejemplo de uso
-imagen_path_1 = "image.png"  # Ruta de la imagen
-resultado_1 = generarPixelesMIF(imagen_path_1)
-
-# Guardar el resultado en un archivo de texto
-with open("resultado_pixeles.txt", "w") as archivo:
-    archivo.write(resultado_1)
-
-print("Proceso completado. Resultado guardado en 'resultado_pixeles.txt'")
-
-from PIL import Image
-
-def generarPixelesZoomMIF(imagen_path):
-    # Abrir la imagen en modo de escala de grises (L) para obtener pixeles de 0 a 255
-    imagen = Image.open(imagen_path).convert('L')
-    pixeles = list(imagen.getdata())
+    print("Proceso completado. Resultado guardado en 'RomPixeles.txt'")
     
-    # Crear el string con el formato especificado
+    cuadrante = 100
+    x0 = 0
+    x1 = cuadrante
+    y0 = 0
+    y1 = cuadrante
+    
+    imageCuadrant = imagen.crop((x0,y0,x1,y1))
+    imageInterp = imageCuadrant.resize((400,400), Image.BILINEAR)
+    pixelesCuadrant = list(imageInterp.getdata())
+    
     salida = "CONTENT BEGIN\n"
-    # Agregar los primeros seis valores con 0
     for i in range(6):
-        salida += f"\t{i}\t:\t0;\n"
+        if i == 2: salida += f"\t{i}\t:\t6;\n"
+        else: salida += f"\t{i}\t:\t0;\n"
     # Agregar los valores de los píxeles a partir de la posición 6
-    for i, pixel in enumerate(pixeles, start=6):
+    for i, pixel in enumerate(pixelesCuadrant, start=6):
         salida += f"\t{i}\t:\t{pixel:X};\n"
     salida += "END;"
     
-    return salida
+    with open("RamPixeles.txt", "w") as archivo:
+        archivo.write(salida)
+
+    print("Proceso completado. Resultado guardado en 'RamPixeles.txt'")
+    
 
 # Ejemplo de uso
-imagen_path_2 = "zoom_image.png"  # Ruta de la imagen
-resultado_2 = generarPixelesZoomMIF(imagen_path_2)
-
-# Guardar el resultado en un archivo de texto
-with open("resultado_pixeles_zoom.txt", "w") as archivo:
-    archivo.write(resultado_2)
-
-print("Proceso completado. Resultado guardado en 'resultado_pixeles_zoom.txt'")
+imagen_path = "image.png"  # Ruta de la imagen
+generarPixelesMIF(imagen_path)
 
 
 

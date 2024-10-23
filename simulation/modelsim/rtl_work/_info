@@ -1,0 +1,986 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/simulation/modelsim
+vALU
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1729703377
+!i10b 1
+!s100 0RzbMzlIFdnnA5d_nn2d81
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IN>E^06Ha^>;znJ?S<R:W03
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z5 w1729702452
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/ALU.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/ALU.sv
+!i122 9
+L0 1 69
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1729703377.000000
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/ALU.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU
+Z10 tCvgOpt 0
+n@a@l@u
+vALU_Decoder
+R1
+Z11 !s110 1729703376
+!i10b 1
+!s100 5haK5g6OZRCFGFfj:`2hd2
+R3
+I4N3K^R9gHEhP8`>WbnV`?2
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/ALU_Decoder.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/ALU_Decoder.sv
+!i122 4
+L0 1 29
+R6
+r1
+!s85 0
+31
+Z12 !s108 1729703376.000000
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/ALU_Decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/ALU_Decoder.sv|
+!i113 1
+R8
+R9
+R10
+n@a@l@u_@decoder
+vclock25mh
+R1
+Z13 !s110 1729703378
+!i10b 1
+!s100 AiX>o@26LC4K^UC3QJ=`M0
+R3
+IRX?RGZ>g6Vd6MNaGK4BYJ2
+R4
+S1
+R0
+w1728771328
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/clock25mh.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/clock25mh.sv
+!i122 20
+L0 1 15
+R6
+r1
+!s85 0
+31
+Z14 !s108 1729703378.000000
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/clock25mh.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/clock25mh.sv|
+!i113 1
+R8
+Z15 !s92 -sv -work work +incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA
+R10
+vcomparador_igual
+R1
+R13
+!i10b 1
+!s100 WzfAoGDWNHPU[Sb<A5aKU1
+R3
+IfAaznE:600`MlbRCS>fld3
+R4
+S1
+R0
+w1728771351
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/comparador_igual.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/comparador_igual.sv
+!i122 21
+Z16 L0 1 14
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/comparador_igual.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/comparador_igual.sv|
+!i113 1
+R8
+R15
+R10
+vcomparador_mayor
+R1
+R13
+!i10b 1
+!s100 KCj@7D49OLSAGFZ`9R`Lg0
+R3
+Ik6UKjGN1Zo2P1BkdGoNXP2
+R4
+S1
+R0
+w1728771364
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/comparador_mayor.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/comparador_mayor.sv
+!i122 22
+R16
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/comparador_mayor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/comparador_mayor.sv|
+!i113 1
+R8
+R15
+R10
+vcontador_cuadrante
+R1
+Z17 !s110 1729703379
+!i10b 1
+!s100 Ef6SW9YXD3Tn_aMD;W69R2
+R3
+IdYZUMKNDSiRf8UOcFU7Pn2
+R4
+S1
+R0
+Z18 w1729015388
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_cuadrante.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_cuadrante.sv
+!i122 30
+L0 1 39
+R6
+r1
+!s85 0
+31
+Z19 !s108 1729703379.000000
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_cuadrante.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_cuadrante.sv|
+!i113 1
+R8
+R15
+R10
+vcontador_direccion
+R1
+R13
+!i10b 1
+!s100 QPi=f7nZWlW2T^ciS7fdN3
+R3
+IILhQ?ToLJj7:@nzhYN7m_2
+R4
+S1
+R0
+R18
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_direccion.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_direccion.sv
+!i122 23
+Z20 L0 1 23
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_direccion.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_direccion.sv|
+!i113 1
+R8
+R15
+R10
+vcontador_horizontal
+R1
+R13
+!i10b 1
+!s100 e:JT37`DYN]VGF^Wk=[P83
+R3
+IBMHBeJ>3Y9hWbB_K1<OMc3
+R4
+S1
+R0
+w1728771174
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_horizontal.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_horizontal.sv
+!i122 24
+L0 1 20
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_horizontal.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_horizontal.sv|
+!i113 1
+R8
+R15
+R10
+vcontador_parametrizable
+R1
+R13
+!i10b 1
+!s100 lhEJ[R<kHOjC9;7Cb`l0[2
+R3
+I6cof<]Gn`Akle>@GP@7C31
+R4
+S1
+R0
+w1728771393
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_parametrizable.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_parametrizable.sv
+!i122 25
+L0 1 17
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_parametrizable.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_parametrizable.sv|
+!i113 1
+R8
+R15
+R10
+vcontador_vertical
+R1
+R13
+!i10b 1
+!s100 =SlR2ibSOl`ETeJ`Ef1a>1
+R3
+If^WRVhg[T39BVlG>^kb_c2
+R4
+S1
+R0
+w1728771194
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_vertical.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_vertical.sv
+!i122 26
+L0 1 21
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_vertical.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/contador_vertical.sv|
+!i113 1
+R8
+R15
+R10
+vControl_Unit
+R1
+R2
+!i10b 1
+!s100 4KGi<5PRC[4bZ>EK49g752
+R3
+I70>d7F?_UjA1WXl84=FYd0
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Control_Unit.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Control_Unit.sv
+!i122 14
+L0 1 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Control_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Control_Unit.sv|
+!i113 1
+R8
+R9
+R10
+n@control_@unit
+vcontrolador_vga
+R1
+R17
+!i10b 1
+!s100 9Bhbl=Im^aZ;@z10OV0CJ2
+R3
+IbYDc@Dfb303ZSU08[GI?_1
+R4
+S1
+R0
+Z21 w1729695842
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/controlador_vga.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/controlador_vga.sv
+!i122 27
+L0 1 55
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/controlador_vga.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/controlador_vga.sv|
+!i113 1
+R8
+R15
+R10
+vcpu
+R1
+R2
+!i10b 1
+!s100 _8g?0>Fo146R]C0?KXkHe0
+R3
+ID]A<5Uf_CQ4XBT?;42l1N3
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/cpu.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/cpu.sv
+!i122 18
+L0 1 126
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/cpu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/cpu.sv|
+!i113 1
+R8
+R9
+R10
+vcpu_tb2
+R1
+!s110 1729703380
+!i10b 1
+!s100 IDiAhi1eg_>cC9MEDoM681
+R3
+IMAcIa2E7TJfb1LoaNJS4D0
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/cpu_tb2.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/cpu_tb2.sv
+!i122 36
+L0 2 296
+R6
+r1
+!s85 0
+31
+!s108 1729703380.000000
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/cpu_tb2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/cpu_tb2.sv|
+!i113 1
+R8
+R9
+R10
+vData_Memory
+R1
+R11
+!i10b 1
+!s100 2bO65dk?1:oKlcI3JJzH73
+R3
+I0XM:^BlG2=XUQAG3im_b52
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Data_Memory.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Data_Memory.sv
+!i122 7
+L0 1 52
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Data_Memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Data_Memory.sv|
+!i113 1
+R8
+R9
+R10
+n@data_@memory
+vDecode_Cycle
+R1
+R2
+!i10b 1
+!s100 lDR1Ql_3IX>YZ:YT:MM@N1
+R3
+I7kZ?=1[TO[@0?@?8T<zT92
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Decode_Cycle.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Decode_Cycle.sv
+!i122 15
+L0 1 159
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Decode_Cycle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Decode_Cycle.sv|
+!i113 1
+R8
+R9
+R10
+n@decode_@cycle
+vdram
+R11
+!i10b 1
+!s100 ]GO<A8K1z6o6km@BE;;@Q1
+R3
+I<e:VLi@3Mb<8gEoIAAN<V2
+R4
+R0
+w1729111006
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/dram.v
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/dram.v
+!i122 1
+L0 40 90
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/dram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/dram.v|
+!i113 1
+Z22 o-vlog01compat -work work
+Z23 !s92 -vlog01compat -work work +incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory
+R10
+vdrom
+R11
+!i10b 1
+!s100 ;=EG2c@Nn:]z>C87fBhTP1
+R3
+IE_lEQoh@KGPebhDan4G4G3
+R4
+R0
+R21
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/drom.v
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/drom.v
+!i122 0
+L0 40 83
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/drom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/drom.v|
+!i113 1
+R22
+R23
+R10
+vExecute_Cycle
+R1
+R2
+!i10b 1
+!s100 Y^OTZe1GaP4bFBB_PeHk=3
+R3
+ICFmQ2YC[AoJ:4AX^GS[Qb0
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Execute_Cycle.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Execute_Cycle.sv
+!i122 11
+L0 1 125
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Execute_Cycle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Execute_Cycle.sv|
+!i113 1
+R8
+R9
+R10
+n@execute_@cycle
+vFetch_Cycle
+R1
+R17
+!i10b 1
+!s100 MYCALI:NbJ;9blb5jhH;e0
+R3
+Ig:jOT40RS_n0mZV;9;hbn0
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Fetch_Cycle.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Fetch_Cycle.sv
+!i122 33
+L0 1 70
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Fetch_Cycle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Fetch_Cycle.sv|
+!i113 1
+R8
+R9
+R10
+n@fetch_@cycle
+vHazard_Unit
+R1
+R11
+!i10b 1
+!s100 o`B_RB4[<WB[>H7LDBF>60
+R3
+I5A@1abMZ6JV]bZflEhe853
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Hazard_Unit.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Hazard_Unit.sv
+!i122 5
+Z24 L0 1 16
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Hazard_Unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Hazard_Unit.sv|
+!i113 1
+R8
+R9
+R10
+n@hazard_@unit
+vinstrROM
+R11
+!i10b 1
+!s100 aWL4HYkOYenjQmbnkWZd53
+R3
+Ic<hUR>SnU]]7M=XmGNF032
+R4
+R0
+w1729699176
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/instrROM.v
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/instrROM.v
+!i122 2
+L0 40 61
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/instrROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/Memory/instrROM.v|
+!i113 1
+R22
+R23
+R10
+ninstr@r@o@m
+vInstruction_Memory
+R1
+R2
+!i10b 1
+!s100 Q9PCkBL>`IabTiFGjIPO;0
+R3
+I^Sa5AhIdfRaRSn1bY2VkU2
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Instruction_Memory.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Instruction_Memory.sv
+!i122 17
+L0 1 24
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Instruction_Memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Instruction_Memory.sv|
+!i113 1
+R8
+R9
+R10
+n@instruction_@memory
+vmain
+R1
+R13
+!i10b 1
+!s100 `]mC6JI7=m3XzS=b=>dUR2
+R3
+IDe7n2h6ngWEYFFP9]XXP03
+R4
+S1
+R0
+w1729699661
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/main.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/main.sv
+!i122 19
+L0 1 88
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/main.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/main.sv|
+!i113 1
+R8
+!s92 -sv -work work +incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture
+R10
+vMain_Decoder
+R1
+R11
+!i10b 1
+!s100 Fbj>^BfHR?Y:C=`h=3zoR0
+R3
+ImNoIaX_3i`A1b?O`HEjZL1
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Main_Decoder.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Main_Decoder.sv
+!i122 3
+L0 1 33
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Main_Decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Main_Decoder.sv|
+!i113 1
+R8
+R9
+R10
+n@main_@decoder
+vMemory_Cycle
+R1
+R2
+!i10b 1
+!s100 W3c3SzjoWBEi>E4kD87CE1
+R3
+InciYA1Qzg]7:?G=@m6b;h1
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Memory_Cycle.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Memory_Cycle.sv
+!i122 8
+L0 1 59
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Memory_Cycle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Memory_Cycle.sv|
+!i113 1
+R8
+R9
+R10
+n@memory_@cycle
+vmostrar_imagen
+R1
+R17
+!i10b 1
+!s100 i1`=VaTSK@e=V]h>Ng6VA0
+R3
+I^oLH]YSbF6ON5>c@hj<8O2
+R4
+S1
+R0
+R21
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/mostrar_imagen.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/mostrar_imagen.sv
+!i122 28
+L0 1 290
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/mostrar_imagen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/mostrar_imagen.sv|
+!i113 1
+R8
+R15
+R10
+vMux
+R1
+R17
+!i10b 1
+!s100 F52bCOG^3:P]=@o4do^_m3
+R3
+I[F5Fg61dm`a@gVQGM74Hh3
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Mux.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Mux.sv
+!i122 34
+L0 1 9
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Mux.sv|
+!i113 1
+R8
+R9
+R10
+n@mux
+vmux2
+R1
+R17
+!i10b 1
+!s100 jQOY?Vg[W1R7ccYe4E=gB1
+R3
+IRPz1RJ6]l7jTIMiC]j8S83
+R4
+S1
+R0
+w1729120150
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/mux2.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/mux2.sv
+!i122 32
+Z25 L0 1 7
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/mux2.sv|
+!i113 1
+R8
+R15
+R10
+vMux_3_by_1
+R1
+R2
+!i10b 1
+!s100 89OG>fm2IQ>Eb;kM0e89J2
+R3
+IUh<di6zP^EhPL=nAb^8NF3
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Mux_3_by_1.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Mux_3_by_1.sv
+!i122 10
+Z26 L0 1 8
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Mux_3_by_1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Mux_3_by_1.sv|
+!i113 1
+R8
+R9
+R10
+n@mux_3_by_1
+vPC_Adder
+R1
+R2
+!i10b 1
+!s100 Ye0`JV:V;k5:O>nodHkCg1
+R3
+I@I2LSM9<V^=9V_o?:FWkR2
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/PC_Adder.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/PC_Adder.sv
+!i122 16
+R26
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/PC_Adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/PC_Adder.sv|
+!i113 1
+R8
+R9
+R10
+n@p@c_@adder
+vPC_Module
+R1
+R17
+!i10b 1
+!s100 4hWN>Zh7]YeNhOhQ[<A`M1
+R3
+IS62N@??>mEZhSUDQOz7Sn2
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/PC_Module.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/PC_Module.sv
+!i122 35
+R16
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/PC_Module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/PC_Module.sv|
+!i113 1
+R8
+R9
+R10
+n@p@c_@module
+vRegister_File
+R1
+R2
+!i10b 1
+!s100 d7T]o?8_RjgFVgXi=0=ZX3
+R3
+I=AOmTiM14QNmze^Y6g8:=2
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Register_File.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Register_File.sv
+!i122 13
+R20
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Register_File.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Register_File.sv|
+!i113 1
+R8
+R9
+R10
+n@register_@file
+vSign_Extend
+R1
+R2
+!i10b 1
+!s100 XaUW?E0;[YdTo0FDHJF2Z0
+R3
+IFOGO=1>>1RDVTSzX]O1QS2
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Sign_Extend.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Sign_Extend.sv
+!i122 12
+R24
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Sign_Extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Sign_Extend.sv|
+!i113 1
+R8
+R9
+R10
+n@sign_@extend
+vsincronizador
+R1
+R17
+!i10b 1
+!s100 ?D4=dR4Xf8^CGDjAjK5<@3
+R3
+I3fjQbS?Rg5YzL>4@6`;DH2
+R4
+S1
+R0
+w1728771260
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/sincronizador.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/sincronizador.sv
+!i122 29
+L0 1 50
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/sincronizador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/sincronizador.sv|
+!i113 1
+R8
+R15
+R10
+vsumador
+R1
+R17
+!i10b 1
+!s100 n@R5[P6YH2dLEo=N:VBa>0
+R3
+I9UieK[Mg6ne;eiQLPlDKn0
+R4
+S1
+R0
+w1729116597
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/sumador.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/sumador.sv
+!i122 31
+R25
+R6
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/sumador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/VGA/sumador.sv|
+!i113 1
+R8
+R15
+R10
+vWriteback_Cycle
+R1
+R11
+!i10b 1
+!s100 B8:i^h_>NJN:OO4>bDBf`0
+R3
+I`?El=ZYW3O>J==l5IlKFD0
+R4
+S1
+R0
+R5
+8C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Writeback_Cycle.sv
+FC:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Writeback_Cycle.sv
+!i122 6
+R24
+R6
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Writeback_Cycle.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU|C:/Users/ricar/OneDrive/Escritorio/RIDA-architecture/CPU/Writeback_Cycle.sv|
+!i113 1
+R8
+R9
+R10
+n@writeback_@cycle

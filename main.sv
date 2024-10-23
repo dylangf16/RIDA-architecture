@@ -79,6 +79,9 @@ module main ( input 			clock_50,
 										 .button(button),
 										 .enable(~start),
 										 .count(quadrant)); 
+										 
+	cpu cpu(.clk(clock_50),
+			  .rst(reset));
 				  
 	assign vgaclock = clock_25;
 		
